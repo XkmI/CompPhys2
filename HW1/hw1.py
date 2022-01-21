@@ -3,5 +3,5 @@ import matplotlib.pyplot as plt
 
 # HW1 Task 1
 
-x = np.linspace(0,1,10)
-print(x)
+def chiFun(alpha, r):
+    return np.exp(-alpha * r**2)
