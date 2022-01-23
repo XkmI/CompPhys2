@@ -19,7 +19,7 @@ def lapPhi(Cs, alphas, r):
     return lapPhi 
 
 def H(Cs, alphas, rvec):
-    -np.gradient()/2 - 2/r + ig.quad(np.abs(phi(Cs, alphas, np.abs(rvec)))**2 / np.abs(rvec-Rvec))
+   -lapPhi(Cs, alphas, r)/2 - 2/r + ig.quad(np.abs(phi(Cs, alphas, np.abs(rvec)))**2 / np.abs(rvec-Rvec))
 
 
 r = np.linspace(0,1,10)
