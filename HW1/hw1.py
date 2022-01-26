@@ -23,12 +23,13 @@ def integrand(z2,y2,x2 , r1vec, Cs, alphas):
     r2vec=np.array([x2,y2,z2])
     return phi(Cs, alphas, la.norm(r2vec))**2  / la.norm(r1vec-r2vec)
 
-alphas = [0.297104, 1.236745, 5.749982, 38.216677]
-Cs = np.ones(4)
+def task1():
+    alphas = [0.297104, 1.236745, 5.749982, 38.216677]
+    Cs = np.ones(4)
 
-r1vec = 
+    r1vec = 
 
--lapPhi(Cs, alphas, r1)/2 + ( - 2/r1 + ig.tplquad( integrand(z2,y2,x2,r1vec,Cs,alphas),-100,100) ) * phi(Cs, alphas, r1)
+    -lapPhi(Cs, alphas, r1)/2 + ( - 2/r1 + ig.tplquad( integrand(z2,y2,x2,r1vec,Cs,alphas),-100,100) ) * phi(Cs, alphas, r1)
 
 
 # HW1 Task 2
