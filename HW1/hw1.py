@@ -2,7 +2,6 @@ import numpy as np
 import numpy.linalg as la
 import matplotlib.pyplot as plt
 import scipy.integrate as ig
-import numpy.linalg as la
 
 # HW1 Task 1
 def chi(alpha, r):
