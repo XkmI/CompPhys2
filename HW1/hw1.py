@@ -1,4 +1,5 @@
 import numpy as np
+import numpy.linalg as la
 import matplotlib.pyplot as plt
 import scipy.integrate as ig
 
