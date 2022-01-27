@@ -22,61 +22,62 @@ def lapPhi(Cs, alphas, r):
 def integrand(r2vec, r1vec, Cs, alphas):
     return phi(Cs, alphas, la.norm(r2vec))**2  / la.norm(r1vec-r2vec)
 
-# Define alphas and initial Cs
-alphas = [0.297104, 1.236745, 5.749982, 38.216677]
-Cs = np.ones(4)
+def task1():
+    # Define alphas and initial Cs
+    alphas = [0.297104, 1.236745, 5.749982, 38.216677]
+    Cs = np.ones(4)
 
-# Initialise and calculate the 4x4 matrices S and h
-SMat = np.zeros([4,4])
-hMat = np.zeros([4,4])
-for p in range(4):
-    for q in range(4):
-        aSum = alphas[p] + alphas[q]
-        aDiv = alphas[p]*alphas[q]/aSum**2
-        hMat[p,q] = 4*np.pi * ( 3.0/4.0 * np.sqrt(np.pi / aSum) * aDiv - 1.0/aSum)
-        SMat[p,q] = np.power(np.pi/(aSum),1.5)
+    # Initialise and calculate the 4x4 matrices S and h
+    SMat = np.zeros([4,4])
+    hMat = np.zeros([4,4])
+    for p in range(4):
+        for q in range(4):
+            aSum = alphas[p] + alphas[q]
+            aDiv = alphas[p]*alphas[q]/aSum**2
+            hMat[p,q] = 4*np.pi * ( 3.0/4.0 * np.sqrt(np.pi / aSum) * aDiv - 1.0/aSum)
+            SMat[p,q] = np.power(np.pi/(aSum),1.5)
 
-# Initialise and calculate the 4x4x4x4 matrix Q (Note that our index ordering is pqrs)
-QMat = np.zeros([4,4,4,4])
-for p in range(4):
-    for q in range(4):
-        for r in range(4):
-            for s in range(4):
-                QMat[p,q,r,s] = 1.0 / ( (alphas[p] + alphas[q])*(alphas[r] + alphas[s])*np.sqrt(alphas[p] + alphas[q]+alphas[r] + alphas[s]) )
-QMat *= 2*np.power(np.pi,2.5)
+    # Initialise and calculate the 4x4x4x4 matrix Q (Note that our index ordering is pqrs)
+    QMat = np.zeros([4,4,4,4])
+    for p in range(4):
+        for q in range(4):
+            for r in range(4):
+                for s in range(4):
+                    QMat[p,q,r,s] = 1.0 / ( (alphas[p] + alphas[q])*(alphas[r] + alphas[s])*np.sqrt(alphas[p] + alphas[q]+alphas[r] + alphas[s]) )
+    QMat *= 2*np.power(np.pi,2.5)
 
-# Normalise Cs
-Cnorm2 = np.dot(np.matmul(Cs, SMat), Cs)
-Cs /= np.sqrt(Cnorm2)
-print('------------------')
-print('Initial Cvec is:')
-print(Cs)
-
-# This will store the ground state energies for the two last runs:
-groundE = np.array([0.0, 1.0])
-i = 0
-
-while np.abs(groundE[1] - groundE[0]) > 1e-5:
-    i += 1
-    groundE[0] = groundE[1]
-
-    # Calculate the 4x4 matrix F
-    FMat = hMat + np.matmul(np.matmul(Cs,QMat), Cs.transpose())
-
-    # Calculate new Cs
-    _, Cs = la.eigh(FMat,SMat, subset_by_index=[0, 0])
-    Cs = Cs.transpose()[0]
+    # Normalise Cs
+    Cnorm2 = np.dot(np.matmul(Cs, SMat), Cs)
+    Cs /= np.sqrt(Cnorm2)
     print('------------------')
-    print('Iteration ' + str(i))
-    print('New Cvec is:')
+    print('Initial Cvec is:')
     print(Cs)
-    print('Is Cvec normalised? This should be = 1:')
-    print(np.dot(np.matmul(Cs, SMat), Cs))
 
-    # Calculate new ground state energy
-    groundE[1] = np.dot(np.matmul(Cs,hMat+FMat),Cs)
-    print('Ground state energy for two latest iterations are:')
-    print(groundE)
+    # This will store the ground state energies for the two last runs:
+    groundE = np.array([0.0, 1.0])
+    i = 0
+
+    while np.abs(groundE[1] - groundE[0]) > 1e-5:
+        i += 1
+        groundE[0] = groundE[1]
+
+        # Calculate the 4x4 matrix F
+        FMat = hMat + np.matmul(np.matmul(Cs,QMat), Cs.transpose())
+
+        # Calculate new Cs
+        _, Cs = la.eigh(FMat,SMat, subset_by_index=[0, 0])
+        Cs = Cs.transpose()[0]
+        print('------------------')
+        print('Iteration ' + str(i))
+        print('New Cvec is:')
+        print(Cs)
+        print('Is Cvec normalised? This should be = 1:')
+        print(np.dot(np.matmul(Cs, SMat), Cs))
+
+        # Calculate new ground state energy
+        groundE[1] = np.dot(np.matmul(Cs,hMat+FMat),Cs)
+        print('Ground state energy for two latest iterations are:')
+        print(groundE)
 
 '''
 xyzMax = 10.0
@@ -101,3 +102,46 @@ xs = np.linspace(0,10)
 plt.plot(xs,phi(Cs, alphas, xs))
 plt.show()
 '''
+
+# HW1 Task 2
+def lap(U,i,h):
+    return (U[i+1]-2*U[i] + U[i-1])/h**2
+
+def realphi(r):
+    return (1/r) - (1 + 1/r) * np.exp(-2*r)
+
+def task2():
+    a=0 
+    b=10 
+    n=1000 
+    h=(b-a)/n
+    rmax=b #idfk
+
+    r = np.linspace(a,b,n)
+
+    U = np.zeros(n)
+    ddU = np.zeros(n)
+    phisquare = np.zeros(n)
+
+    for i in range(n):
+        if i == 0 or n:
+            U[i] = 0
+        U[i]=r[i] * V[i] - r[i]/rmax #detta är sus
+    
+    for i in range(n):
+        if i == 0 or n:
+            U[i] = 0
+        ddU[i] = lap(U,i,h)
+
+    phisquare = - 1/(4*np.pi) * ddU
+
+    plt.plot(r,np.sqrt(phisquare),'r')
+    plt.plot(r,realphi(r),'b')
+    plt.show()
+
+task1()
+task2()
+task3()
+task4()
+task5()
+task6()
