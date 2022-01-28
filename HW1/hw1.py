@@ -132,10 +132,10 @@ def task2():
 
     x = la.solve(A,f)
 
-    V = 2*x/r
+    V = x/(2*r) + r/b
     
     plt.plot(r,V,'r',label="Calculated Hartree potential")
-    plt.plot(r,realphi(r),'b', label="True Hartree potential")
+    plt.plot(r,realphi(r),'b', label="Expected Hartree potential")
     plt.legend()
     plt.xlabel('$r$')
     plt.ylabel('$V_H(r)$')
