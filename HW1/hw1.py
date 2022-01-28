@@ -2,6 +2,7 @@ import numpy as np
 import scipy.linalg as la
 import matplotlib.pyplot as plt
 import scipy.integrate as ig
+import scipy.sparse as sp
 
 # HW1 Task 1
 def chi(alpha, r):
@@ -139,9 +140,42 @@ def task2():
     plt.plot(r,realphi(r),'b')
     plt.show()
 
-task1()
-task2()
+# HW1 Task 3
+def getAMat(vHxc,rs):
+    nMin2 = len(rs)-2
+    A = sp.diags([-0.5, 1, -0.5], [-1, 0, 1], shape=(nMin2,nMin2)).toarray() / (rs[1]-rs[0])**2
+
+    diagVec = vHxc - 2/rs[1:-1]
+    A += np.diag(diagVec)
+
+    return A
+
+def task3():
+    rMax = 20
+    nPoints = 2001
+    rs = np.linspace(0,rMax,nPoints)
+    vHxc = 1/rs[1:-1]
+
+    AMat = getAMat(vHxc,rs)
+
+    ei=0
+    eps, uVec = la.eigh(AMat,subset_by_index=[ei,ei])
+    eps = eps[0]
+    uVec = uVec.flatten()
+    print(eps)
+    print(uVec[0])
+    print(uVec[-1])
+    plt.plot(rs[1:-1], uVec/(np.sqrt(rs[1]-rs[0])),linewidth=6, label='Calculated u(r)')
+    plt.plot(rs[1:-1],2*rs[1:-1]*np.exp(-rs[1:-1]),'-.',linewidth=2, label='Theoretical u(r)')
+    plt.xlabel('Radial distance $r$ [$a_0$]')
+    plt.ylabel('Radial wave function $u(r)$ [$a_0^{-1/2}$] ')
+    plt.xlim([0,10])
+    plt.legend()
+    plt.show()
+    
+
+    
+
+#task1()
+#task2()
 task3()
-task4()
-task5()
-task6()

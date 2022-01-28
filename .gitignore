@@ -1,0 +1,8 @@
+*.code-workspace
+.vscode/
+.DS_Store
+.metadata/
+*.csv
+*.pdf
+*.o
+Executable_files/
