@@ -105,40 +105,41 @@ plt.show()
 '''
 
 # HW1 Task 2
-def lap(U,i,h):
-    return (U[i+1]-2*U[i] + U[i-1])/h**2
-
 def realphi(r):
     return (1/r) - (1 + 1/r) * np.exp(-2*r)
 
 def task2():
-    a=0 
-    b=10 
-    n=1000 
-    h=(b-a)/n
-    rmax=b #idfk
 
+    a = 0.01
+    b = 15
+    n = 1000
+    dx = (b-a)/n
     r = np.linspace(a,b,n)
-
-    U = np.zeros(n)
-    ddU = np.zeros(n)
-    phisquare = np.zeros(n)
-
+    n_s = np.zeros(n)
     for i in range(n):
-        if i == 0 or n:
-            U[i] = 0
-        U[i]=r[i] * V[i] - r[i]/rmax #detta är sus
+        n_s[i] = np.exp(-2*r[i])/(np.pi) 
+
+    A = sp.diags([1, -2, 1], [-1, 0, 1], shape=(n,n)).toarray()    
+    for i,row in enumerate(A):
+        if i == 0 or i == n-1:
+            row = np.zeros(n)
+            row[i] = 1
+        A[i] = row
+    A = A/dx/dx
+    #print(A)
+
+    f = r*n_s *-4*np.pi 
+
+    x = la.solve(A,f)
+
+    V = x/(2*r) + r/b
     
-    for i in range(n):
-        if i == 0 or n:
-            U[i] = 0
-        ddU[i] = lap(U,i,h)
-
-    phisquare = - 1/(4*np.pi) * ddU
-
-    plt.plot(r,np.sqrt(phisquare),'r')
-    plt.plot(r,realphi(r),'b')
-    plt.show()
+    plt.plot(r,V,'r',label="Calculated Hartree potential")
+    plt.plot(r,realphi(r),'b', label="Expected Hartree potential")
+    plt.legend()
+    plt.xlabel('$r$')
+    plt.ylabel('$V_H(r)$')
+    plt.savefig('task2.pdf')
 
 # HW1 Task 3
 def getAMat(vHxc,rs):
@@ -177,5 +178,5 @@ def task3():
     
 
 #task1()
-#task2()
-task3()
+task2()
+#task3()
