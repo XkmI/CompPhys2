@@ -2,6 +2,7 @@ import numpy as np
 import scipy.linalg as la
 import matplotlib.pyplot as plt
 import scipy.integrate as ig
+import scipy.sparse as sp
 
 # HW1 Task 1
 def chi(alpha, r):
@@ -111,31 +112,29 @@ def realphi(r):
     return (1/r) - (1 + 1/r) * np.exp(-2*r)
 
 def task2():
-    a=0 
-    b=10 
-    n=1000 
-    dx=(b-a)/n
 
-    r = np.linspace(a,b,n)
+    n = 5
 
-    U = np.zeros(n)
-    ddU = np.zeros(n)
-    phisquare = np.zeros(n)
+    A = sp.diags([1, -2, 1], [-1, 0, 1], shape=(n,n)).toarray()    
+    for i,row in enumerate(A):
+        if i == 0 or i == n-1:
+            row = np.zeros(n)
+            row[i] = 1
+        A[i] = row
 
-    for i in range(n):
-        if i == 0 or n:
-            ddU[i] = 0
-        ddU[i] = lap(U,i,dx)
+    #print(A)
 
-    phisquare = - 1/(4*np.pi) * ddU
+    #la.solve()
+    #phisquare = - 1/(4*np.pi) * ddU
 
-    plt.plot(r,np.sqrt(phisquare),'r')
-    plt.plot(r,realphi(r),'b')
-    plt.show()
 
-task1()
+    #plt.plot(r,np.sqrt(phisquare),'r')
+    #plt.plot(r,realphi(r),'b')
+    #plt.show()
+
+#task1()
 task2()
-task3()
-task4()
-task5()
-task6()
+#task3()
+#task4()
+#task5()
+#task6()
