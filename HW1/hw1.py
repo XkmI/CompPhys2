@@ -105,41 +105,30 @@ plt.show()
 '''
 
 # HW1 Task 2
-def realphi(r):
+def getVH(r):
     return (1/r) - (1 + 1/r) * np.exp(-2*r)
 
 def task2():
-
-    a = 0.01
-    b = 15
-    n = 1000
-    dx = (b-a)/n
-    r = np.linspace(a,b,n)
-    n_s = np.zeros(n)
-    for i in range(n):
-        n_s[i] = np.exp(-2*r[i])/(np.pi) 
-
-    A = sp.diags([1, -2, 1], [-1, 0, 1], shape=(n,n)).toarray()    
-    for i,row in enumerate(A):
-        if i == 0 or i == n-1:
-            row = np.zeros(n)
-            row[i] = 1
-        A[i] = row
-    A = A/dx/dx
+    rMax = 20
+    nPoints = 2001
+    rs = np.linspace(0,rMax,nPoints)
+    nMin2 = nPoints-2
+    A = sp.diags([1, -2, 1], [-1, 0, 1], shape=(nMin2,nMin2)).toarray() / (rs[1] - rs[0])**2
     #print(A)
-
-    f = r*n_s *-4*np.pi 
-
-    x = la.solve(A,f)
-
-    V = x/(2*r) + r/b
     
-    plt.plot(r,V,'r',label="Calculated Hartree potential")
-    plt.plot(r,realphi(r),'b', label="Expected Hartree potential")
+    f = - 4 * rs[1:-1] * np.exp(-2*rs[1:-1])
+    
+    U0vec = la.solve(A,f)
+    
+    VHvec = U0vec/rs[1:-1] + 1/rMax
+
+    plt.plot(rs[1:-1],VHvec,linewidth=6,label="Calculated Hartree potential")
+    plt.plot(rs,getVH(rs),'-.', label="Theoretical Hartree potential")
     plt.legend()
-    plt.xlabel('$r$')
-    plt.ylabel('$V_H(r)$')
-    plt.savefig('task2.pdf')
+    plt.xlabel('Radial distance $r$ [$a_0$]')
+    plt.ylabel('Potential energy $V_H(r)$ [eV]')
+    plt.show()
+    #plt.savefig('task2.pdf')
 
 # HW1 Task 3
 def getAMat(vHxc,rs):
