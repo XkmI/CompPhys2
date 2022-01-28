@@ -105,15 +105,19 @@ plt.show()
 '''
 
 # HW1 Task 2
-def lap(U,i,dx):
-    return (U[i+1]-2*U[i] + U[i-1])/dx**2
-
 def realphi(r):
     return (1/r) - (1 + 1/r) * np.exp(-2*r)
 
 def task2():
 
-    n = 5
+    a = 0.01
+    b = 15
+    n = 1000
+    dx = (b-a)/n
+    r = np.linspace(a,b,n)
+    n_s = np.zeros(n)
+    for i in range(n):
+        n_s[i] = np.exp(-2*r[i])/(np.pi) 
 
     A = sp.diags([1, -2, 1], [-1, 0, 1], shape=(n,n)).toarray()    
     for i,row in enumerate(A):
@@ -121,16 +125,21 @@ def task2():
             row = np.zeros(n)
             row[i] = 1
         A[i] = row
-
+    A = A/dx/dx
     #print(A)
 
-    #la.solve()
-    #phisquare = - 1/(4*np.pi) * ddU
+    f = r*n_s *-4*np.pi 
 
+    x = la.solve(A,f)
 
-    #plt.plot(r,np.sqrt(phisquare),'r')
-    #plt.plot(r,realphi(r),'b')
-    #plt.show()
+    V = 2*x/r
+    
+    plt.plot(r,V,'r',label="Calculated Hartree potential")
+    plt.plot(r,realphi(r),'b', label="True Hartree potential")
+    plt.legend()
+    plt.xlabel('$r$')
+    plt.ylabel('$V_H(r)$')
+    plt.savefig('task2.pdf')
 
 #task1()
 task2()
