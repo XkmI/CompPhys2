@@ -4,5 +4,6 @@
 .metadata/
 *.csv
 *.pdf
+*.png
 *.o
 Executable_files/
