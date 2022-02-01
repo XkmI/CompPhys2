@@ -79,30 +79,21 @@ def task1():
         groundE[1] = np.dot(np.matmul(Cs,hMat+FMat),Cs)
         print('Ground state energy for two latest iterations are:')
         print(groundE)
+    
+    rs = np.linspace(0,8,1000)
+    
+    plt.plot(rs, phi(Cs,alphas,rs), label='Optimal wave function $\phi(r)$')
+    plt.legend()
+    plt.xlabel('Radial distance $r$ [$a_0$]')
+    plt.ylabel('3D probability density [$a_0^{-3/2}$]')
+    '''
+    plt.plot(rs, 2*np.sqrt(np.pi) * rs * phi(Cs,alphas,rs),label='Optimal radial wave function $2\sqrt{\pi} r \phi(r)$')
+    plt.legend()
+    plt.xlabel('Radial distance $r$ [$a_0$]')
+    plt.ylabel('1D probability density [$a_0^{-1/2}$]')
+    '''
+    plt.show()
 
-'''
-xyzMax = 10.0
-nPoints = 1001
-xyzVals = np.linspace(-xyzMax, xyzMax, nPoints)
-
-vlGrid = np.zeros([nPoints,nPoints,nPoints])
-for i in range(nPoints):
-    for j in range(nPoints):
-        for k in range(nPoints):
-            r1vec = np.array([xyzVals[i],xyzVals[j],xyzVals[k]])
-            r1 = la.norm(r1vec)
-
-            def currIntegrand(z2,y2,x2):
-                r2vec = np.array([x2,y2,z2])
-                return integrand(r2vec,r1vec,Cs,alphas)
-
-            vlGrid[i,j,k] = -lapPhi(Cs, alphas, r1)/2.0 + ( - 2.0/r1 + ig.tplquad(currIntegrand,-xyzMax,xyzMax,-xyzMax,xyzMax,-xyzMax,xyzMax) ) * phi(Cs, alphas, r1)
-'''
-'''
-xs = np.linspace(0,10)
-plt.plot(xs,phi(Cs, alphas, xs))
-plt.show()
-'''
 
 # HW1 Task 2
 def getVH(r):
