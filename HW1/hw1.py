@@ -164,8 +164,49 @@ def task3():
     plt.show()
     
 
+# HW1 task 4
+def task4():
+    rMax = 20
+    nPoints = 2001
+    nMin2 = nPoints-2
+    rs = np.linspace(0,rMax,nPoints)
+    E = np.array([0.0, 1.0])
+    i = 0
+
+    # initial condition
+    u = - 4 * rs[1:-1] * rs[1:-1] * np.exp(-2*rs[1:-1])
+
+    while np.abs(E[1] - E[0]) > 1e-5:
+        i+=1
+        E[0] = E[1]
+        print('------------------')
+        print('Iteration ' + str(i))
+
+        f = u**2/rs[1:-1]
+        Amat = sp.diags([1, -2, 1], [-1, 0, 1], shape=(nMin2,nMin2)).toarray() / (rs[1] - rs[0])**2
+        U0vec = la.solve(Amat,f)
+        vsH = U0vec/rs[1:-1] + 1/rMax  #*2?
+        BMat = getAMat(vsH,rs)
+
+        ei=0
+        eps, u = la.eigh(BMat,subset_by_index=[ei,ei])
+        E[1] = eps[0]
+        u = u.flatten()
+        print('Ground state energy for two latest iterations are:')
+        print(E)
+ 
+    print(u[0])
+    print(u[-1])
+    plt.plot(rs[1:-1], u/(np.sqrt(rs[1]-rs[0])),linewidth=6, label='Calculated u(r)')
+    plt.plot(rs[1:-1],2*rs[1:-1]*np.exp(-rs[1:-1]),'-.',linewidth=2, label='Theoretical u(r)')
+    plt.xlabel('Radial distance $r$ [$a_0$]')
+    plt.ylabel('Radial wave function $u(r)$ [$a_0^{-1/2}$] ')
+    plt.xlim([0,10])
+    plt.legend()
+    plt.show()
     
 
 #task1()
-task2()
+#task2()
 #task3()
+task4()
