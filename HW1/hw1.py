@@ -267,10 +267,87 @@ def task5(rComp=None, uComp=None):
     plt.xlim([0,8])
     plt.legend()
     plt.show()
+
+def getEpsC(r_s):
+    greeks = [-0.1423, 1.0529, 0.3334] # ga be1 be2
+    romans = [0.0311, -0.048, 0.0020, -0.0116] # ABCD
+
+    epsC = ( greeks[0] / (1 + greeks[1]*np.sqrt(r_s) + greeks[2]*r_s) ) * (r_s >= 1.0)
+    epsC += (romans[0] * np.log(r_s) + romans[1] + romans[2] * r_s * np.log(r_s) + romans[3] * r_s) * (r_s < 1.0)
+    
+    return epsC
+
+def getdEpsCdr(r_s):
+    greeks = [-0.1423, 1.0529, 0.3334] # ga be1 be2
+    romans = [0.0311, -0.048, 0.0020, -0.0116] # ABCD
+
+    depsCdr = ( -greeks[0]*(greeks[1]/(2*np.sqrt(r_s)) + greeks[2]) / (1 + greeks[1]*np.sqrt(r_s) + greeks[2]*r_s)**2 ) * (r_s >= 1.0)
+    depsCdr += (romans[0]/r_s + romans[2] * (np.log(r_s) + 1.0) + romans[3]) * (r_s < 1.0)
+
+    return depsCdr
+
+def getVc(pDens):
+    r_s = np.cbrt(3/(4*np.pi*pDens))
+    drdn = - 1.0 / np.cbrt(36*np.pi * pDens**4)
+    return (getEpsC(r_s) + pDens * getdEpsCdr(r_s) * drdn)
+
+# HW1 task 6
+def task6(rComp=None,uComp=None):
+    rMax = 20
+    nPoints = 4001
+    nMin2 = nPoints-2
+    rs = np.linspace(0,rMax,nPoints)
+    epsList = np.array([0.0, 1.0])
+    i = 0
+
+    # initial condition
+    u = 2 * rs[1:-1] * np.exp(-rs[1:-1]) #* np.sqrt(2)
+
+    while np.abs(epsList[1] - epsList[0]) > 0.3e-5:
+        i+=1
+        epsList[0] = epsList[1]
+        print('------------------')
+        print('Iteration ' + str(i))
+
+        f = -u**2/rs[1:-1]
+        Amat = sp.diags([1, -2, 1], [-1, 0, 1], shape=(nMin2,nMin2)).toarray() / (rs[1] - rs[0])**2
+        U0vec = la.solve(Amat,f)
+        vsH = U0vec/rs[1:-1] + 1/rMax
+        pDens = (u/rs[1:-1])**2/(2*np.pi)
+        vHxc = 2*vsH + getVx(pDens) + getVc(pDens)
+        BMat = getAMat(vHxc,rs)
+
+        ei=0
+        eps, u = la.eigh(BMat,subset_by_index=[ei,ei])
+        epsList[1] = eps[0]
+        u = u.flatten()/(np.sqrt(rs[1]-rs[0]))
+
+        #print(np.sum(u**2))
+        print('Eigenvalues for two latest iterations are:')
+        print(epsList)
+    
+    print('------------------')
+    print('Calculated ground state energy:')
+    pDens = (u/rs[1:-1])**2/(2*np.pi)
+    eG = 2*eps[-1] - 2 * np.sum(u**2 * (vsH + 0.25*getVx(pDens) + getVc(pDens) - getEpsC(np.cbrt(3/(4*np.pi*pDens)))))*(rs[1]-rs[0])
+    print(eG)
+    print('------------------')
+    print('u next to endpoints:')
+    print(u[0])
+    print(u[-1])
+    plt.plot(rs[1:-1], u, label='New calculated u(r)',linewidth=4)
+    if uComp is not None:
+        plt.plot(rComp,uComp,'-.', label='The u(r) calculated in task 4', linewidth=2)
+    plt.xlabel('Radial distance $r$ [$a_0$]')
+    plt.ylabel('Radial wave function $u(r)$ [$a_0^{-1/2}$] ')
+    plt.xlim([0,8])
+    plt.legend()
+    plt.show()
     
 
 #r1, u1 = task1()
 #task2()
 #task3()
-r4, u4 = task4()
-task5(r4,u4)
+#r4, u4 = task4()
+#task5(r4,u4)
+task6()
