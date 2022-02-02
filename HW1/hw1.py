@@ -81,18 +81,21 @@ def task1():
         print(groundE)
     
     rs = np.linspace(0,8,1000)
-    
+    '''
     plt.plot(rs, phi(Cs,alphas,rs), label='Optimal wave function $\phi(r)$')
     plt.legend()
     plt.xlabel('Radial distance $r$ [$a_0$]')
     plt.ylabel('3D probability density [$a_0^{-3/2}$]')
-    '''
+    
     plt.plot(rs, 2*np.sqrt(np.pi) * rs * phi(Cs,alphas,rs),label='Optimal radial wave function $2\sqrt{\pi} r \phi(r)$')
     plt.legend()
     plt.xlabel('Radial distance $r$ [$a_0$]')
     plt.ylabel('1D probability density [$a_0^{-1/2}$]')
-    '''
+    
     plt.show()
+    '''
+
+    return (rs, 2*np.sqrt(np.pi) * rs * phi(Cs,alphas,rs))
 
 
 # HW1 Task 2
@@ -156,7 +159,7 @@ def task3():
     
 
 # HW1 task 4
-def task4():
+def task4(rComp=None, uComp=None):
     rMax = 20
     nPoints = 4001
     nMin2 = nPoints-2
@@ -165,9 +168,9 @@ def task4():
     i = 0
 
     # initial condition
-    u = 2 * rs[1:-1] * np.exp(-rs[1:-1]) * np.sqrt(2)
+    u = 2 * rs[1:-1] * np.exp(-rs[1:-1]) #* np.sqrt(2)
 
-    while np.abs(epsList[1] - epsList[0]) > 1e-5:
+    while np.abs(epsList[1] - epsList[0]) > 0.3e-5:
         i+=1
         epsList[0] = epsList[1]
         print('------------------')
@@ -196,8 +199,69 @@ def task4():
     print('u next to endpoints:')
     print(u[0])
     print(u[-1])
-    plt.plot(rs[1:-1], u, label='Calculated u(r)') # ,linewidth=6
-    #plt.plot(rs[1:-1],2*rs[1:-1]*np.exp(-rs[1:-1]),'-.',linewidth=2, label='Theoretical u(r)')
+    '''
+    plt.plot(rs[1:-1], u, label='New calculated u(r)',linewidth=4)
+    if uComp is not None:
+        plt.plot(rComp,uComp,'-.', label='The u(r) calculated in task 1', linewidth=2)
+    plt.xlabel('Radial distance $r$ [$a_0$]')
+    plt.ylabel('Radial wave function $u(r)$ [$a_0^{-1/2}$] ')
+    plt.xlim([0,8])
+    plt.legend()
+    plt.show()
+    '''
+    return (rs[1:-1], u)
+
+
+def getVx(pDens):
+    return - np.cbrt(3*pDens/np.pi)
+
+# HW1 task 5
+def task5(rComp=None, uComp=None):
+    rMax = 20
+    nPoints = 4001
+    nMin2 = nPoints-2
+    rs = np.linspace(0,rMax,nPoints)
+    epsList = np.array([0.0, 1.0])
+    i = 0
+
+    # initial condition
+    u = 2 * rs[1:-1] * np.exp(-rs[1:-1]) #* np.sqrt(2)
+
+    while np.abs(epsList[1] - epsList[0]) > 0.3e-5:
+        i+=1
+        epsList[0] = epsList[1]
+        print('------------------')
+        print('Iteration ' + str(i))
+
+        f = -u**2/rs[1:-1]
+        Amat = sp.diags([1, -2, 1], [-1, 0, 1], shape=(nMin2,nMin2)).toarray() / (rs[1] - rs[0])**2
+        U0vec = la.solve(Amat,f)
+        vsH = U0vec/rs[1:-1] + 1/rMax
+        pDens = (u/rs[1:-1])**2/(2*np.pi)
+        vHx = 2*vsH + getVx(pDens)
+        BMat = getAMat(vHx,rs)
+
+        ei=0
+        eps, u = la.eigh(BMat,subset_by_index=[ei,ei])
+        epsList[1] = eps[0]
+        u = u.flatten()/(np.sqrt(rs[1]-rs[0]))
+
+        #print(np.sum(u**2))
+        print('Eigenvalues for two latest iterations are:')
+        print(epsList)
+    
+    print('------------------')
+    print('Calculated ground state energy:')
+    pDens = (u/rs[1:-1])**2/(2*np.pi)
+    eG = 2*eps[-1] - 2 * np.sum(u**2 * (vsH + 0.25*getVx(pDens)))*(rs[1]-rs[0])
+    print(eG)
+    print('------------------')
+    print('u next to endpoints:')
+    print(u[0])
+    print(u[-1])
+    plt.plot(rs[1:-1], u, label='New calculated u(r)',linewidth=4)
+    if uComp is not None:
+        plt.plot(rComp,uComp,'-.', label='The u(r) calculated in task 4', linewidth=2)
     plt.xlabel('Radial distance $r$ [$a_0$]')
     plt.ylabel('Radial wave function $u(r)$ [$a_0^{-1/2}$] ')
     plt.xlim([0,8])
@@ -205,7 +269,8 @@ def task4():
     plt.show()
     
 
-#task1()
+#r1, u1 = task1()
 #task2()
 #task3()
-task4()
+r4, u4 = task4()
+task5(r4,u4)
