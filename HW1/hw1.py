@@ -155,7 +155,7 @@ def task3():
     plt.show()
     
 
-# HW1 task 4
+# HW1 Task 4
 def task4():
     rMax = 20
     nPoints = 4001
@@ -203,9 +203,58 @@ def task4():
     plt.xlim([0,8])
     plt.legend()
     plt.show()
+
+#HW1 Task 5
+def task5():
+    rMax = 20
+    nPoints = 4001
+    nMin2 = nPoints-2
+    rs = np.linspace(0,rMax,nPoints)
+    epsList = np.array([0.0, 1.0])
+    i = 0
+
+    # initial condition
+    u = 2 * rs[1:-1] * np.exp(-rs[1:-1]) * np.sqrt(2)
+
+    while np.abs(epsList[1] - epsList[0]) > 1e-5:
+        i+=1
+        epsList[0] = epsList[1]
+        print('------------------')
+        print('Iteration ' + str(i))
+
+        f = -u**2/rs[1:-1]
+        Amat = sp.diags([1, -2, 1], [-1, 0, 1], shape=(nMin2,nMin2)).toarray() / (rs[1] - rs[0])**2
+        U0vec = la.solve(Amat,f)
+        vsH = U0vec/rs[1:-1] + 1/rMax  #*2?
+        BMat = getAMat(vsH,rs)
+
+        ei=0
+        eps, u = la.eigh(BMat,subset_by_index=[ei,ei])
+        epsList[1] = eps[0]
+        u = u.flatten()/(np.sqrt(rs[1]-rs[0]))
+
+        #print(np.sum(u**2))
+        print('Eigenvalues for two latest iterations are:')
+        print(epsList)
     
+    print('------------------')
+    print('Calculated ground state energy:')
+    eG = 2*eps[-1] - np.sum(u**2 * vsH)*(rs[1]-rs[0])
+    print(eG)
+    print('------------------')
+    print('u next to endpoints:')
+    print(u[0])
+    print(u[-1])
+    plt.plot(rs[1:-1], u, label='Calculated u(r)') # ,linewidth=6
+    #plt.plot(rs[1:-1],2*rs[1:-1]*np.exp(-rs[1:-1]),'-.',linewidth=2, label='Theoretical u(r)')
+    plt.xlabel('Radial distance $r$ [$a_0$]')
+    plt.ylabel('Radial wave function $u(r)$ [$a_0^{-1/2}$] ')
+    plt.xlim([0,8])
+    plt.legend()
+    plt.show()        
 
 #task1()
 #task2()
 #task3()
-task4()
+#task4()
+task5()
