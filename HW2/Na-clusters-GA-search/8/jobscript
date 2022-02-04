@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#SBATCH -A C3SE2022-1-18
+#SBATCH -J GA
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH -t 0-10:00:00
+#SBATCH -o output
+#SBATCH -e error
+
+module purge
+module load ifort/2019.1.144-GCC-8.2.0-2.31.1 impi/2018.4.274
+module load ASE/3.18.0-Python-3.7.2 GPAW/19.8.1-Python-3.7.2
+
+srun python initialization.py 8
+srun gpaw-python ga.py
