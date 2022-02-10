@@ -1,30 +1,16 @@
-import time
-start_time = time.time()  
-
 #Vi behöver nog fler paket
+import ase
+import gpaw
 from ase.units import fs, kB 
-from gpaw import GPAW
 
-atoms = read('cluster24.log')  #känns bootleg
+atoms = read('cluster24_9176_Na.xyz')  
 
-calc = GPAW(
-    mode = 'lcao',
-    xc = 'PBE',
-    basis = 'dzp'
-    symmetry = {'point_group': False},
-    charge = 1,
-    txt = 'gpawOutput.gpaw-out',
-)
+calc = GPAW(mode = 'lcao', xc = 'PBE', basis = 'dzp', symmetry = {'point_group': False}, charge = 1, txt = 'gpawOutput.gpaw-out')
 
 atoms.set_calculator(calc)
 
-dyn = NPT(
-    temperature = 350*kB,
-    timestep = 0.5*fs,
-    ttime = 20*fs,
-    logfile = 'mdOutput.log',
-)
+dyn = NPT(atoms, timestep = 0.5*fs, temperature = 350*kB, externalstress = 0, ttime = 20*fs, logfile = 'babys_first_Nacluster24.log')
 
-trajectory = Trajectory('someDynamics.traj', 'w', atoms)  #känns bootleg
+trajectory = Trajectory('babys_first_Nacluster24.traj', 'w', atoms)
 dyn.attach(trajectory.write, interval=1)
-dyn.run(10)
+dyn.run(4000)
