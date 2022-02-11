@@ -259,6 +259,7 @@ def task5(rComp=None, uComp=None):
     print('u next to endpoints:')
     print(u[0])
     print(u[-1])
+    '''
     plt.plot(rs[1:-1], u, label='New calculated u(r)',linewidth=4)
     if uComp is not None:
         plt.plot(rComp,uComp,'-.', label='The u(r) calculated in task 4', linewidth=2)
@@ -267,6 +268,8 @@ def task5(rComp=None, uComp=None):
     plt.xlim([0,8])
     plt.legend()
     plt.show()
+    '''
+    return (rs[1:-1], u)
 
 def getEpsC(r_s):
     greeks = [-0.1423, 1.0529, 0.3334] # ga be1 be2
@@ -337,13 +340,14 @@ def task6(rComp=None,uComp=None):
     print(u[-1])
     plt.plot(rs[1:-1], u, label='New calculated u(r)',linewidth=4)
     if uComp is not None:
-        plt.plot(rComp,uComp,'-.', label='The u(r) calculated in task 4', linewidth=2)
+        plt.plot(rComp,uComp,'-.', label='The u(r) calculated in task 5', linewidth=2)
     plt.xlabel('Radial distance $r$ [$a_0$]')
     plt.ylabel('Radial wave function $u(r)$ [$a_0^{-1/2}$] ')
     plt.xlim([0,8])
     plt.legend()
     plt.show()
 
+'''
 #HW1 Task 5
 def task5():
     rMax = 20
@@ -391,11 +395,12 @@ def task5():
     plt.ylabel('Radial wave function $u(r)$ [$a_0^{-1/2}$] ')
     plt.xlim([0,8])
     plt.legend()
-    plt.show()        
+    plt.show()   
+    '''     
 
 #r1, u1 = task1()
 #task2()
 #task3()
 #r4, u4 = task4()
-#task5(r4,u4)
-task6()
+r5, u5 = task5()
+task6(r5, u5)
