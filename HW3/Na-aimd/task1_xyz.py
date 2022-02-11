@@ -6,10 +6,10 @@ import os
 # ...surface-growing-string-method/converting-trajectory-file-to-xyz-format/
 
 # Read in .traj file
-traj = TrajectoryReader("cluster24.traj")
+traj = TrajectoryReader("NaCluster24.traj")
 
 # Where to start and how many snapshots
-startInd = 9176
+startInd = 9000
 nSnapshots = 1
 
 path = os.getcwd()
@@ -17,7 +17,7 @@ path = os.getcwd()
 #if not os.path.exists(path): os.makedirs(path)
 
 # Output file name
-outFileName = 'cluster24.xyz'
+outFileName = 'NaCluster24.xyz'
 # Write each selected structure from the .traj file in .xyz format
 for i in range(startInd, startInd+nSnapshots):
     atoms = traj[i]
