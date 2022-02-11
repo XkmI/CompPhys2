@@ -10,8 +10,8 @@ def partial_rdf(filename=None, atoms=None, dr=None, nBins=None):
         atoms = io.read(filename)
     nOx = 24 #24 oxygen atoms (and water molecules)
     distances = np.zeros(nOx) 
-    for i in range(nOx): #Finds distances from the sodium atom (#48) to all oxygen atoms, since they are more or less at the centre of each water molecule
-        distances[i] = atoms.get_distances(49+i,48)
+    for i in range(nOx): #Finds distances from the sodium atom (#-1 i.e. the last one) to all oxygen atoms (#0-23), since they are more or less at the centre of each water molecule
+        distances[i] = atoms.get_distances(i,-1)
     distances.sort()
 
     # Set dr and #bins for the ~histogram of oxygen distances
@@ -36,20 +36,21 @@ def partial_rdf(filename=None, atoms=None, dr=None, nBins=None):
     return (rBins,prdf)
 
 # Read in .traj file
-traj = TrajectoryReader("NaCluster24.traj") #babys_first_
+traj = TrajectoryReader("babys_first_NaCluster24.traj") #
 # Where to start and how many snapshots
-startInd = 6000
-nSnapshots = 8000
+startInd = 1000
+nSnapshots = 2000
 path = os.getcwd()
 
-dr = 1.0
-nBins = 20
+dr = 0.1
+nBins = 200
 rLimBins = np.linspace(0,nBins*dr,nBins+1)
 rBins = rLimBins[1:]-0.5*dr
 rdf = np.zeros(nBins)
 
 for i in range(startInd, startInd+nSnapshots):
     atoms = traj[i]
+    #print(atoms[0])
     _,prdf = partial_rdf(atoms=atoms,dr=dr,nBins=nBins)
     rdf += prdf
 
