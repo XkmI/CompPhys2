@@ -36,10 +36,10 @@ def partial_rdf(filename=None, atoms=None, dr=None, nBins=None):
     return (rBins,prdf)
 
 # Read in .traj file
-traj = TrajectoryReader("NaCluster24.traj") #babys_first_
+traj = TrajectoryReader("babys_first_NaCluster24.traj") #babys_first_
 # Where to start and how many snapshots
-startInd = 6000
-nSnapshots = 8000
+startInd = 1000
+nSnapshots = 3341
 path = os.getcwd()
 
 dr = 0.1
@@ -63,17 +63,18 @@ print(dr*sum(rdf[:int(5.1/dr)]))
 print(dr*sum(rdf[:int(3.2/dr)]))
 
 plt.plot(rBins,rdf,label='Radial distribution function of O around Na')
-'''
+
 plt.plot([2.45, 2.45],[-5, 20],'k:', label='Early first minimum ($r = 2.45 a_0$)')
 plt.plot([4.05, 4.05],[-5, 20],'k--', label='Middle first minimum ($r = 4.05 a_0$)')
 plt.plot([5.05, 5.05],[-5, 20],'k-.', label='Late first minimum ($r = 5.05 a_0$)')
-'''
-plt.plot([3.15, 3.15],[-5, 20],'k-.', label='First minimum ($r = 3.15 a_0$)')
+
+#plt.plot([3.15, 3.15],[-5, 20],'k-.', label='First minimum ($r = 3.15 a_0$)')
 plt.xlabel('Radial distance $r$ [$a_0$]')
 plt.ylabel('RDF$_\\operatorname{NaO}$ at distance r')
 plt.xlim([-0.1, 10])
 plt.ylim([-0.1, 12.1])
 plt.legend()
 plt.show()
+plt.savefig('lamao.pdf')
 
 
