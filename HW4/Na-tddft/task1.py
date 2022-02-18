@@ -3,6 +3,7 @@ from gpaw import GPAW
 import ase.io as io
 from gpaw.lrtddft import LrTDDFT
 from gpaw.lrtddft import photoabsorption_spectrum
+from gpaw import restart
 
 atoms = io.read('Na8.xyz')
 atoms.center(vacuum=8.0) #add 8 ang vacuum
@@ -14,11 +15,11 @@ atoms.get_potential_energy()
 
 calc.write('task1_groundstate.gpw', mode='all') #saves the calculator, load it by calc=GPAW('babysFirstCalc(task1).gpw')
 
-calc2 = GPAW('task1_groundstate.gpw')
+_ , calc2 = restart('task1_groundstate.gpw')
 calc2.set(nbands=110, convergence={'bands': -10}, fixdensity=True)
 
 calc2.write('task1_backup.gpw', mode='all')
-calc3 = GPAW('task1_backup.gpw')
+_ , calc3 = restart('task1_backup.gpw')
 
 calc3.get_eigenvalues()
 
