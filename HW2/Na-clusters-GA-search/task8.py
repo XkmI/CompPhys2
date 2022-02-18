@@ -13,6 +13,6 @@ calc = GPAW(nbands=10, h=0.25, txt='out.txt', occupations=FermiDirac(0.05), setu
 
 atoms.set_calculator(calc)
 
-dyn = GPMin(atoms, tratomsjectory='task8.traj', logfile='task8.log')
+dyn = GPMin(atoms, trajectory='task8.traj', logfile='task8.log')
 dyn.run(fmax=0.02, steps=100)
 atoms.info['key_value_pairs']['raw_score'] = -atoms.get_potential_energy()
