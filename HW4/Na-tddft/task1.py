@@ -12,12 +12,12 @@ calc = GPAW(mode='fd', xc='LDA', setups={'Na': '1'}, h=0.3, nbands=0, txt='f.gpa
 atoms.set_calculator(calc)
 atoms.get_potential_energy()
 
-calc.write('task1_groundstate.gpw', 'all') #saves the calculator, load it by calc=GPAW('babysFirstCalc(task1).gpw')
+calc.write('task1_groundstate.gpw', mode='all') #saves the calculator, load it by calc=GPAW('babysFirstCalc(task1).gpw')
 
 calc2 = GPAW('task1_groundstate.gpw')
 calc2.set(nbands=110, convergence={'bands': -10}, fixdensity=True)
 
-calc2.write('task1_backup.gpw','all')
+calc2.write('task1_backup.gpw', mode='all')
 calc3 = GPAW('task1_backup.gpw')
 
 calc3.get_eigenvalues()
