@@ -1,5 +1,3 @@
-from this import d
-from turtle import width
 from ase import Atoms
 from gpaw import GPAW
 import ase.io as io
@@ -16,14 +14,16 @@ atoms.get_potential_energy()
 
 calc.write('task1_groundstate.gpw', 'all') #saves the calculator, load it by calc=GPAW('babysFirstCalc(task1).gpw')
 
-calc.set(nbands=110, convergence={'bands': -10}, fixdensity=True)
+calc2 = GPAW('task1_groundstate.gpw')
+calc2.set(nbands=110, convergence={'bands': -10}, fixdensity=True)
 
-calc.write('task1_backup.gpw','all')
+calc2.write('task1_backup.gpw','all')
+calc3 = GPAW('task1_backup.gpw')
 
-calc.get_eigenvalues()
+calc3.get_eigenvalues()
 
 dE = 6 # eV
-lr = LrTDDFT(calc, xc='LDA', restrict={'energy range': dE})
+lr = LrTDDFT(calc3, xc='LDA', restrict={'energy range': dE})
 lr.diagonalize()
 photoabsorption_spectrum(lr,'spectrum_w.dat',width=0.06)
 lr.write('LrTDDFTresults.dat') # Save for task 2
