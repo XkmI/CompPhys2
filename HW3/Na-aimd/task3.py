@@ -7,6 +7,16 @@ import os
 
 def partial_rdf(filename=None, atoms=None, dr=None, nBins=None):
     prdf=0
+
+    # Set dr and #bins for the ~histogram of oxygen distances
+    if dr is None:
+        dr = 1.0
+    if nBins is None:
+        nBins = 20 #int(np.ceil(max(distances))) + 1
+    # Set limits for histogram bins and calculate centre points of bins
+    rLimBins = np.linspace(0,nBins*dr,nBins+1)
+    rBins = rLimBins[1:]-0.5*dr
+
     for currentOx in range(23):
         if atoms is None:
             atoms = io.read(filename)
@@ -15,15 +25,6 @@ def partial_rdf(filename=None, atoms=None, dr=None, nBins=None):
         for i in range(nOx): #Finds distances from the sodium atom (#-1 i.e. the last one) to all oxygen atoms (#0-23), since they are more or less at the centre of each water molecule
             distances[i] = atoms.get_distances(i,currentOx,mic=True)
         distances.sort()
-
-        # Set dr and #bins for the ~histogram of oxygen distances
-        if dr is None:
-            dr = 1.0
-        if nBins is None:
-            nBins = 20 #int(np.ceil(max(distances))) + 1
-        # Set limits for histogram bins and calculate centre points of bins
-        rLimBins = np.linspace(0,nBins*dr,nBins+1)
-        rBins = rLimBins[1:]-0.5*dr
 
         # Initialise and fill bins appropriately
         nOxHist = np.zeros(nBins)
@@ -35,7 +36,7 @@ def partial_rdf(filename=None, atoms=None, dr=None, nBins=None):
     #plt.plot(rBins,prdf)
     #plt.show()
         prdf += pprdf
-    return (rBins,prdf/nOx,nOxHist)
+    return (rBins,prdf/(1.0*nOx),nOxHist)
 
 # Read in .traj file
 traj = TrajectoryReader("babys_first_NaCluster24.traj") #babys_first_
