@@ -15,8 +15,11 @@ atoms.get_potential_energy()
 
 calc.write('task1_groundstate.gpw', mode='all') #saves the calculator, load it by calc=GPAW('babysFirstCalc(task1).gpw')
 
-_ , calc2 = restart('task1_groundstate.gpw')
+atoms, calc2 = restart('task1_groundstate.gpw')
 calc2.set(nbands=110, convergence={'bands': -10}, fixdensity=True)
+
+#energy = atoms.get_potential_energy()
+#print(energy)
 
 calc2.write('task1_backup.gpw', mode='all')
 _ , calc3 = restart('task1_backup.gpw')
