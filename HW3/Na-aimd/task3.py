@@ -6,7 +6,7 @@ from ase.io.trajectory import TrajectoryReader
 import os
 
 def partial_rdf(filename=None, atoms=None, dr=None, nBins=None):
-    prdf=0
+    prdf=np.zeros(nBins)
 
     # Set dr and #bins for the ~histogram of oxygen distances
     if dr is None:
@@ -25,13 +25,14 @@ def partial_rdf(filename=None, atoms=None, dr=None, nBins=None):
         for i in range(nOx): #Finds distances from the sodium atom (#-1 i.e. the last one) to all oxygen atoms (#0-23), since they are more or less at the centre of each water molecule
             distances[i] = atoms.get_distances(i,currentOx,mic=True)
         distances.sort()
+        #print(distances)
 
         # Initialise and fill bins appropriately
         nOxHist = np.zeros(nBins)
-        for bInd in np.floor(distances/dr):
+        for bInd in np.floor(distances[1:]/dr):
             nOxHist[int(bInd)] += 1
 
-        pprdf = nOxHist * max(distances)**3 / (dr * 3 * nOx * rBins**2)
+        pprdf = nOxHist * max(distances[1:])**3 / (dr * 3 * nOx * rBins**2)
     #print(max(distances))
     #plt.plot(rBins,prdf)
     #plt.show()
