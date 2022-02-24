@@ -22,7 +22,7 @@ def partial_rdf(filename=None, atoms=None, dr=None, nBins=None):
     nOx = 24 #24 oxygen atoms (and water molecules)
 
     distances = np.zeros(nOx)
-    
+
     for currentOx in range(nOx):
         for i in range(nOx): #Finds distances from the sodium atom (#-1 i.e. the last one) to all oxygen atoms (#0-23), since they are more or less at the centre of each water molecule
             distances[i] = atoms.get_distances(i,currentOx,mic=True)
@@ -35,9 +35,9 @@ def partial_rdf(filename=None, atoms=None, dr=None, nBins=None):
             nOxHist[int(bInd)] += 1
 
         pprdf = nOxHist * max(distances[1:])**3 / (dr * 3 * nOx * rBins**2)
-    #print(max(distances))
-    #plt.plot(rBins,prdf)
-    #plt.show()
+        #print(max(distances))
+        #plt.plot(rBins,prdf)
+        #plt.show()
         prdf += pprdf
     return (rBins,prdf/(1.0*nOx),nOxHist)
 
