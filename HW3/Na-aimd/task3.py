@@ -17,11 +17,13 @@ def partial_rdf(filename=None, atoms=None, dr=None, nBins=None):
     rLimBins = np.linspace(0,nBins*dr,nBins+1)
     rBins = rLimBins[1:]-0.5*dr
 
-    for currentOx in range(23):
-        if atoms is None:
-            atoms = io.read(filename)
-        nOx = 24 #24 oxygen atoms (and water molecules)
-        distances = np.zeros(nOx) 
+    if atoms is None:
+        atoms = io.read(filename)
+    nOx = 24 #24 oxygen atoms (and water molecules)
+
+    distances = np.zeros(nOx)
+    
+    for currentOx in range(nOx):
         for i in range(nOx): #Finds distances from the sodium atom (#-1 i.e. the last one) to all oxygen atoms (#0-23), since they are more or less at the centre of each water molecule
             distances[i] = atoms.get_distances(i,currentOx,mic=True)
         distances.sort()

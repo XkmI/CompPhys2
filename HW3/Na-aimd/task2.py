@@ -36,10 +36,10 @@ def partial_rdf(filename=None, atoms=None, dr=None, nBins=None):
     return (rBins,prdf,nOxHist)
 
 # Read in .traj file
-traj = TrajectoryReader("babys_first_NaCluster24.traj") #babys_first_
+traj = TrajectoryReader("NaCluster24.traj") #babys_first_
 # Where to start and how many snapshots
-startInd = 1000
-nSnapshots = 2340
+startInd = 5999
+nSnapshots = 7000
 path = os.getcwd()
 
 dr = 0.1
