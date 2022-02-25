@@ -5,7 +5,7 @@ from ase.io.trajectory import PickleTrajectory
 from ase.optimize.bfgs import BFGS
 from gpaw import GPAW
 from gpaw import PW
-from gpaw import FermiDirac
+# from gpaw import FermiDirac
 
 atomNames = ['Au', 'Pt', 'Rh']
 latPms = [4.05, 3.90, 3.80]
