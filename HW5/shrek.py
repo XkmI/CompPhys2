@@ -1,7 +1,8 @@
 import numpy as np
 from ase import Atoms
 from ase.build import bulk
-from ase.io.trajectory import PickleTrajectory
+from ase.io import write
+# from ase.io.trajectory import PickleTrajectory
 from ase.optimize.bfgs import BFGS
 from gpaw import GPAW
 from gpaw import PW
@@ -14,7 +15,7 @@ for i in range(3):
     all_that_glitters = bulk(atomNames[i], 'fcc', a=latPms[i])
 
     cell = all_that_glitters.get_cell()
-    traj = PickleTrajectory(atomNames[i] + '.traj', 'w')
+    #traj = PickleTrajectory(atomNames[i] + '.traj', 'w')
 
     calc=GPAW(mode=PW(450),                # Energycutoff for planewaves [eV]
               h=0.2,                       # The distance between gridpoints AA^-1
@@ -27,4 +28,4 @@ for i in range(3):
 
     for x in np.linspace(0.95, 1.05, 7):
         all_that_glitters.set_cell(cell * x, scale_atoms=True)
-        traj.write(all_that_glitters)
+        write(atomNames[i] + '.traj', all_that_glitters)
