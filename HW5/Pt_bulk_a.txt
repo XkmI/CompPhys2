@@ -5,10 +5,10 @@
  |__ |  _|___|_____|  19.8.1
  |___|_|             
 
-User:   ermag@vera10-3
-Date:   Fri Feb 25 17:12:04 2022
+User:   ermag@vera12-4
+Date:   Fri Feb 25 18:35:23 2022
 Arch:   x86_64
-Pid:    163845
+Pid:    13112
 Python: 3.7.2
 gpaw:   /apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw
 _gpaw:  /apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/bin/
@@ -28,5 +28,5 @@ Input parameters:
          name: pw}
   xc: PBE
 
-Memory usage: 86.54 MiB
-Date: Fri Feb 25 17:12:04 2022
+Memory usage: 88.53 MiB
+Date: Fri Feb 25 18:35:23 2022
