@@ -1,19 +1,24 @@
+import numpy as np
+import matplotlib.pyplot as plt
 from ase.io import read
 from ase.units import kJ
-from ase.utils.eos import EquationOfState
+from ase.eos import EquationOfState
 
 atomNames = ['Au', 'Pt', 'Rh']
 latPms = [4.05, 3.90, 3.80]
 
 for aN in atomNames:
-    configs = read(aN + '.traj@0:7') # read 7 configurations
+    configs = read(aN + '.traj') # @0:15 read 15 configurations
 
-    # Extract volumes and energies:
-    volumes = [atoms.get_volume() for atoms in configs]
+    # Extract lattice parameters and energies:
+    latPms = [np.cbrt(4*atoms.get_volume()) for atoms in configs]
     energies = [atoms.get_potential_energy() for atoms in configs]
-    eos = EquationOfState(volumes , energies)
-    v0, e0, B = eos.fit()
+    
+    plt.plot(latPms,energies,'-', label='Energy for ' + aN + ' lattice')
+    plt.plot(latPms,energies,'kx')
+    plt.ylabel('Energy [eV]')
+    plt.xlabel('Lattice parameter [Å]')
 
-    print(e0)
-    print(f'{v0} \AA^3, {B / kJ * 1.0e24} GPa')
-    eos.plot(aN + '-eos.png')
+plt.legend()
+plt.savefig('AuPtRh.png')
+plt.show()

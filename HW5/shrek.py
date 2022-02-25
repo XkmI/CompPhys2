@@ -10,7 +10,7 @@ from gpaw import PW
 # from gpaw import FermiDirac
 
 atomNames = ['Au', 'Pt', 'Rh']
-latPms = [4.05, 3.90, 3.80]
+latPms = [4.15, 3.95, 3.85]
 
 for i in range(3):
     all_that_glitters = bulk(atomNames[i], 'fcc', a=latPms[i])
@@ -27,7 +27,7 @@ for i in range(3):
             
     all_that_glitters.set_calculator(calc)
 
-    for x in np.linspace(0.9, 1.1, 15):
+    for x in np.linspace(0.95, 1.05, 50):
         all_that_glitters.set_cell(cell * x, scale_atoms=True)
         all_that_glitters.info['raw_score'] = all_that_glitters.get_potential_energy()
         traj = Trajectory(atomNames[i] + '.traj', mode='a', atoms=all_that_glitters)
