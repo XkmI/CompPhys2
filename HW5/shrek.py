@@ -27,7 +27,7 @@ for i in range(3):
             
     all_that_glitters.set_calculator(calc)
 
-    for x in np.linspace(0.95, 1.05, 7):
+    for x in np.linspace(0.9, 1.1, 15):
         all_that_glitters.set_cell(cell * x, scale_atoms=True)
         all_that_glitters.info['raw_score'] = all_that_glitters.get_potential_energy()
         traj = Trajectory(atomNames[i] + '.traj', mode='a', atoms=all_that_glitters)
