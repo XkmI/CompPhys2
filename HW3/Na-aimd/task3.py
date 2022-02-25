@@ -42,20 +42,22 @@ def partial_rdf(filename=None, atoms=None, dr=None, nBins=None):
     return (rBins,prdf/(1.0*nOx),nOxHist)
 
 # Read in .traj file
-traj = TrajectoryReader("babys_first_NaCluster24.traj") #babys_first_
+traj = TrajectoryReader("cluster24.traj") #babys_first_
 # Where to start and how many snapshots
-startInd = 1000
-nSnapshots = 2340
+startInd = 7499
+nSnapshots = 4500
 path = os.getcwd()
 
-dr = 0.1
-nBins = 200
+dr = 0.05
+nBins = 400
 rLimBins = np.linspace(0,nBins*dr,nBins+1)
 rBins = rLimBins[1:]-0.5*dr
 rdf = np.zeros(nBins)
 nOxHist = np.zeros(nBins)
 
 for i in range(startInd, startInd+nSnapshots):
+    if (i-startInd) % 100 == 0:
+        print(i)
     atoms = traj[i]
     #print(atoms[0])
     _, prdf, nOxHist_part = partial_rdf(atoms=atoms,dr=dr,nBins=nBins)
@@ -68,13 +70,13 @@ nOxHist /= nSnapshots
 print(sum(nOxHist[:int(3.2/dr)]))
 print(nOxHist[:int(3.2/dr)])
 
-plt.plot(rBins,rdf,label='Radial distribution function of O around O')
+plt.plot(rBins,0.5*rdf,label='Radial distribution function of O around O')
 
 #plt.plot([3.15, 3.15],[-5, 20],'k-.', label='First minimum ($r = 3.15 a_0$)')
 plt.xlabel('Radial distance $r$ [$a_0$]')
 plt.ylabel('RDF$_\\operatorname{OO}$ at distance r')
 plt.xlim([-0.1, 8])
-plt.ylim([-0.1, 8])
+plt.ylim([-0.1, 3])
 plt.legend()
 plt.show()
 plt.savefig('L+ratio.pdf')
