@@ -5,10 +5,10 @@
  |__ |  _|___|_____|  19.8.1
  |___|_|             
 
-User:   ermag@vera30-2
-Date:   Fri Feb 25 18:54:01 2022
+User:   ermag@vera14-4
+Date:   Fri Feb 25 19:47:25 2022
 Arch:   x86_64
-Pid:    230164
+Pid:    248004
 Python: 3.7.2
 gpaw:   /apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw
 _gpaw:  /apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/bin/
@@ -28,5 +28,1642 @@ Input parameters:
          name: pw}
   xc: PBE
 
-Memory usage: 88.43 MiB
-Date: Fri Feb 25 18:54:01 2022
+System changes: positions, numbers, cell, pbc, initial_charges, initial_magmoms 
+
+Initialize ...
+
+Au-setup:
+  name: Gold
+  id: b12133f335f6ca0d89c4b1ccaa844e9a
+  Z: 79
+  valence: 11
+  core: 68
+  charge: 0.0
+  file: /apps/Common/software/GPAW-setups/0.9.20000/Au.PBE.gz
+  compensation charges: gauss, rc=0.42, lmax=2
+  cutoffs: 2.33(filt), 2.81(core),
+  valence states:
+                energy  radius
+    6s(1.00)    -5.728   1.323
+    6p(0.00)    -0.775   1.323
+    5d(10.00)    -6.891   1.323
+    *s          21.484   1.323
+    *p          26.436   1.323
+    *d          20.321   1.323
+
+  Using partial waves for Au as LCAO basis
+
+Reference energy: -516598.271109
+
+Spin-paired calculation
+
+Occupation numbers:
+  Fermi-Dirac: width=0.1000 eV
+
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+Symmetries present (total): 48
+
+  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0 -1)  ( 1  0 -1)
+  ( 1  0 -1)  ( 1 -1  0)  ( 0  1  0)  ( 0  0  1)  ( 1  0  0)  ( 1 -1  0)
+  ( 1 -1  0)  ( 1  0 -1)  ( 0  0  1)  ( 0  1  0)  ( 1 -1  0)  ( 1  0  0)
+
+  ( 1  0 -1)  ( 1  0 -1)  ( 1 -1  0)  ( 1 -1  0)  ( 1 -1  0)  ( 1 -1  0)
+  ( 0  1 -1)  ( 0  0 -1)  ( 1  0  0)  ( 1  0 -1)  ( 0 -1  1)  ( 0 -1  0)
+  ( 0  0 -1)  ( 0  1 -1)  ( 1  0 -1)  ( 1  0  0)  ( 0 -1  0)  ( 0 -1  1)
+
+  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1 -1)  ( 0  1 -1)
+  ( 1  0  0)  ( 0  1 -1)  ( 0  0  1)  (-1  1  0)  ( 1  0 -1)  ( 0  1  0)
+  ( 0  0  1)  (-1  1  0)  ( 1  0  0)  ( 0  1 -1)  ( 0  0 -1)  (-1  1  0)
+
+  ( 0  1 -1)  ( 0  1 -1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)
+  ( 0  0 -1)  (-1  1  0)  ( 1  0  0)  ( 0  1  0)  ( 0 -1  1)  (-1  0  1)
+  ( 1  0 -1)  ( 0  1  0)  ( 0  1  0)  ( 1  0  0)  (-1  0  1)  ( 0 -1  1)
+
+  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0 -1  1)  ( 0 -1  1)
+  ( 1  0 -1)  ( 0  1 -1)  ( 0 -1  0)  (-1  0  0)  ( 1 -1  0)  ( 0  0  1)
+  ( 0  1 -1)  ( 1  0 -1)  (-1  0  0)  ( 0 -1  0)  ( 0 -1  0)  (-1  0  1)
+
+  ( 0 -1  1)  ( 0 -1  1)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)
+  ( 0 -1  0)  (-1  0  1)  ( 1 -1  0)  ( 0  0 -1)  ( 0 -1  1)  (-1  0  0)
+  ( 1 -1  0)  ( 0  0  1)  ( 0 -1  1)  (-1  0  0)  ( 1 -1  0)  ( 0  0 -1)
+
+  (-1  1  0)  (-1  1  0)  (-1  1  0)  (-1  1  0)  (-1  0  1)  (-1  0  1)
+  ( 0  1  0)  ( 0  1 -1)  (-1  0  1)  (-1  0  0)  ( 0  0  1)  ( 0 -1  1)
+  ( 0  1 -1)  ( 0  1  0)  (-1  0  0)  (-1  0  1)  ( 0 -1  1)  ( 0  0  1)
+
+  (-1  0  1)  (-1  0  1)  (-1  0  0)  (-1  0  0)  (-1  0  0)  (-1  0  0)
+  (-1  1  0)  (-1  0  0)  ( 0  0 -1)  ( 0 -1  0)  (-1  1  0)  (-1  0  1)
+  (-1  0  0)  (-1  1  0)  ( 0 -1  0)  ( 0  0 -1)  (-1  0  1)  (-1  1  0)
+Note: your k-points are not as symmetric as your crystal!
+
+1728 k-points: 12 x 12 x 12 Monkhorst-Pack grid
+182 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.04166667    0.04166667   -0.04166667          6/1728
+   1:     0.04166667    0.04166667    0.04166667          2/1728
+   2:     0.12500000   -0.04166667   -0.04166667          6/1728
+   3:     0.12500000    0.04166667   -0.12500000         12/1728
+   4:     0.12500000    0.04166667   -0.04166667         12/1728
+   5:     0.12500000    0.04166667    0.04166667          6/1728
+   6:     0.12500000    0.12500000   -0.12500000          6/1728
+   7:     0.12500000    0.12500000   -0.04166667          6/1728
+   8:     0.12500000    0.12500000    0.04166667          6/1728
+   9:     0.12500000    0.12500000    0.12500000          2/1728
+          ...
+ 181:     0.45833333    0.45833333    0.45833333          2/1728
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 450.000 eV
+  Number of coefficients (min, max): 303, 322
+  Pulay-stress correction: 0.000000 eV/Ang^3 (de/decut=0.000000)
+  Using FFTW library
+  ScaLapack parameters: grid=1x1, blocksize=None
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Eigensolver
+   Davidson(niter=2, smin=None, normalize=True) 
+
+Densities:
+  Coarse grid: 14*14*14 grid
+  Fine grid: 28*28*28 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 28*28*28 grid
+  Using the PBE Exchange-Correlation functional
+ 
+
+XC parameters: PBE with 2 nearest neighbor stencil
+
+Memory estimate:
+  Process memory now: 94.54 MiB
+  Calculator: 2.61 MiB
+    Density: 1.10 MiB
+      Arrays: 0.54 MiB
+      Localized functions: 0.35 MiB
+      Mixer: 0.21 MiB
+    Hamiltonian: 0.36 MiB
+      Arrays: 0.36 MiB
+      XC: 0.00 MiB
+      Poisson: 0.00 MiB
+      vbar: 0.01 MiB
+    Wavefunctions: 1.15 MiB
+      Arrays psit_nG: 0.49 MiB
+      Eigensolver: 0.08 MiB
+      Projections: 0.03 MiB
+      Projectors: 0.39 MiB
+      PW-descriptor: 0.16 MiB
+
+Total number of cores used: 16
+Parallelization over k-points: 16
+
+Number of atoms: 1
+Number of atomic orbitals: 9
+Number of bands in calculation: 9
+Bands to converge: occupied states only
+Number of valence electrons: 11
+
+... initialized
+
+Initializing position-dependent things.
+
+Density initialized from atomic densities
+Creating initial wave functions:
+  9 bands from LCAO basis set
+
+                
+                
+                
+       Au       
+                
+                
+                
+                
+
+Positions:
+   0 Au     0.000000    0.000000    0.000000    ( 0.0000,  0.0000,  0.0000)
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    0.000000    1.923750    1.923750    14     0.1587
+  2. axis:    yes    1.923750    0.000000    1.923750    14     0.1587
+  3. axis:    yes    1.923750    1.923750    0.000000    14     0.1587
+
+  Lengths:   2.720593   2.720593   2.720593
+  Angles:   60.000000  60.000000  60.000000
+
+Effective grid spacing dv^(1/3) = 0.1731
+
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       fermi  poisson
+iter:   1  19:47:29  +1.64   +inf    -2.748985    2             
+iter:   2  19:47:30  -1.66  -1.37    -2.711495    3             
+iter:   3  19:47:30  -1.66  -1.39    -2.504239    29            
+iter:   4  19:47:31  -3.09  -2.05    -2.488928    3             
+iter:   5  19:47:31  -2.61  -2.07    -2.488469    3             
+iter:   6  19:47:31  -3.58  -2.25    -2.482464    3             
+iter:   7  19:47:32  -4.07  -2.76    -2.482198    3             
+iter:   8  19:47:32  -4.96  -2.86    -2.482191    2             
+iter:   9  19:47:32  -5.37  -3.40    -2.482152    2             
+iter:  10  19:47:33  -7.08  -4.58    -2.482152    2             
+iter:  11  19:47:33  -7.48  -4.59    -2.482153    2             
+
+Converged after 11 iterations.
+
+Dipole moment: (-0.000000, 0.000000, 0.000000) |e|*Ang
+
+Energy contributions relative to reference atoms: (reference = -516598.271109)
+
+Kinetic:        +19.882772
+Potential:      -17.527434
+External:        +0.000000
+XC:              -5.008348
+Entropy (-ST):   -0.008913
+Local:           +0.175314
+--------------------------
+Free energy:     -2.486609
+Extrapolated:    -2.482153
+
+Fermi level: 13.52254
+
+Showing only first 2 kpts
+ Kpt  Band  Eigenvalues  Occupancy
+  0     3      7.70061    0.00694
+  0     4      9.50360    0.00694
+  0     5      9.68056    0.00694
+  0     6     29.56023    0.00000
+
+  1     3      7.60703    0.00231
+  1     4      9.62837    0.00231
+  1     5      9.62837    0.00231
+  1     6     29.38283    0.00000
+
+
+No gap
+System changes: cell 
+
+Initialize ...
+
+Au-setup:
+  name: Gold
+  id: b12133f335f6ca0d89c4b1ccaa844e9a
+  Z: 79
+  valence: 11
+  core: 68
+  charge: 0.0
+  file: /apps/Common/software/GPAW-setups/0.9.20000/Au.PBE.gz
+  compensation charges: gauss, rc=0.42, lmax=2
+  cutoffs: 2.33(filt), 2.81(core),
+  valence states:
+                energy  radius
+    6s(1.00)    -5.728   1.323
+    6p(0.00)    -0.775   1.323
+    5d(10.00)    -6.891   1.323
+    *s          21.484   1.323
+    *p          26.436   1.323
+    *d          20.321   1.323
+
+  Using partial waves for Au as LCAO basis
+
+Reference energy: -516598.271109
+
+Spin-paired calculation
+
+Occupation numbers:
+  Fermi-Dirac: width=0.1000 eV
+
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+Symmetries present (total): 48
+
+  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0 -1)  ( 1  0 -1)
+  ( 1  0 -1)  ( 1 -1  0)  ( 0  1  0)  ( 0  0  1)  ( 1  0  0)  ( 1 -1  0)
+  ( 1 -1  0)  ( 1  0 -1)  ( 0  0  1)  ( 0  1  0)  ( 1 -1  0)  ( 1  0  0)
+
+  ( 1  0 -1)  ( 1  0 -1)  ( 1 -1  0)  ( 1 -1  0)  ( 1 -1  0)  ( 1 -1  0)
+  ( 0  1 -1)  ( 0  0 -1)  ( 1  0  0)  ( 1  0 -1)  ( 0 -1  1)  ( 0 -1  0)
+  ( 0  0 -1)  ( 0  1 -1)  ( 1  0 -1)  ( 1  0  0)  ( 0 -1  0)  ( 0 -1  1)
+
+  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1 -1)  ( 0  1 -1)
+  ( 1  0  0)  ( 0  1 -1)  ( 0  0  1)  (-1  1  0)  ( 1  0 -1)  ( 0  1  0)
+  ( 0  0  1)  (-1  1  0)  ( 1  0  0)  ( 0  1 -1)  ( 0  0 -1)  (-1  1  0)
+
+  ( 0  1 -1)  ( 0  1 -1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)
+  ( 0  0 -1)  (-1  1  0)  ( 1  0  0)  ( 0  1  0)  ( 0 -1  1)  (-1  0  1)
+  ( 1  0 -1)  ( 0  1  0)  ( 0  1  0)  ( 1  0  0)  (-1  0  1)  ( 0 -1  1)
+
+  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0 -1  1)  ( 0 -1  1)
+  ( 1  0 -1)  ( 0  1 -1)  ( 0 -1  0)  (-1  0  0)  ( 1 -1  0)  ( 0  0  1)
+  ( 0  1 -1)  ( 1  0 -1)  (-1  0  0)  ( 0 -1  0)  ( 0 -1  0)  (-1  0  1)
+
+  ( 0 -1  1)  ( 0 -1  1)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)
+  ( 0 -1  0)  (-1  0  1)  ( 1 -1  0)  ( 0  0 -1)  ( 0 -1  1)  (-1  0  0)
+  ( 1 -1  0)  ( 0  0  1)  ( 0 -1  1)  (-1  0  0)  ( 1 -1  0)  ( 0  0 -1)
+
+  (-1  1  0)  (-1  1  0)  (-1  1  0)  (-1  1  0)  (-1  0  1)  (-1  0  1)
+  ( 0  1  0)  ( 0  1 -1)  (-1  0  1)  (-1  0  0)  ( 0  0  1)  ( 0 -1  1)
+  ( 0  1 -1)  ( 0  1  0)  (-1  0  0)  (-1  0  1)  ( 0 -1  1)  ( 0  0  1)
+
+  (-1  0  1)  (-1  0  1)  (-1  0  0)  (-1  0  0)  (-1  0  0)  (-1  0  0)
+  (-1  1  0)  (-1  0  0)  ( 0  0 -1)  ( 0 -1  0)  (-1  1  0)  (-1  0  1)
+  (-1  0  0)  (-1  1  0)  ( 0 -1  0)  ( 0  0 -1)  (-1  0  1)  (-1  1  0)
+Note: your k-points are not as symmetric as your crystal!
+
+1728 k-points: 12 x 12 x 12 Monkhorst-Pack grid
+182 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.04166667    0.04166667   -0.04166667          6/1728
+   1:     0.04166667    0.04166667    0.04166667          2/1728
+   2:     0.12500000   -0.04166667   -0.04166667          6/1728
+   3:     0.12500000    0.04166667   -0.12500000         12/1728
+   4:     0.12500000    0.04166667   -0.04166667         12/1728
+   5:     0.12500000    0.04166667    0.04166667          6/1728
+   6:     0.12500000    0.12500000   -0.12500000          6/1728
+   7:     0.12500000    0.12500000   -0.04166667          6/1728
+   8:     0.12500000    0.12500000    0.04166667          6/1728
+   9:     0.12500000    0.12500000    0.12500000          2/1728
+          ...
+ 181:     0.45833333    0.45833333    0.45833333          2/1728
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 450.000 eV
+  Number of coefficients (min, max): 317, 335
+  Pulay-stress correction: 0.000000 eV/Ang^3 (de/decut=0.000000)
+  Using FFTW library
+  ScaLapack parameters: grid=1x1, blocksize=None
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Eigensolver
+   Davidson(niter=2, smin=None, normalize=True) 
+
+Densities:
+  Coarse grid: 14*14*14 grid
+  Fine grid: 28*28*28 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 28*28*28 grid
+  Using the PBE Exchange-Correlation functional
+ 
+
+XC parameters: PBE with 2 nearest neighbor stencil
+
+Memory estimate:
+  Process memory now: 110.45 MiB
+  Calculator: 2.67 MiB
+    Density: 1.12 MiB
+      Arrays: 0.54 MiB
+      Localized functions: 0.36 MiB
+      Mixer: 0.21 MiB
+    Hamiltonian: 0.36 MiB
+      Arrays: 0.36 MiB
+      XC: 0.00 MiB
+      Poisson: 0.00 MiB
+      vbar: 0.01 MiB
+    Wavefunctions: 1.19 MiB
+      Arrays psit_nG: 0.51 MiB
+      Eigensolver: 0.08 MiB
+      Projections: 0.03 MiB
+      Projectors: 0.41 MiB
+      PW-descriptor: 0.16 MiB
+
+Total number of cores used: 16
+Parallelization over k-points: 16
+
+Number of atoms: 1
+Number of atomic orbitals: 9
+Number of bands in calculation: 9
+Bands to converge: occupied states only
+Number of valence electrons: 11
+
+... initialized
+
+Initializing position-dependent things.
+
+Density initialized from atomic densities
+Creating initial wave functions:
+  9 bands from LCAO basis set
+
+                
+                
+                
+       Au       
+                
+                
+                
+                
+
+Positions:
+   0 Au     0.000000    0.000000    0.000000    ( 0.0000,  0.0000,  0.0000)
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    0.000000    1.957500    1.957500    14     0.1615
+  2. axis:    yes    1.957500    0.000000    1.957500    14     0.1615
+  3. axis:    yes    1.957500    1.957500    0.000000    14     0.1615
+
+  Lengths:   2.768323   2.768323   2.768323
+  Angles:   60.000000  60.000000  60.000000
+
+Effective grid spacing dv^(1/3) = 0.1762
+
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       fermi  poisson
+iter:   1  19:47:36  +1.64   +inf    -3.034190    2             
+iter:   2  19:47:37  -1.74  -1.36    -2.992623    3             
+iter:   3  19:47:37  -1.57  -1.37    -2.792839    26            
+iter:   4  19:47:38  -2.88  -1.95    -2.766300    3             
+iter:   5  19:47:38  -2.64  -2.06    -2.765890    3             
+iter:   6  19:47:38  -3.64  -2.29    -2.760708    3             
+iter:   7  19:47:39  -4.27  -2.81    -2.760419    3             
+iter:   8  19:47:39  -5.57  -3.01    -2.760457    2             
+iter:   9  19:47:39  -5.68  -3.54    -2.760435    2             
+iter:  10  19:47:40  -7.25  -4.51    -2.760435    2             
+iter:  11  19:47:40  -7.28  -4.36    -2.760436    2             
+iter:  12  19:47:40  -7.42  -4.41    -2.760435    2             
+
+Converged after 12 iterations.
+
+Dipole moment: (-0.000000, 0.000000, 0.000000) |e|*Ang
+
+Energy contributions relative to reference atoms: (reference = -516598.271109)
+
+Kinetic:        +11.091270
+Potential:       -9.964782
+External:        +0.000000
+XC:              -4.046842
+Entropy (-ST):   -0.008726
+Local:           +0.164282
+--------------------------
+Free energy:     -2.764798
+Extrapolated:    -2.760435
+
+Fermi level: 12.41480
+
+Showing only first 2 kpts
+ Kpt  Band  Eigenvalues  Occupancy
+  0     3      6.97993    0.00694
+  0     4      8.62901    0.00694
+  0     5      8.78923    0.00694
+  0     6     28.46013    0.00000
+
+  1     3      6.89369    0.00231
+  1     4      8.74130    0.00231
+  1     5      8.74130    0.00231
+  1     6     28.80830    0.00000
+
+
+No gap
+System changes: cell 
+
+Initialize ...
+
+Au-setup:
+  name: Gold
+  id: b12133f335f6ca0d89c4b1ccaa844e9a
+  Z: 79
+  valence: 11
+  core: 68
+  charge: 0.0
+  file: /apps/Common/software/GPAW-setups/0.9.20000/Au.PBE.gz
+  compensation charges: gauss, rc=0.42, lmax=2
+  cutoffs: 2.33(filt), 2.81(core),
+  valence states:
+                energy  radius
+    6s(1.00)    -5.728   1.323
+    6p(0.00)    -0.775   1.323
+    5d(10.00)    -6.891   1.323
+    *s          21.484   1.323
+    *p          26.436   1.323
+    *d          20.321   1.323
+
+  Using partial waves for Au as LCAO basis
+
+Reference energy: -516598.271109
+
+Spin-paired calculation
+
+Occupation numbers:
+  Fermi-Dirac: width=0.1000 eV
+
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+Symmetries present (total): 48
+
+  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0 -1)  ( 1  0 -1)
+  ( 1  0 -1)  ( 1 -1  0)  ( 0  1  0)  ( 0  0  1)  ( 1  0  0)  ( 1 -1  0)
+  ( 1 -1  0)  ( 1  0 -1)  ( 0  0  1)  ( 0  1  0)  ( 1 -1  0)  ( 1  0  0)
+
+  ( 1  0 -1)  ( 1  0 -1)  ( 1 -1  0)  ( 1 -1  0)  ( 1 -1  0)  ( 1 -1  0)
+  ( 0  1 -1)  ( 0  0 -1)  ( 1  0  0)  ( 1  0 -1)  ( 0 -1  1)  ( 0 -1  0)
+  ( 0  0 -1)  ( 0  1 -1)  ( 1  0 -1)  ( 1  0  0)  ( 0 -1  0)  ( 0 -1  1)
+
+  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1 -1)  ( 0  1 -1)
+  ( 1  0  0)  ( 0  1 -1)  ( 0  0  1)  (-1  1  0)  ( 1  0 -1)  ( 0  1  0)
+  ( 0  0  1)  (-1  1  0)  ( 1  0  0)  ( 0  1 -1)  ( 0  0 -1)  (-1  1  0)
+
+  ( 0  1 -1)  ( 0  1 -1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)
+  ( 0  0 -1)  (-1  1  0)  ( 1  0  0)  ( 0  1  0)  ( 0 -1  1)  (-1  0  1)
+  ( 1  0 -1)  ( 0  1  0)  ( 0  1  0)  ( 1  0  0)  (-1  0  1)  ( 0 -1  1)
+
+  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0 -1  1)  ( 0 -1  1)
+  ( 1  0 -1)  ( 0  1 -1)  ( 0 -1  0)  (-1  0  0)  ( 1 -1  0)  ( 0  0  1)
+  ( 0  1 -1)  ( 1  0 -1)  (-1  0  0)  ( 0 -1  0)  ( 0 -1  0)  (-1  0  1)
+
+  ( 0 -1  1)  ( 0 -1  1)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)
+  ( 0 -1  0)  (-1  0  1)  ( 1 -1  0)  ( 0  0 -1)  ( 0 -1  1)  (-1  0  0)
+  ( 1 -1  0)  ( 0  0  1)  ( 0 -1  1)  (-1  0  0)  ( 1 -1  0)  ( 0  0 -1)
+
+  (-1  1  0)  (-1  1  0)  (-1  1  0)  (-1  1  0)  (-1  0  1)  (-1  0  1)
+  ( 0  1  0)  ( 0  1 -1)  (-1  0  1)  (-1  0  0)  ( 0  0  1)  ( 0 -1  1)
+  ( 0  1 -1)  ( 0  1  0)  (-1  0  0)  (-1  0  1)  ( 0 -1  1)  ( 0  0  1)
+
+  (-1  0  1)  (-1  0  1)  (-1  0  0)  (-1  0  0)  (-1  0  0)  (-1  0  0)
+  (-1  1  0)  (-1  0  0)  ( 0  0 -1)  ( 0 -1  0)  (-1  1  0)  (-1  0  1)
+  (-1  0  0)  (-1  1  0)  ( 0 -1  0)  ( 0  0 -1)  (-1  0  1)  (-1  1  0)
+Note: your k-points are not as symmetric as your crystal!
+
+1728 k-points: 12 x 12 x 12 Monkhorst-Pack grid
+182 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.04166667    0.04166667   -0.04166667          6/1728
+   1:     0.04166667    0.04166667    0.04166667          2/1728
+   2:     0.12500000   -0.04166667   -0.04166667          6/1728
+   3:     0.12500000    0.04166667   -0.12500000         12/1728
+   4:     0.12500000    0.04166667   -0.04166667         12/1728
+   5:     0.12500000    0.04166667    0.04166667          6/1728
+   6:     0.12500000    0.12500000   -0.12500000          6/1728
+   7:     0.12500000    0.12500000   -0.04166667          6/1728
+   8:     0.12500000    0.12500000    0.04166667          6/1728
+   9:     0.12500000    0.12500000    0.12500000          2/1728
+          ...
+ 181:     0.45833333    0.45833333    0.45833333          2/1728
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 450.000 eV
+  Number of coefficients (min, max): 332, 351
+  Pulay-stress correction: 0.000000 eV/Ang^3 (de/decut=0.000000)
+  Using FFTW library
+  ScaLapack parameters: grid=1x1, blocksize=None
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Eigensolver
+   Davidson(niter=2, smin=None, normalize=True) 
+
+Densities:
+  Coarse grid: 15*15*15 grid
+  Fine grid: 30*30*30 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 30*30*30 grid
+  Using the PBE Exchange-Correlation functional
+ 
+
+XC parameters: PBE with 2 nearest neighbor stencil
+
+Memory estimate:
+  Process memory now: 116.25 MiB
+  Calculator: 3.02 MiB
+    Density: 1.32 MiB
+      Arrays: 0.67 MiB
+      Localized functions: 0.39 MiB
+      Mixer: 0.26 MiB
+    Hamiltonian: 0.45 MiB
+      Arrays: 0.44 MiB
+      XC: 0.00 MiB
+      Poisson: 0.00 MiB
+      vbar: 0.01 MiB
+    Wavefunctions: 1.25 MiB
+      Arrays psit_nG: 0.53 MiB
+      Eigensolver: 0.09 MiB
+      Projections: 0.03 MiB
+      Projectors: 0.42 MiB
+      PW-descriptor: 0.19 MiB
+
+Total number of cores used: 16
+Parallelization over k-points: 16
+
+Number of atoms: 1
+Number of atomic orbitals: 9
+Number of bands in calculation: 9
+Bands to converge: occupied states only
+Number of valence electrons: 11
+
+... initialized
+
+Initializing position-dependent things.
+
+Density initialized from atomic densities
+Creating initial wave functions:
+  9 bands from LCAO basis set
+
+                
+                
+                
+       Au       
+                
+                
+                
+                
+
+Positions:
+   0 Au     0.000000    0.000000    0.000000    ( 0.0000,  0.0000,  0.0000)
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    0.000000    1.991250    1.991250    15     0.1533
+  2. axis:    yes    1.991250    0.000000    1.991250    15     0.1533
+  3. axis:    yes    1.991250    1.991250    0.000000    15     0.1533
+
+  Lengths:   2.816053   2.816053   2.816053
+  Angles:   60.000000  60.000000  60.000000
+
+Effective grid spacing dv^(1/3) = 0.1673
+
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       fermi  poisson
+iter:   1  19:47:44  +1.64   +inf    -3.227920    2             
+iter:   2  19:47:44  -1.84  -1.34    -3.182628    3             
+iter:   3  19:47:44  -1.51  -1.36    -2.990845    29            
+iter:   4  19:47:45  -2.79  -1.88    -2.955171    3             
+iter:   5  19:47:45  -2.65  -2.06    -2.954676    3             
+iter:   6  19:47:46  -3.66  -2.32    -2.950095    3             
+iter:   7  19:47:46  -4.55  -2.89    -2.949876    3             
+iter:   8  19:47:46  -5.34  -3.10    -2.949913    2             
+iter:   9  19:47:47  -5.83  -3.56    -2.949894    2             
+iter:  10  19:47:47  -7.37  -4.33    -2.949894    2             
+iter:  11  19:47:47  -7.00  -4.17    -2.949895    2             
+iter:  12  19:47:48  -8.41  -4.38    -2.949895    2             
+
+Converged after 12 iterations.
+
+Dipole moment: (0.000000, 0.000000, 0.000000) |e|*Ang
+
+Energy contributions relative to reference atoms: (reference = -516598.271109)
+
+Kinetic:         +3.728481
+Potential:       -3.620426
+External:        +0.000000
+XC:              -3.207692
+Entropy (-ST):   -0.008730
+Local:           +0.154108
+--------------------------
+Free energy:     -2.954260
+Extrapolated:    -2.949895
+
+Fermi level: 11.39339
+
+Showing only first 2 kpts
+ Kpt  Band  Eigenvalues  Occupancy
+  0     3      6.30303    0.00694
+  0     4      7.81279    0.00694
+  0     5      7.95792    0.00694
+  0     6     27.41882    0.00000
+
+  1     3      6.22368    0.00231
+  1     4      7.91398    0.00231
+  1     5      7.91398    0.00231
+  1     6     27.22688    0.00000
+
+
+No gap
+System changes: cell 
+
+Initialize ...
+
+Au-setup:
+  name: Gold
+  id: b12133f335f6ca0d89c4b1ccaa844e9a
+  Z: 79
+  valence: 11
+  core: 68
+  charge: 0.0
+  file: /apps/Common/software/GPAW-setups/0.9.20000/Au.PBE.gz
+  compensation charges: gauss, rc=0.42, lmax=2
+  cutoffs: 2.33(filt), 2.81(core),
+  valence states:
+                energy  radius
+    6s(1.00)    -5.728   1.323
+    6p(0.00)    -0.775   1.323
+    5d(10.00)    -6.891   1.323
+    *s          21.484   1.323
+    *p          26.436   1.323
+    *d          20.321   1.323
+
+  Using partial waves for Au as LCAO basis
+
+Reference energy: -516598.271109
+
+Spin-paired calculation
+
+Occupation numbers:
+  Fermi-Dirac: width=0.1000 eV
+
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+Symmetries present (total): 48
+
+  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0 -1)  ( 1  0 -1)
+  ( 1  0 -1)  ( 1 -1  0)  ( 0  1  0)  ( 0  0  1)  ( 1  0  0)  ( 1 -1  0)
+  ( 1 -1  0)  ( 1  0 -1)  ( 0  0  1)  ( 0  1  0)  ( 1 -1  0)  ( 1  0  0)
+
+  ( 1  0 -1)  ( 1  0 -1)  ( 1 -1  0)  ( 1 -1  0)  ( 1 -1  0)  ( 1 -1  0)
+  ( 0  1 -1)  ( 0  0 -1)  ( 1  0  0)  ( 1  0 -1)  ( 0 -1  1)  ( 0 -1  0)
+  ( 0  0 -1)  ( 0  1 -1)  ( 1  0 -1)  ( 1  0  0)  ( 0 -1  0)  ( 0 -1  1)
+
+  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1 -1)  ( 0  1 -1)
+  ( 1  0  0)  ( 0  1 -1)  ( 0  0  1)  (-1  1  0)  ( 1  0 -1)  ( 0  1  0)
+  ( 0  0  1)  (-1  1  0)  ( 1  0  0)  ( 0  1 -1)  ( 0  0 -1)  (-1  1  0)
+
+  ( 0  1 -1)  ( 0  1 -1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)
+  ( 0  0 -1)  (-1  1  0)  ( 1  0  0)  ( 0  1  0)  ( 0 -1  1)  (-1  0  1)
+  ( 1  0 -1)  ( 0  1  0)  ( 0  1  0)  ( 1  0  0)  (-1  0  1)  ( 0 -1  1)
+
+  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0 -1  1)  ( 0 -1  1)
+  ( 1  0 -1)  ( 0  1 -1)  ( 0 -1  0)  (-1  0  0)  ( 1 -1  0)  ( 0  0  1)
+  ( 0  1 -1)  ( 1  0 -1)  (-1  0  0)  ( 0 -1  0)  ( 0 -1  0)  (-1  0  1)
+
+  ( 0 -1  1)  ( 0 -1  1)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)
+  ( 0 -1  0)  (-1  0  1)  ( 1 -1  0)  ( 0  0 -1)  ( 0 -1  1)  (-1  0  0)
+  ( 1 -1  0)  ( 0  0  1)  ( 0 -1  1)  (-1  0  0)  ( 1 -1  0)  ( 0  0 -1)
+
+  (-1  1  0)  (-1  1  0)  (-1  1  0)  (-1  1  0)  (-1  0  1)  (-1  0  1)
+  ( 0  1  0)  ( 0  1 -1)  (-1  0  1)  (-1  0  0)  ( 0  0  1)  ( 0 -1  1)
+  ( 0  1 -1)  ( 0  1  0)  (-1  0  0)  (-1  0  1)  ( 0 -1  1)  ( 0  0  1)
+
+  (-1  0  1)  (-1  0  1)  (-1  0  0)  (-1  0  0)  (-1  0  0)  (-1  0  0)
+  (-1  1  0)  (-1  0  0)  ( 0  0 -1)  ( 0 -1  0)  (-1  1  0)  (-1  0  1)
+  (-1  0  0)  (-1  1  0)  ( 0 -1  0)  ( 0  0 -1)  (-1  0  1)  (-1  1  0)
+Note: your k-points are not as symmetric as your crystal!
+
+1728 k-points: 12 x 12 x 12 Monkhorst-Pack grid
+182 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.04166667    0.04166667   -0.04166667          6/1728
+   1:     0.04166667    0.04166667    0.04166667          2/1728
+   2:     0.12500000   -0.04166667   -0.04166667          6/1728
+   3:     0.12500000    0.04166667   -0.12500000         12/1728
+   4:     0.12500000    0.04166667   -0.04166667         12/1728
+   5:     0.12500000    0.04166667    0.04166667          6/1728
+   6:     0.12500000    0.12500000   -0.12500000          6/1728
+   7:     0.12500000    0.12500000   -0.04166667          6/1728
+   8:     0.12500000    0.12500000    0.04166667          6/1728
+   9:     0.12500000    0.12500000    0.12500000          2/1728
+          ...
+ 181:     0.45833333    0.45833333    0.45833333          2/1728
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 450.000 eV
+  Number of coefficients (min, max): 338, 370
+  Pulay-stress correction: 0.000000 eV/Ang^3 (de/decut=0.000000)
+  Using FFTW library
+  ScaLapack parameters: grid=1x1, blocksize=None
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Eigensolver
+   Davidson(niter=2, smin=None, normalize=True) 
+
+Densities:
+  Coarse grid: 15*15*15 grid
+  Fine grid: 30*30*30 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 30*30*30 grid
+  Using the PBE Exchange-Correlation functional
+ 
+
+XC parameters: PBE with 2 nearest neighbor stencil
+
+Memory estimate:
+  Process memory now: 121.30 MiB
+  Calculator: 3.08 MiB
+    Density: 1.33 MiB
+      Arrays: 0.67 MiB
+      Localized functions: 0.40 MiB
+      Mixer: 0.26 MiB
+    Hamiltonian: 0.45 MiB
+      Arrays: 0.44 MiB
+      XC: 0.00 MiB
+      Poisson: 0.00 MiB
+      vbar: 0.01 MiB
+    Wavefunctions: 1.31 MiB
+      Arrays psit_nG: 0.56 MiB
+      Eigensolver: 0.09 MiB
+      Projections: 0.03 MiB
+      Projectors: 0.44 MiB
+      PW-descriptor: 0.19 MiB
+
+Total number of cores used: 16
+Parallelization over k-points: 16
+
+Number of atoms: 1
+Number of atomic orbitals: 9
+Number of bands in calculation: 9
+Bands to converge: occupied states only
+Number of valence electrons: 11
+
+... initialized
+
+Initializing position-dependent things.
+
+Density initialized from atomic densities
+Creating initial wave functions:
+  9 bands from LCAO basis set
+
+                
+                
+                
+       Au       
+                
+                
+                
+                
+
+Positions:
+   0 Au     0.000000    0.000000    0.000000    ( 0.0000,  0.0000,  0.0000)
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    0.000000    2.025000    2.025000    15     0.1559
+  2. axis:    yes    2.025000    0.000000    2.025000    15     0.1559
+  3. axis:    yes    2.025000    2.025000    0.000000    15     0.1559
+
+  Lengths:   2.863782   2.863782   2.863782
+  Angles:   60.000000  60.000000  60.000000
+
+Effective grid spacing dv^(1/3) = 0.1701
+
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       fermi  poisson
+iter:   1  19:47:51  +1.64   +inf    -3.346718    3             
+iter:   2  19:47:51  -1.93  -1.33    -3.298344    3             
+iter:   3  19:47:52  -1.47  -1.36    -3.112193    28            
+iter:   4  19:47:52  -2.80  -1.86    -3.072741    3             
+iter:   5  19:47:53  -2.62  -2.06    -3.072615    3             
+iter:   6  19:47:53  -3.62  -2.30    -3.067833    3             
+iter:   7  19:47:53  -5.03  -2.93    -3.067703    2             
+iter:   8  19:47:54  -4.98  -3.09    -3.067689    3             
+iter:   9  19:47:54  -5.71  -3.51    -3.067665    2             
+iter:  10  19:47:54  -8.03  -4.07    -3.067665    2             
+
+Converged after 10 iterations.
+
+Dipole moment: (-0.000000, -0.000000, 0.000000) |e|*Ang
+
+Energy contributions relative to reference atoms: (reference = -516598.271109)
+
+Kinetic:         -1.881550
+Potential:       +1.177842
+External:        +0.000000
+XC:              -2.503660
+Entropy (-ST):   -0.008747
+Local:           +0.144078
+--------------------------
+Free energy:     -3.072038
+Extrapolated:    -3.067665
+
+Fermi level: 10.45581
+
+Showing only first 2 kpts
+ Kpt  Band  Eigenvalues  Occupancy
+  0     3      5.67127    0.00694
+  0     4      7.05487    0.00694
+  0     5      7.18659    0.00694
+  0     6     26.43181    0.00000
+
+  1     3      5.59782    0.00231
+  1     4      7.14626    0.00231
+  1     5      7.14626    0.00231
+  1     6     26.26702    0.00000
+
+
+No gap
+System changes: cell 
+
+Initialize ...
+
+Au-setup:
+  name: Gold
+  id: b12133f335f6ca0d89c4b1ccaa844e9a
+  Z: 79
+  valence: 11
+  core: 68
+  charge: 0.0
+  file: /apps/Common/software/GPAW-setups/0.9.20000/Au.PBE.gz
+  compensation charges: gauss, rc=0.42, lmax=2
+  cutoffs: 2.33(filt), 2.81(core),
+  valence states:
+                energy  radius
+    6s(1.00)    -5.728   1.323
+    6p(0.00)    -0.775   1.323
+    5d(10.00)    -6.891   1.323
+    *s          21.484   1.323
+    *p          26.436   1.323
+    *d          20.321   1.323
+
+  Using partial waves for Au as LCAO basis
+
+Reference energy: -516598.271109
+
+Spin-paired calculation
+
+Occupation numbers:
+  Fermi-Dirac: width=0.1000 eV
+
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+Symmetries present (total): 48
+
+  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0 -1)  ( 1  0 -1)
+  ( 1  0 -1)  ( 1 -1  0)  ( 0  1  0)  ( 0  0  1)  ( 1  0  0)  ( 1 -1  0)
+  ( 1 -1  0)  ( 1  0 -1)  ( 0  0  1)  ( 0  1  0)  ( 1 -1  0)  ( 1  0  0)
+
+  ( 1  0 -1)  ( 1  0 -1)  ( 1 -1  0)  ( 1 -1  0)  ( 1 -1  0)  ( 1 -1  0)
+  ( 0  1 -1)  ( 0  0 -1)  ( 1  0  0)  ( 1  0 -1)  ( 0 -1  1)  ( 0 -1  0)
+  ( 0  0 -1)  ( 0  1 -1)  ( 1  0 -1)  ( 1  0  0)  ( 0 -1  0)  ( 0 -1  1)
+
+  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1 -1)  ( 0  1 -1)
+  ( 1  0  0)  ( 0  1 -1)  ( 0  0  1)  (-1  1  0)  ( 1  0 -1)  ( 0  1  0)
+  ( 0  0  1)  (-1  1  0)  ( 1  0  0)  ( 0  1 -1)  ( 0  0 -1)  (-1  1  0)
+
+  ( 0  1 -1)  ( 0  1 -1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)
+  ( 0  0 -1)  (-1  1  0)  ( 1  0  0)  ( 0  1  0)  ( 0 -1  1)  (-1  0  1)
+  ( 1  0 -1)  ( 0  1  0)  ( 0  1  0)  ( 1  0  0)  (-1  0  1)  ( 0 -1  1)
+
+  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0 -1  1)  ( 0 -1  1)
+  ( 1  0 -1)  ( 0  1 -1)  ( 0 -1  0)  (-1  0  0)  ( 1 -1  0)  ( 0  0  1)
+  ( 0  1 -1)  ( 1  0 -1)  (-1  0  0)  ( 0 -1  0)  ( 0 -1  0)  (-1  0  1)
+
+  ( 0 -1  1)  ( 0 -1  1)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)
+  ( 0 -1  0)  (-1  0  1)  ( 1 -1  0)  ( 0  0 -1)  ( 0 -1  1)  (-1  0  0)
+  ( 1 -1  0)  ( 0  0  1)  ( 0 -1  1)  (-1  0  0)  ( 1 -1  0)  ( 0  0 -1)
+
+  (-1  1  0)  (-1  1  0)  (-1  1  0)  (-1  1  0)  (-1  0  1)  (-1  0  1)
+  ( 0  1  0)  ( 0  1 -1)  (-1  0  1)  (-1  0  0)  ( 0  0  1)  ( 0 -1  1)
+  ( 0  1 -1)  ( 0  1  0)  (-1  0  0)  (-1  0  1)  ( 0 -1  1)  ( 0  0  1)
+
+  (-1  0  1)  (-1  0  1)  (-1  0  0)  (-1  0  0)  (-1  0  0)  (-1  0  0)
+  (-1  1  0)  (-1  0  0)  ( 0  0 -1)  ( 0 -1  0)  (-1  1  0)  (-1  0  1)
+  (-1  0  0)  (-1  1  0)  ( 0 -1  0)  ( 0  0 -1)  (-1  0  1)  (-1  1  0)
+Note: your k-points are not as symmetric as your crystal!
+
+1728 k-points: 12 x 12 x 12 Monkhorst-Pack grid
+182 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.04166667    0.04166667   -0.04166667          6/1728
+   1:     0.04166667    0.04166667    0.04166667          2/1728
+   2:     0.12500000   -0.04166667   -0.04166667          6/1728
+   3:     0.12500000    0.04166667   -0.12500000         12/1728
+   4:     0.12500000    0.04166667   -0.04166667         12/1728
+   5:     0.12500000    0.04166667    0.04166667          6/1728
+   6:     0.12500000    0.12500000   -0.12500000          6/1728
+   7:     0.12500000    0.12500000   -0.04166667          6/1728
+   8:     0.12500000    0.12500000    0.04166667          6/1728
+   9:     0.12500000    0.12500000    0.12500000          2/1728
+          ...
+ 181:     0.45833333    0.45833333    0.45833333          2/1728
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 450.000 eV
+  Number of coefficients (min, max): 357, 385
+  Pulay-stress correction: 0.000000 eV/Ang^3 (de/decut=0.000000)
+  Using FFTW library
+  ScaLapack parameters: grid=1x1, blocksize=None
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Eigensolver
+   Davidson(niter=2, smin=None, normalize=True) 
+
+Densities:
+  Coarse grid: 15*15*15 grid
+  Fine grid: 30*30*30 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 30*30*30 grid
+  Using the PBE Exchange-Correlation functional
+ 
+
+XC parameters: PBE with 2 nearest neighbor stencil
+
+Memory estimate:
+  Process memory now: 123.77 MiB
+  Calculator: 3.16 MiB
+    Density: 1.36 MiB
+      Arrays: 0.67 MiB
+      Localized functions: 0.43 MiB
+      Mixer: 0.26 MiB
+    Hamiltonian: 0.45 MiB
+      Arrays: 0.44 MiB
+      XC: 0.00 MiB
+      Poisson: 0.00 MiB
+      vbar: 0.01 MiB
+    Wavefunctions: 1.36 MiB
+      Arrays psit_nG: 0.58 MiB
+      Eigensolver: 0.09 MiB
+      Projections: 0.03 MiB
+      Projectors: 0.46 MiB
+      PW-descriptor: 0.19 MiB
+
+Total number of cores used: 16
+Parallelization over k-points: 16
+
+Number of atoms: 1
+Number of atomic orbitals: 9
+Number of bands in calculation: 9
+Bands to converge: occupied states only
+Number of valence electrons: 11
+
+... initialized
+
+Initializing position-dependent things.
+
+Density initialized from atomic densities
+Creating initial wave functions:
+  9 bands from LCAO basis set
+
+                
+                
+                
+       Au       
+                
+                
+                
+                
+
+Positions:
+   0 Au     0.000000    0.000000    0.000000    ( 0.0000,  0.0000,  0.0000)
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    0.000000    2.058750    2.058750    15     0.1585
+  2. axis:    yes    2.058750    0.000000    2.058750    15     0.1585
+  3. axis:    yes    2.058750    2.058750    0.000000    15     0.1585
+
+  Lengths:   2.911512   2.911512   2.911512
+  Angles:   60.000000  60.000000  60.000000
+
+Effective grid spacing dv^(1/3) = 0.1729
+
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       fermi  poisson
+iter:   1  19:47:58  +1.65   +inf    -3.404738    3             
+iter:   2  19:47:58  -2.02  -1.33    -3.354136    3             
+iter:   3  19:47:58  -1.46  -1.35    -3.171710    29            
+iter:   4  19:47:59  -2.87  -1.86    -3.133456    3             
+iter:   5  19:47:59  -2.57  -2.06    -3.133683    3             
+iter:   6  19:48:00  -3.56  -2.27    -3.128337    3             
+iter:   7  19:48:00  -5.85  -2.95    -3.128351    2             
+iter:   8  19:48:00  -4.59  -2.93    -3.128221    2             
+iter:   9  19:48:01  -6.08  -3.48    -3.128194    2             
+iter:  10  19:48:01  -7.94  -4.24    -3.128195    2             
+
+Converged after 10 iterations.
+
+Dipole moment: (0.000000, 0.000000, -0.000000) |e|*Ang
+
+Energy contributions relative to reference atoms: (reference = -516598.271109)
+
+Kinetic:         -6.809550
+Potential:       +5.425650
+External:        +0.000000
+XC:              -1.873788
+Entropy (-ST):   -0.008622
+Local:           +0.133804
+--------------------------
+Free energy:     -3.132506
+Extrapolated:    -3.128195
+
+Fermi level: 9.58640
+
+Showing only first 2 kpts
+ Kpt  Band  Eigenvalues  Occupancy
+  0     3      5.07397    0.00694
+  0     4      6.34174    0.00694
+  0     5      6.46134    0.00694
+  0     6     25.49459    0.00000
+
+  1     3      5.00644    0.00231
+  1     4      6.42438    0.00231
+  1     5      6.42438    0.00231
+  1     6     25.35619    0.00000
+
+
+No gap
+System changes: cell 
+
+Initialize ...
+
+Au-setup:
+  name: Gold
+  id: b12133f335f6ca0d89c4b1ccaa844e9a
+  Z: 79
+  valence: 11
+  core: 68
+  charge: 0.0
+  file: /apps/Common/software/GPAW-setups/0.9.20000/Au.PBE.gz
+  compensation charges: gauss, rc=0.42, lmax=2
+  cutoffs: 2.33(filt), 2.81(core),
+  valence states:
+                energy  radius
+    6s(1.00)    -5.728   1.323
+    6p(0.00)    -0.775   1.323
+    5d(10.00)    -6.891   1.323
+    *s          21.484   1.323
+    *p          26.436   1.323
+    *d          20.321   1.323
+
+  Using partial waves for Au as LCAO basis
+
+Reference energy: -516598.271109
+
+Spin-paired calculation
+
+Occupation numbers:
+  Fermi-Dirac: width=0.1000 eV
+
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+Symmetries present (total): 48
+
+  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0 -1)  ( 1  0 -1)
+  ( 1  0 -1)  ( 1 -1  0)  ( 0  1  0)  ( 0  0  1)  ( 1  0  0)  ( 1 -1  0)
+  ( 1 -1  0)  ( 1  0 -1)  ( 0  0  1)  ( 0  1  0)  ( 1 -1  0)  ( 1  0  0)
+
+  ( 1  0 -1)  ( 1  0 -1)  ( 1 -1  0)  ( 1 -1  0)  ( 1 -1  0)  ( 1 -1  0)
+  ( 0  1 -1)  ( 0  0 -1)  ( 1  0  0)  ( 1  0 -1)  ( 0 -1  1)  ( 0 -1  0)
+  ( 0  0 -1)  ( 0  1 -1)  ( 1  0 -1)  ( 1  0  0)  ( 0 -1  0)  ( 0 -1  1)
+
+  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1 -1)  ( 0  1 -1)
+  ( 1  0  0)  ( 0  1 -1)  ( 0  0  1)  (-1  1  0)  ( 1  0 -1)  ( 0  1  0)
+  ( 0  0  1)  (-1  1  0)  ( 1  0  0)  ( 0  1 -1)  ( 0  0 -1)  (-1  1  0)
+
+  ( 0  1 -1)  ( 0  1 -1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)
+  ( 0  0 -1)  (-1  1  0)  ( 1  0  0)  ( 0  1  0)  ( 0 -1  1)  (-1  0  1)
+  ( 1  0 -1)  ( 0  1  0)  ( 0  1  0)  ( 1  0  0)  (-1  0  1)  ( 0 -1  1)
+
+  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0 -1  1)  ( 0 -1  1)
+  ( 1  0 -1)  ( 0  1 -1)  ( 0 -1  0)  (-1  0  0)  ( 1 -1  0)  ( 0  0  1)
+  ( 0  1 -1)  ( 1  0 -1)  (-1  0  0)  ( 0 -1  0)  ( 0 -1  0)  (-1  0  1)
+
+  ( 0 -1  1)  ( 0 -1  1)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)
+  ( 0 -1  0)  (-1  0  1)  ( 1 -1  0)  ( 0  0 -1)  ( 0 -1  1)  (-1  0  0)
+  ( 1 -1  0)  ( 0  0  1)  ( 0 -1  1)  (-1  0  0)  ( 1 -1  0)  ( 0  0 -1)
+
+  (-1  1  0)  (-1  1  0)  (-1  1  0)  (-1  1  0)  (-1  0  1)  (-1  0  1)
+  ( 0  1  0)  ( 0  1 -1)  (-1  0  1)  (-1  0  0)  ( 0  0  1)  ( 0 -1  1)
+  ( 0  1 -1)  ( 0  1  0)  (-1  0  0)  (-1  0  1)  ( 0 -1  1)  ( 0  0  1)
+
+  (-1  0  1)  (-1  0  1)  (-1  0  0)  (-1  0  0)  (-1  0  0)  (-1  0  0)
+  (-1  1  0)  (-1  0  0)  ( 0  0 -1)  ( 0 -1  0)  (-1  1  0)  (-1  0  1)
+  (-1  0  0)  (-1  1  0)  ( 0 -1  0)  ( 0  0 -1)  (-1  0  1)  (-1  1  0)
+Note: your k-points are not as symmetric as your crystal!
+
+1728 k-points: 12 x 12 x 12 Monkhorst-Pack grid
+182 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.04166667    0.04166667   -0.04166667          6/1728
+   1:     0.04166667    0.04166667    0.04166667          2/1728
+   2:     0.12500000   -0.04166667   -0.04166667          6/1728
+   3:     0.12500000    0.04166667   -0.12500000         12/1728
+   4:     0.12500000    0.04166667   -0.04166667         12/1728
+   5:     0.12500000    0.04166667    0.04166667          6/1728
+   6:     0.12500000    0.12500000   -0.12500000          6/1728
+   7:     0.12500000    0.12500000   -0.04166667          6/1728
+   8:     0.12500000    0.12500000    0.04166667          6/1728
+   9:     0.12500000    0.12500000    0.12500000          2/1728
+          ...
+ 181:     0.45833333    0.45833333    0.45833333          2/1728
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 450.000 eV
+  Number of coefficients (min, max): 384, 405
+  Pulay-stress correction: 0.000000 eV/Ang^3 (de/decut=0.000000)
+  Using FFTW library
+  ScaLapack parameters: grid=1x1, blocksize=None
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Eigensolver
+   Davidson(niter=2, smin=None, normalize=True) 
+
+Densities:
+  Coarse grid: 15*15*15 grid
+  Fine grid: 30*30*30 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 30*30*30 grid
+  Using the PBE Exchange-Correlation functional
+ 
+
+XC parameters: PBE with 2 nearest neighbor stencil
+
+Memory estimate:
+  Process memory now: 127.91 MiB
+  Calculator: 3.25 MiB
+    Density: 1.37 MiB
+      Arrays: 0.67 MiB
+      Localized functions: 0.45 MiB
+      Mixer: 0.26 MiB
+    Hamiltonian: 0.45 MiB
+      Arrays: 0.44 MiB
+      XC: 0.00 MiB
+      Poisson: 0.00 MiB
+      vbar: 0.01 MiB
+    Wavefunctions: 1.43 MiB
+      Arrays psit_nG: 0.61 MiB
+      Eigensolver: 0.10 MiB
+      Projections: 0.03 MiB
+      Projectors: 0.49 MiB
+      PW-descriptor: 0.20 MiB
+
+Total number of cores used: 16
+Parallelization over k-points: 16
+
+Number of atoms: 1
+Number of atomic orbitals: 9
+Number of bands in calculation: 9
+Bands to converge: occupied states only
+Number of valence electrons: 11
+
+... initialized
+
+Initializing position-dependent things.
+
+Density initialized from atomic densities
+Creating initial wave functions:
+  9 bands from LCAO basis set
+
+                
+                
+                
+       Au       
+                
+                
+                
+                
+
+Positions:
+   0 Au     0.000000    0.000000    0.000000    ( 0.0000,  0.0000,  0.0000)
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    0.000000    2.092500    2.092500    15     0.1611
+  2. axis:    yes    2.092500    0.000000    2.092500    15     0.1611
+  3. axis:    yes    2.092500    2.092500    0.000000    15     0.1611
+
+  Lengths:   2.959242   2.959242   2.959242
+  Angles:   60.000000  60.000000  60.000000
+
+Effective grid spacing dv^(1/3) = 0.1758
+
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       fermi  poisson
+iter:   1  19:48:04  +1.66   +inf    -3.413915    3             
+iter:   2  19:48:05  -2.09  -1.32    -3.362082    3             
+iter:   3  19:48:05  -1.44  -1.35    -3.184275    29            
+iter:   4  19:48:05  -2.95  -1.86    -3.148660    3             
+iter:   5  19:48:06  -2.53  -2.06    -3.149072    3             
+iter:   6  19:48:06  -3.49  -2.24    -3.143190    3             
+iter:   7  19:48:07  -5.88  -3.00    -3.143270    2             
+iter:   8  19:48:07  -4.47  -2.91    -3.143107    2             
+iter:   9  19:48:07  -5.92  -3.43    -3.143073    2             
+iter:  10  19:48:08  -7.97  -4.20    -3.143073    1             
+
+Converged after 10 iterations.
+
+Dipole moment: (-0.000000, -0.000000, 0.000000) |e|*Ang
+
+Energy contributions relative to reference atoms: (reference = -516598.271109)
+
+Kinetic:        -10.323377
+Potential:       +8.417000
+External:        +0.000000
+XC:              -1.356092
+Entropy (-ST):   -0.008516
+Local:           +0.123655
+--------------------------
+Free energy:     -3.147331
+Extrapolated:    -3.143073
+
+Fermi level: 8.78033
+
+Showing only first 2 kpts
+ Kpt  Band  Eigenvalues  Occupancy
+  0     3      4.51694    0.00694
+  0     4      5.67969    0.00694
+  0     5      5.78802    0.00694
+  0     6     24.60316    0.00000
+
+  1     3      4.45376    0.00231
+  1     4      5.75372    0.00231
+  1     5      5.75372    0.00231
+  1     6     24.48731    0.00000
+
+
+No gap
+System changes: cell 
+
+Initialize ...
+
+Au-setup:
+  name: Gold
+  id: b12133f335f6ca0d89c4b1ccaa844e9a
+  Z: 79
+  valence: 11
+  core: 68
+  charge: 0.0
+  file: /apps/Common/software/GPAW-setups/0.9.20000/Au.PBE.gz
+  compensation charges: gauss, rc=0.42, lmax=2
+  cutoffs: 2.33(filt), 2.81(core),
+  valence states:
+                energy  radius
+    6s(1.00)    -5.728   1.323
+    6p(0.00)    -0.775   1.323
+    5d(10.00)    -6.891   1.323
+    *s          21.484   1.323
+    *p          26.436   1.323
+    *d          20.321   1.323
+
+  Using partial waves for Au as LCAO basis
+
+Reference energy: -516598.271109
+
+Spin-paired calculation
+
+Occupation numbers:
+  Fermi-Dirac: width=0.1000 eV
+
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+Symmetries present (total): 48
+
+  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0  0)  ( 1  0 -1)  ( 1  0 -1)
+  ( 1  0 -1)  ( 1 -1  0)  ( 0  1  0)  ( 0  0  1)  ( 1  0  0)  ( 1 -1  0)
+  ( 1 -1  0)  ( 1  0 -1)  ( 0  0  1)  ( 0  1  0)  ( 1 -1  0)  ( 1  0  0)
+
+  ( 1  0 -1)  ( 1  0 -1)  ( 1 -1  0)  ( 1 -1  0)  ( 1 -1  0)  ( 1 -1  0)
+  ( 0  1 -1)  ( 0  0 -1)  ( 1  0  0)  ( 1  0 -1)  ( 0 -1  1)  ( 0 -1  0)
+  ( 0  0 -1)  ( 0  1 -1)  ( 1  0 -1)  ( 1  0  0)  ( 0 -1  0)  ( 0 -1  1)
+
+  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1  0)  ( 0  1 -1)  ( 0  1 -1)
+  ( 1  0  0)  ( 0  1 -1)  ( 0  0  1)  (-1  1  0)  ( 1  0 -1)  ( 0  1  0)
+  ( 0  0  1)  (-1  1  0)  ( 1  0  0)  ( 0  1 -1)  ( 0  0 -1)  (-1  1  0)
+
+  ( 0  1 -1)  ( 0  1 -1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)  ( 0  0  1)
+  ( 0  0 -1)  (-1  1  0)  ( 1  0  0)  ( 0  1  0)  ( 0 -1  1)  (-1  0  1)
+  ( 1  0 -1)  ( 0  1  0)  ( 0  1  0)  ( 1  0  0)  (-1  0  1)  ( 0 -1  1)
+
+  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0  0 -1)  ( 0 -1  1)  ( 0 -1  1)
+  ( 1  0 -1)  ( 0  1 -1)  ( 0 -1  0)  (-1  0  0)  ( 1 -1  0)  ( 0  0  1)
+  ( 0  1 -1)  ( 1  0 -1)  (-1  0  0)  ( 0 -1  0)  ( 0 -1  0)  (-1  0  1)
+
+  ( 0 -1  1)  ( 0 -1  1)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)  ( 0 -1  0)
+  ( 0 -1  0)  (-1  0  1)  ( 1 -1  0)  ( 0  0 -1)  ( 0 -1  1)  (-1  0  0)
+  ( 1 -1  0)  ( 0  0  1)  ( 0 -1  1)  (-1  0  0)  ( 1 -1  0)  ( 0  0 -1)
+
+  (-1  1  0)  (-1  1  0)  (-1  1  0)  (-1  1  0)  (-1  0  1)  (-1  0  1)
+  ( 0  1  0)  ( 0  1 -1)  (-1  0  1)  (-1  0  0)  ( 0  0  1)  ( 0 -1  1)
+  ( 0  1 -1)  ( 0  1  0)  (-1  0  0)  (-1  0  1)  ( 0 -1  1)  ( 0  0  1)
+
+  (-1  0  1)  (-1  0  1)  (-1  0  0)  (-1  0  0)  (-1  0  0)  (-1  0  0)
+  (-1  1  0)  (-1  0  0)  ( 0  0 -1)  ( 0 -1  0)  (-1  1  0)  (-1  0  1)
+  (-1  0  0)  (-1  1  0)  ( 0 -1  0)  ( 0  0 -1)  (-1  0  1)  (-1  1  0)
+Note: your k-points are not as symmetric as your crystal!
+
+1728 k-points: 12 x 12 x 12 Monkhorst-Pack grid
+182 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.04166667    0.04166667   -0.04166667          6/1728
+   1:     0.04166667    0.04166667    0.04166667          2/1728
+   2:     0.12500000   -0.04166667   -0.04166667          6/1728
+   3:     0.12500000    0.04166667   -0.12500000         12/1728
+   4:     0.12500000    0.04166667   -0.04166667         12/1728
+   5:     0.12500000    0.04166667    0.04166667          6/1728
+   6:     0.12500000    0.12500000   -0.12500000          6/1728
+   7:     0.12500000    0.12500000   -0.04166667          6/1728
+   8:     0.12500000    0.12500000    0.04166667          6/1728
+   9:     0.12500000    0.12500000    0.12500000          2/1728
+          ...
+ 181:     0.45833333    0.45833333    0.45833333          2/1728
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 450.000 eV
+  Number of coefficients (min, max): 408, 429
+  Pulay-stress correction: 0.000000 eV/Ang^3 (de/decut=0.000000)
+  Using FFTW library
+  ScaLapack parameters: grid=1x1, blocksize=None
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Eigensolver
+   Davidson(niter=2, smin=None, normalize=True) 
+
+Densities:
+  Coarse grid: 16*16*16 grid
+  Fine grid: 32*32*32 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 32*32*32 grid
+  Using the PBE Exchange-Correlation functional
+ 
+
+XC parameters: PBE with 2 nearest neighbor stencil
+
+Memory estimate:
+  Process memory now: 129.71 MiB
+  Calculator: 3.67 MiB
+    Density: 1.60 MiB
+      Arrays: 0.81 MiB
+      Localized functions: 0.47 MiB
+      Mixer: 0.31 MiB
+    Hamiltonian: 0.54 MiB
+      Arrays: 0.53 MiB
+      XC: 0.00 MiB
+      Poisson: 0.00 MiB
+      vbar: 0.01 MiB
+    Wavefunctions: 1.53 MiB
+      Arrays psit_nG: 0.65 MiB
+      Eigensolver: 0.10 MiB
+      Projections: 0.03 MiB
+      Projectors: 0.52 MiB
+      PW-descriptor: 0.23 MiB
+
+Total number of cores used: 16
+Parallelization over k-points: 16
+
+Number of atoms: 1
+Number of atomic orbitals: 9
+Number of bands in calculation: 9
+Bands to converge: occupied states only
+Number of valence electrons: 11
+
+... initialized
+
+Initializing position-dependent things.
+
+Density initialized from atomic densities
+Creating initial wave functions:
+  9 bands from LCAO basis set
+
+                
+                
+                
+       Au       
+                
+                
+                
+                
+
+Positions:
+   0 Au     0.000000    0.000000    0.000000    ( 0.0000,  0.0000,  0.0000)
+
+Unit cell:
+           periodic     x           y           z      points  spacing
+  1. axis:    yes    0.000000    2.126250    2.126250    16     0.1534
+  2. axis:    yes    2.126250    0.000000    2.126250    16     0.1534
+  3. axis:    yes    2.126250    2.126250    0.000000    16     0.1534
+
+  Lengths:   3.006972   3.006972   3.006972
+  Angles:   60.000000  60.000000  60.000000
+
+Effective grid spacing dv^(1/3) = 0.1674
+
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       fermi  poisson
+iter:   1  19:48:11  +1.68   +inf    -3.384538    2             
+iter:   2  19:48:11  -2.15  -1.32    -3.332426    3             
+iter:   3  19:48:12  -1.44  -1.35    -3.158746    26            
+iter:   4  19:48:12  -3.08  -1.88    -3.127829    3             
+iter:   5  19:48:13  -2.48  -2.05    -3.128062    3             
+iter:   6  19:48:13  -3.45  -2.24    -3.121911    3             
+iter:   7  19:48:13  -5.90  -3.03    -3.121997    2             
+iter:   8  19:48:14  -4.40  -2.94    -3.121856    2             
+iter:   9  19:48:14  -5.62  -3.31    -3.121804    2             
+iter:  10  19:48:15  -7.61  -4.17    -3.121804    2             
+
+Converged after 10 iterations.
+
+Dipole moment: (-0.000000, 0.000000, 0.000000) |e|*Ang
+
+Energy contributions relative to reference atoms: (reference = -516598.271109)
+
+Kinetic:        -13.075935
+Potential:      +10.757425
+External:        +0.000000
+XC:              -0.912647
+Entropy (-ST):   -0.008718
+Local:           +0.113712
+--------------------------
+Free energy:     -3.126162
+Extrapolated:    -3.121804
+
+Fermi level: 8.02906
+
+Showing only first 2 kpts
+ Kpt  Band  Eigenvalues  Occupancy
+  0     3      3.99328    0.00694
+  0     4      5.06046    0.00694
+  0     5      5.15956    0.00694
+  0     6     23.75437    0.00000
+
+  1     3      3.93513    0.00231
+  1     4      5.12821    0.00231
+  1     5      5.12821    0.00231
+  1     6     23.66336    0.00000
+
+
+No gap
+Timing:                              incl.     excl.
+-----------------------------------------------------------
+Hamiltonian:                         1.298     0.004   0.0% |
+ Atomic:                             1.120     1.120   1.9% ||
+  XC Correction:                     0.000     0.000   0.0% |
+ Calculate atomic Hamiltonians:      0.007     0.007   0.0% |
+ Communicate:                        0.001     0.001   0.0% |
+ Initialize Hamiltonian:             0.001     0.001   0.0% |
+ Poisson:                            0.002     0.002   0.0% |
+ XC 3D grid:                         0.164     0.164   0.3% |
+LCAO initialization:                 9.665     0.630   1.1% |
+ LCAO eigensolver:                   2.387     0.007   0.0% |
+  Calculate projections:             0.003     0.003   0.0% |
+  DenseAtomicCorrection:             0.012     0.012   0.0% |
+  Distribute overlap matrix:         0.003     0.003   0.0% |
+  Orbital Layouts:                   0.014     0.014   0.0% |
+  Potential matrix:                  2.053     2.053   3.5% ||
+  Sum over cells:                    0.295     0.295   0.5% |
+ LCAO to grid:                       5.282     5.282   9.0% |---|
+ Set positions (LCAO WFS):           1.365     0.209   0.4% |
+  Basic WFS set positions:           0.024     0.024   0.0% |
+  Basis functions set positions:     0.000     0.000   0.0% |
+  P tci:                             0.265     0.265   0.5% |
+  ST tci:                            0.618     0.618   1.1% |
+  mktci:                             0.249     0.249   0.4% |
+PWDescriptor:                        0.149     0.149   0.3% |
+SCF-cycle:                          27.913     2.402   4.1% |-|
+ Davidson:                          11.063     2.745   4.7% |-|
+  Apply H:                           1.140     0.989   1.7% ||
+   HMM T:                            0.151     0.151   0.3% |
+  Subspace diag:                     1.939     0.120   0.2% |
+   calc_h_matrix:                    1.450     0.301   0.5% |
+    Apply H:                         1.150     0.995   1.7% ||
+     HMM T:                          0.155     0.155   0.3% |
+   diagonalize:                      0.228     0.228   0.4% |
+   rotate_psi:                       0.141     0.141   0.2% |
+  calc. matrices:                    4.277     1.995   3.4% ||
+   Apply H:                          2.282     1.976   3.4% ||
+    HMM T:                           0.305     0.305   0.5% |
+  diagonalize:                       0.753     0.753   1.3% ||
+  rotate_psi:                        0.210     0.210   0.4% |
+ Density:                            2.003     0.002   0.0% |
+  Atomic density matrices:           0.157     0.157   0.3% |
+  Mix:                               0.201     0.201   0.3% |
+  Multipole moments:                 0.013     0.013   0.0% |
+  Pseudo density:                    1.630     0.450   0.8% |
+   Symmetrize density:               1.180     1.180   2.0% ||
+ Hamiltonian:                       12.357     0.040   0.1% |
+  Atomic:                           10.718    10.718  18.3% |------|
+   XC Correction:                    0.001     0.001   0.0% |
+  Calculate atomic Hamiltonians:     0.069     0.069   0.1% |
+  Communicate:                       0.012     0.012   0.0% |
+  Poisson:                           0.018     0.018   0.0% |
+  XC 3D grid:                        1.500     1.500   2.6% ||
+ Orthonormalize:                     0.088     0.011   0.0% |
+  calc_s_matrix:                     0.022     0.022   0.0% |
+  inverse-cholesky:                  0.025     0.025   0.0% |
+  projections:                       0.023     0.023   0.0% |
+  rotate_psi_s:                      0.007     0.007   0.0% |
+Set symmetry:                        1.641     1.641   2.8% ||
+Other:                              17.765    17.765  30.4% |-----------|
+-----------------------------------------------------------
+Total:                                        58.430 100.0%
+
+Memory usage: 139.95 MiB
+Date: Fri Feb 25 19:48:24 2022
