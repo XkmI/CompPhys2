@@ -3,7 +3,7 @@ from ase import Atoms
 from ase.build import bulk
 # from ase.io import write
 # from ase.io.trajectory import PickleTrajectory
-from ase.io.trajectory import TrajectoryWriter
+from ase.io.trajectory import Trajectory
 # from ase.optimize.bfgs import BFGS
 from gpaw import GPAW
 from gpaw import PW
@@ -29,4 +29,5 @@ for i in range(3):
 
     for x in np.linspace(0.95, 1.05, 7):
         all_that_glitters.set_cell(cell * x, scale_atoms=True)
-        TrajectoryWriter.write(atomNames[i] + '.traj', mode='a', atoms=all_that_glitters)
+        traj = Trajectory(atomNames[i] + '.traj', mode='a', atoms=all_that_glitters)
+        traj.write()
