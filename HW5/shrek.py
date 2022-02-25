@@ -1,6 +1,6 @@
 import numpy as np
 from ase import Atoms
-from ase.lattice import bulk
+from ase.build import bulk
 from ase.io.trajectory import PickleTrajectory
 from ase.optimize.bfgs import BFGS
 from gpaw import GPAW
