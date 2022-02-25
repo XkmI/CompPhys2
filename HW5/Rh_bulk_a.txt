@@ -5,10 +5,10 @@
  |__ |  _|___|_____|  19.8.1
  |___|_|             
 
-User:   ermag@vera14-4
-Date:   Fri Feb 25 19:58:54 2022
+User:   ermag@vera11-4
+Date:   Fri Feb 25 21:12:35 2022
 Arch:   x86_64
-Pid:    252326
+Pid:    64469
 Python: 3.7.2
 gpaw:   /apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw
 _gpaw:  /apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/bin/
@@ -149,7 +149,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 149.44 MiB
+  Process memory now: 144.14 MiB
   Calculator: 2.34 MiB
     Density: 1.00 MiB
       Arrays: 0.54 MiB
@@ -209,26 +209,26 @@ Effective grid spacing dv^(1/3) = 0.1539
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  19:59:00  +2.02   +inf    -5.909193    3             
-iter:   2  19:59:00  -1.74  -1.42    -5.824548    3             
-iter:   3  19:59:00  -1.34  -1.45    -5.458591    32            
-iter:   4  19:59:01  -2.81  -1.82    -5.390496    3             
-iter:   5  19:59:01  -2.74  -2.17    -5.422935    3             
-iter:   6  19:59:02  -1.83  -2.10    -5.364453    29            
-iter:   7  19:59:02  -2.86  -3.25    -5.365068    2             
-iter:   8  19:59:02  -3.46  -2.97    -5.365825    3             
-iter:   9  19:59:03  -4.13  -3.01    -5.365825    2             
-iter:  10  19:59:03  -4.76  -3.11    -5.365882    2             
-iter:  11  19:59:03  -5.36  -3.18    -5.365921    2             
-iter:  12  19:59:04  -4.74  -3.29    -5.365985    2             
-iter:  13  19:59:04  -6.10  -4.67    -5.365984    2             
-iter:  14  19:59:04  -7.18  -4.78    -5.365984    2             
-iter:  15  19:59:05  -6.27  -4.83    -5.365984    2             
-iter:  16  19:59:05  -7.73  -4.31    -5.365983    2             
+iter:   1  21:12:40  +2.02   +inf    -5.909193    3             
+iter:   2  21:12:41  -1.74  -1.42    -5.824548    3             
+iter:   3  21:12:41  -1.34  -1.45    -5.458591    32            
+iter:   4  21:12:42  -2.81  -1.82    -5.390496    3             
+iter:   5  21:12:42  -2.74  -2.17    -5.422935    3             
+iter:   6  21:12:42  -1.83  -2.10    -5.364453    29            
+iter:   7  21:12:43  -2.86  -3.25    -5.365068    2             
+iter:   8  21:12:43  -3.46  -2.97    -5.365825    3             
+iter:   9  21:12:43  -4.13  -3.01    -5.365825    2             
+iter:  10  21:12:44  -4.76  -3.11    -5.365882    2             
+iter:  11  21:12:44  -5.36  -3.18    -5.365921    2             
+iter:  12  21:12:44  -4.74  -3.29    -5.365985    2             
+iter:  13  21:12:45  -6.10  -4.67    -5.365984    2             
+iter:  14  21:12:45  -7.18  -4.78    -5.365984    2             
+iter:  15  21:12:45  -6.27  -4.83    -5.365984    2             
+iter:  16  21:12:46  -7.73  -4.31    -5.365983    2             
 
 Converged after 16 iterations.
 
-Dipole moment: (0.000000, -0.000000, -0.000000) |e|*Ang
+Dipole moment: (-0.000000, 0.000000, -0.000000) |e|*Ang
 
 Energy contributions relative to reference atoms: (reference = -130134.647000)
 
@@ -379,7 +379,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 155.20 MiB
+  Process memory now: 150.78 MiB
   Calculator: 2.42 MiB
     Density: 1.01 MiB
       Arrays: 0.54 MiB
@@ -439,21 +439,21 @@ Effective grid spacing dv^(1/3) = 0.1563
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  19:59:11  +2.01   +inf    -6.481264    2             
-iter:   2  19:59:11  -1.76  -1.41    -6.391756    3             
-iter:   3  19:59:12  -1.31  -1.44    -6.025674    31            
-iter:   4  19:59:12  -2.81  -1.82    -5.953270    28            
-iter:   5  19:59:12  -3.19  -2.17    -5.977314    3             
-iter:   6  19:59:13  -2.01  -2.08    -5.926291    30            
-iter:   7  19:59:13  -2.96  -3.30    -5.926716    2             
-iter:   8  19:59:14  -3.61  -3.06    -5.927245    3             
-iter:   9  19:59:14  -4.24  -3.06    -5.927275    2             
-iter:  10  19:59:14  -4.73  -3.14    -5.927307    2             
-iter:  11  19:59:15  -5.49  -3.27    -5.927330    2             
-iter:  12  19:59:15  -5.17  -3.38    -5.927364    2             
-iter:  13  19:59:15  -5.63  -3.90    -5.927367    2             
-iter:  14  19:59:16  -7.12  -4.63    -5.927368    2             
-iter:  15  19:59:16  -7.94  -4.87    -5.927367    2             
+iter:   1  21:12:51  +2.01   +inf    -6.481264    2             
+iter:   2  21:12:52  -1.76  -1.41    -6.391756    3             
+iter:   3  21:12:52  -1.31  -1.44    -6.025674    31            
+iter:   4  21:12:52  -2.81  -1.82    -5.953270    28            
+iter:   5  21:12:53  -3.19  -2.17    -5.977314    3             
+iter:   6  21:12:53  -2.01  -2.08    -5.926291    30            
+iter:   7  21:12:53  -2.96  -3.30    -5.926716    2             
+iter:   8  21:12:54  -3.61  -3.06    -5.927245    3             
+iter:   9  21:12:54  -4.24  -3.06    -5.927275    2             
+iter:  10  21:12:54  -4.73  -3.14    -5.927307    2             
+iter:  11  21:12:55  -5.49  -3.27    -5.927330    2             
+iter:  12  21:12:55  -5.17  -3.38    -5.927364    2             
+iter:  13  21:12:56  -5.63  -3.90    -5.927367    2             
+iter:  14  21:12:56  -7.12  -4.63    -5.927368    2             
+iter:  15  21:12:56  -7.94  -4.87    -5.927367    2             
 
 Converged after 15 iterations.
 
@@ -608,7 +608,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 155.23 MiB
+  Process memory now: 150.80 MiB
   Calculator: 2.49 MiB
     Density: 1.02 MiB
       Arrays: 0.54 MiB
@@ -668,19 +668,19 @@ Effective grid spacing dv^(1/3) = 0.1588
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  19:59:22  +2.00   +inf    -6.933678    2             
-iter:   2  19:59:22  -1.77  -1.40    -6.839245    3             
-iter:   3  19:59:22  -1.29  -1.43    -6.470329    32            
-iter:   4  19:59:23  -2.77  -1.82    -6.393705    31            
-iter:   5  19:59:23  -2.59  -2.20    -6.371237    3             
-iter:   6  19:59:23  -2.76  -2.53    -6.368923    3             
-iter:   7  19:59:24  -3.61  -3.09    -6.369160    2             
-iter:   8  19:59:24  -4.12  -2.97    -6.369108    2             
-iter:   9  19:59:25  -5.60  -3.87    -6.369095    2             
-iter:  10  19:59:25  -6.08  -3.79    -6.369078    2             
-iter:  11  19:59:25  -5.38  -3.56    -6.369103    2             
-iter:  12  19:59:26  -6.42  -4.58    -6.369103    2             
-iter:  13  19:59:26  -7.52  -5.30    -6.369103    2             
+iter:   1  21:13:02  +2.00   +inf    -6.933678    2             
+iter:   2  21:13:02  -1.77  -1.40    -6.839245    3             
+iter:   3  21:13:02  -1.29  -1.43    -6.470329    32            
+iter:   4  21:13:03  -2.77  -1.82    -6.393705    31            
+iter:   5  21:13:03  -2.59  -2.20    -6.371237    3             
+iter:   6  21:13:03  -2.76  -2.53    -6.368923    3             
+iter:   7  21:13:04  -3.61  -3.09    -6.369160    2             
+iter:   8  21:13:04  -4.12  -2.97    -6.369108    2             
+iter:   9  21:13:05  -5.60  -3.87    -6.369095    2             
+iter:  10  21:13:05  -6.08  -3.79    -6.369078    2             
+iter:  11  21:13:05  -5.38  -3.56    -6.369103    2             
+iter:  12  21:13:06  -6.42  -4.58    -6.369103    2             
+iter:  13  21:13:06  -7.52  -5.30    -6.369103    2             
 
 Converged after 13 iterations.
 
@@ -835,7 +835,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 157.24 MiB
+  Process memory now: 150.83 MiB
   Calculator: 2.53 MiB
     Density: 1.03 MiB
       Arrays: 0.54 MiB
@@ -895,24 +895,24 @@ Effective grid spacing dv^(1/3) = 0.1612
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  19:59:31  +1.99   +inf    -7.281650    2             
-iter:   2  19:59:31  -1.77  -1.39    -7.182411    3             
-iter:   3  19:59:32  -1.26  -1.42    -6.810778    32            
-iter:   4  19:59:32  -2.71  -1.81    -6.729870    30            
-iter:   5  19:59:33  -2.06  -2.22    -6.713715    30            
-iter:   6  19:59:33  -3.65  -2.70    -6.707714    2             
-iter:   7  19:59:33  -4.44  -2.97    -6.707818    2             
-iter:   8  19:59:34  -4.09  -2.98    -6.707501    2             
-iter:   9  19:59:34  -5.62  -3.74    -6.707486    2             
-iter:  10  19:59:34  -6.57  -3.86    -6.707484    2             
-iter:  11  19:59:35  -5.84  -3.72    -6.707492    2             
-iter:  12  19:59:35  -6.41  -4.27    -6.707494    2             
-iter:  13  19:59:36  -7.27  -5.35    -6.707493    1             
-iter:  14  19:59:36  -8.09  -5.41    -6.707493    1             
+iter:   1  21:13:11  +1.99   +inf    -7.281650    2             
+iter:   2  21:13:11  -1.77  -1.39    -7.182411    3             
+iter:   3  21:13:12  -1.26  -1.42    -6.810778    32            
+iter:   4  21:13:12  -2.71  -1.81    -6.729870    30            
+iter:   5  21:13:12  -2.06  -2.22    -6.713715    30            
+iter:   6  21:13:13  -3.65  -2.70    -6.707714    2             
+iter:   7  21:13:13  -4.44  -2.97    -6.707818    2             
+iter:   8  21:13:13  -4.09  -2.98    -6.707501    2             
+iter:   9  21:13:14  -5.62  -3.74    -6.707486    2             
+iter:  10  21:13:14  -6.57  -3.86    -6.707484    2             
+iter:  11  21:13:15  -5.84  -3.72    -6.707492    2             
+iter:  12  21:13:15  -6.41  -4.27    -6.707494    2             
+iter:  13  21:13:15  -7.27  -5.35    -6.707493    1             
+iter:  14  21:13:16  -8.09  -5.41    -6.707493    1             
 
 Converged after 14 iterations.
 
-Dipole moment: (-0.000000, 0.000000, 0.000000) |e|*Ang
+Dipole moment: (0.000000, 0.000000, 0.000000) |e|*Ang
 
 Energy contributions relative to reference atoms: (reference = -130134.647000)
 
@@ -1063,7 +1063,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 157.25 MiB
+  Process memory now: 150.84 MiB
   Calculator: 2.57 MiB
     Density: 1.04 MiB
       Arrays: 0.54 MiB
@@ -1123,23 +1123,23 @@ Effective grid spacing dv^(1/3) = 0.1637
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  19:59:41  +1.99   +inf    -7.538963    2             
-iter:   2  19:59:41  -1.78  -1.38    -7.435263    3             
-iter:   3  19:59:41  -1.24  -1.41    -7.063282    32            
-iter:   4  19:59:42  -2.69  -1.81    -6.979105    29            
-iter:   5  19:59:42  -2.10  -2.22    -6.964075    31            
-iter:   6  19:59:42  -3.68  -2.64    -6.957668    3             
-iter:   7  19:59:43  -4.52  -2.93    -6.957565    2             
-iter:   8  19:59:43  -4.09  -3.02    -6.957295    3             
-iter:   9  19:59:44  -5.25  -3.50    -6.957242    2             
-iter:  10  19:59:44  -6.58  -3.85    -6.957239    2             
-iter:  11  19:59:44  -5.70  -3.72    -6.957249    2             
-iter:  12  19:59:45  -6.70  -4.94    -6.957248    2             
-iter:  13  19:59:45  -7.62  -5.34    -6.957248    2             
+iter:   1  21:13:20  +1.99   +inf    -7.538963    2             
+iter:   2  21:13:21  -1.78  -1.38    -7.435263    3             
+iter:   3  21:13:21  -1.24  -1.41    -7.063282    32            
+iter:   4  21:13:21  -2.69  -1.81    -6.979105    29            
+iter:   5  21:13:22  -2.10  -2.22    -6.964075    31            
+iter:   6  21:13:22  -3.68  -2.64    -6.957668    3             
+iter:   7  21:13:23  -4.52  -2.93    -6.957565    2             
+iter:   8  21:13:23  -4.09  -3.02    -6.957295    3             
+iter:   9  21:13:23  -5.25  -3.50    -6.957242    2             
+iter:  10  21:13:24  -6.58  -3.85    -6.957239    2             
+iter:  11  21:13:24  -5.70  -3.72    -6.957249    2             
+iter:  12  21:13:24  -6.70  -4.94    -6.957248    2             
+iter:  13  21:13:25  -7.62  -5.34    -6.957248    2             
 
 Converged after 13 iterations.
 
-Dipole moment: (-0.000000, 0.000000, 0.000000) |e|*Ang
+Dipole moment: (-0.000000, -0.000000, -0.000000) |e|*Ang
 
 Energy contributions relative to reference atoms: (reference = -130134.647000)
 
@@ -1290,7 +1290,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 157.27 MiB
+  Process memory now: 150.87 MiB
   Calculator: 2.64 MiB
     Density: 1.06 MiB
       Arrays: 0.54 MiB
@@ -1350,23 +1350,23 @@ Effective grid spacing dv^(1/3) = 0.1661
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  19:59:50  +1.98   +inf    -7.717981    2             
-iter:   2  19:59:50  -1.79  -1.37    -7.610225    3             
-iter:   3  19:59:50  -1.22  -1.40    -7.240719    33            
-iter:   4  19:59:51  -2.70  -1.79    -7.153535    31            
-iter:   5  19:59:51  -2.19  -2.19    -7.136388    29            
-iter:   6  19:59:51  -3.66  -2.66    -7.131681    3             
-iter:   7  19:59:52  -4.47  -2.92    -7.131458    2             
-iter:   8  19:59:52  -4.13  -3.06    -7.131253    3             
-iter:   9  19:59:53  -5.07  -3.36    -7.131158    2             
-iter:  10  19:59:53  -6.62  -3.85    -7.131154    2             
-iter:  11  19:59:53  -5.71  -3.78    -7.131166    2             
-iter:  12  19:59:54  -6.89  -4.46    -7.131163    2             
-iter:  13  19:59:54  -7.95  -5.26    -7.131163    2             
+iter:   1  21:13:29  +1.98   +inf    -7.717981    2             
+iter:   2  21:13:29  -1.79  -1.37    -7.610225    3             
+iter:   3  21:13:30  -1.22  -1.40    -7.240719    33            
+iter:   4  21:13:30  -2.70  -1.79    -7.153535    31            
+iter:   5  21:13:31  -2.19  -2.19    -7.136388    29            
+iter:   6  21:13:31  -3.66  -2.66    -7.131681    3             
+iter:   7  21:13:31  -4.47  -2.92    -7.131458    2             
+iter:   8  21:13:32  -4.13  -3.06    -7.131253    3             
+iter:   9  21:13:32  -5.07  -3.36    -7.131158    2             
+iter:  10  21:13:32  -6.62  -3.85    -7.131154    2             
+iter:  11  21:13:33  -5.71  -3.78    -7.131166    2             
+iter:  12  21:13:33  -6.89  -4.46    -7.131163    2             
+iter:  13  21:13:34  -7.95  -5.26    -7.131163    2             
 
 Converged after 13 iterations.
 
-Dipole moment: (0.000000, 0.000000, 0.000000) |e|*Ang
+Dipole moment: (-0.000000, -0.000000, -0.000000) |e|*Ang
 
 Energy contributions relative to reference atoms: (reference = -130134.647000)
 
@@ -1517,7 +1517,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 157.29 MiB
+  Process memory now: 150.88 MiB
   Calculator: 2.69 MiB
     Density: 1.07 MiB
       Arrays: 0.54 MiB
@@ -1577,23 +1577,23 @@ Effective grid spacing dv^(1/3) = 0.1685
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  19:59:58  +1.97   +inf    -7.829706    2             
-iter:   2  19:59:59  -1.80  -1.36    -7.718267    3             
-iter:   3  19:59:59  -1.20  -1.40    -7.352914    33            
-iter:   4  20:00:00  -2.74  -1.78    -7.265272    30            
-iter:   5  20:00:00  -2.26  -2.15    -7.244478    31            
-iter:   6  20:00:00  -3.66  -2.68    -7.241071    3             
-iter:   7  20:00:01  -4.46  -2.92    -7.240789    2             
-iter:   8  20:00:01  -4.19  -3.08    -7.240598    3             
-iter:   9  20:00:02  -5.01  -3.27    -7.240488    3             
-iter:  10  20:00:02  -6.51  -3.87    -7.240484    2             
-iter:  11  20:00:02  -5.85  -3.83    -7.240497    2             
-iter:  12  20:00:03  -6.61  -4.24    -7.240490    2             
-iter:  13  20:00:03  -7.88  -5.25    -7.240490    1             
+iter:   1  21:13:38  +1.97   +inf    -7.829706    2             
+iter:   2  21:13:38  -1.80  -1.36    -7.718267    3             
+iter:   3  21:13:39  -1.20  -1.40    -7.352914    33            
+iter:   4  21:13:39  -2.74  -1.78    -7.265272    30            
+iter:   5  21:13:39  -2.26  -2.15    -7.244478    31            
+iter:   6  21:13:40  -3.66  -2.68    -7.241071    3             
+iter:   7  21:13:40  -4.46  -2.92    -7.240789    2             
+iter:   8  21:13:41  -4.19  -3.08    -7.240598    3             
+iter:   9  21:13:41  -5.01  -3.27    -7.240488    3             
+iter:  10  21:13:41  -6.51  -3.87    -7.240484    2             
+iter:  11  21:13:42  -5.85  -3.83    -7.240497    2             
+iter:  12  21:13:42  -6.61  -4.24    -7.240490    2             
+iter:  13  21:13:42  -7.88  -5.25    -7.240490    1             
 
 Converged after 13 iterations.
 
-Dipole moment: (-0.000000, -0.000000, 0.000000) |e|*Ang
+Dipole moment: (0.000000, 0.000000, 0.000000) |e|*Ang
 
 Energy contributions relative to reference atoms: (reference = -130134.647000)
 
@@ -1744,7 +1744,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 157.34 MiB
+  Process memory now: 150.89 MiB
   Calculator: 2.75 MiB
     Density: 1.09 MiB
       Arrays: 0.54 MiB
@@ -1804,23 +1804,23 @@ Effective grid spacing dv^(1/3) = 0.1710
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  20:00:07  +1.96   +inf    -7.883991    2             
-iter:   2  20:00:08  -1.81  -1.36    -7.769290    3             
-iter:   3  20:00:08  -1.19  -1.39    -7.410386    30            
-iter:   4  20:00:09  -2.79  -1.77    -7.322686    30            
-iter:   5  20:00:09  -2.30  -2.11    -7.298636    31            
-iter:   6  20:00:09  -3.69  -2.69    -7.295894    3             
-iter:   7  20:00:10  -4.47  -2.92    -7.295568    3             
-iter:   8  20:00:10  -4.29  -3.09    -7.295353    3             
-iter:   9  20:00:11  -5.03  -3.25    -7.295273    3             
-iter:  10  20:00:11  -6.41  -3.89    -7.295270    2             
-iter:  11  20:00:11  -6.03  -3.87    -7.295281    2             
-iter:  12  20:00:12  -6.40  -4.14    -7.295274    2             
-iter:  13  20:00:12  -7.83  -5.21    -7.295273    2             
+iter:   1  21:13:46  +1.96   +inf    -7.883991    2             
+iter:   2  21:13:47  -1.81  -1.36    -7.769290    3             
+iter:   3  21:13:47  -1.19  -1.39    -7.410386    30            
+iter:   4  21:13:48  -2.79  -1.77    -7.322686    30            
+iter:   5  21:13:48  -2.30  -2.11    -7.298636    31            
+iter:   6  21:13:48  -3.69  -2.69    -7.295894    3             
+iter:   7  21:13:49  -4.47  -2.92    -7.295568    3             
+iter:   8  21:13:49  -4.29  -3.09    -7.295353    3             
+iter:   9  21:13:49  -5.03  -3.25    -7.295273    3             
+iter:  10  21:13:50  -6.41  -3.89    -7.295270    2             
+iter:  11  21:13:50  -6.03  -3.87    -7.295281    2             
+iter:  12  21:13:51  -6.40  -4.14    -7.295274    2             
+iter:  13  21:13:51  -7.83  -5.21    -7.295273    2             
 
 Converged after 13 iterations.
 
-Dipole moment: (-0.000000, 0.000000, -0.000000) |e|*Ang
+Dipole moment: (0.000000, 0.000000, -0.000000) |e|*Ang
 
 Energy contributions relative to reference atoms: (reference = -130134.647000)
 
@@ -1971,7 +1971,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 157.36 MiB
+  Process memory now: 150.91 MiB
   Calculator: 2.82 MiB
     Density: 1.11 MiB
       Arrays: 0.54 MiB
@@ -2031,23 +2031,23 @@ Effective grid spacing dv^(1/3) = 0.1734
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  20:00:16  +1.96   +inf    -7.889616    2             
-iter:   2  20:00:17  -1.85  -1.35    -7.771950    3             
-iter:   3  20:00:17  -1.18  -1.39    -7.418699    32            
-iter:   4  20:00:17  -2.85  -1.77    -7.333974    31            
-iter:   5  20:00:18  -2.31  -2.07    -7.307729    30            
-iter:   6  20:00:18  -3.76  -2.67    -7.304877    3             
-iter:   7  20:00:19  -4.49  -2.92    -7.304521    3             
-iter:   8  20:00:19  -4.40  -3.10    -7.304263    3             
-iter:   9  20:00:19  -5.09  -3.28    -7.304239    3             
-iter:  10  20:00:20  -6.34  -3.91    -7.304235    2             
-iter:  11  20:00:20  -6.20  -3.89    -7.304244    2             
-iter:  12  20:00:20  -6.38  -4.14    -7.304237    2             
-iter:  13  20:00:21  -7.71  -5.08    -7.304237    2             
+iter:   1  21:13:55  +1.96   +inf    -7.889616    2             
+iter:   2  21:13:55  -1.85  -1.35    -7.771950    3             
+iter:   3  21:13:56  -1.18  -1.39    -7.418699    32            
+iter:   4  21:13:56  -2.85  -1.77    -7.333974    31            
+iter:   5  21:13:57  -2.31  -2.07    -7.307729    30            
+iter:   6  21:13:57  -3.76  -2.67    -7.304877    3             
+iter:   7  21:13:57  -4.49  -2.92    -7.304521    3             
+iter:   8  21:13:58  -4.40  -3.10    -7.304263    3             
+iter:   9  21:13:58  -5.09  -3.28    -7.304239    3             
+iter:  10  21:13:58  -6.34  -3.91    -7.304235    2             
+iter:  11  21:13:59  -6.20  -3.89    -7.304244    2             
+iter:  12  21:13:59  -6.38  -4.14    -7.304237    2             
+iter:  13  21:14:00  -7.71  -5.08    -7.304237    2             
 
 Converged after 13 iterations.
 
-Dipole moment: (-0.000000, -0.000000, 0.000000) |e|*Ang
+Dipole moment: (-0.000000, -0.000000, -0.000000) |e|*Ang
 
 Energy contributions relative to reference atoms: (reference = -130134.647000)
 
@@ -2198,7 +2198,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 157.37 MiB
+  Process memory now: 150.92 MiB
   Calculator: 2.86 MiB
     Density: 1.12 MiB
       Arrays: 0.54 MiB
@@ -2258,23 +2258,23 @@ Effective grid spacing dv^(1/3) = 0.1759
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  20:00:25  +1.96   +inf    -7.854130    3             
-iter:   2  20:00:25  -1.90  -1.35    -7.733953    4             
-iter:   3  20:00:25  -1.17  -1.38    -7.386538    33            
-iter:   4  20:00:26  -2.90  -1.77    -7.305969    30            
-iter:   5  20:00:26  -2.29  -2.05    -7.279686    31            
-iter:   6  20:00:27  -3.79  -2.56    -7.275752    3             
-iter:   7  20:00:27  -4.58  -2.91    -7.275365    3             
-iter:   8  20:00:27  -4.53  -3.11    -7.275085    3             
-iter:   9  20:00:28  -5.16  -3.35    -7.275108    3             
-iter:  10  20:00:28  -6.34  -3.94    -7.275104    2             
-iter:  11  20:00:28  -6.38  -3.92    -7.275108    2             
-iter:  12  20:00:29  -6.71  -4.23    -7.275105    2             
-iter:  13  20:00:29  -7.59  -4.54    -7.275104    2             
+iter:   1  21:14:03  +1.96   +inf    -7.854130    3             
+iter:   2  21:14:04  -1.90  -1.35    -7.733953    4             
+iter:   3  21:14:04  -1.17  -1.38    -7.386538    33            
+iter:   4  21:14:05  -2.90  -1.77    -7.305969    30            
+iter:   5  21:14:05  -2.29  -2.05    -7.279686    31            
+iter:   6  21:14:05  -3.79  -2.56    -7.275752    3             
+iter:   7  21:14:06  -4.58  -2.91    -7.275365    3             
+iter:   8  21:14:06  -4.53  -3.11    -7.275085    3             
+iter:   9  21:14:07  -5.16  -3.35    -7.275108    3             
+iter:  10  21:14:07  -6.34  -3.94    -7.275104    2             
+iter:  11  21:14:07  -6.38  -3.92    -7.275108    2             
+iter:  12  21:14:08  -6.71  -4.23    -7.275105    2             
+iter:  13  21:14:08  -7.59  -4.54    -7.275104    2             
 
 Converged after 13 iterations.
 
-Dipole moment: (-0.000000, 0.000000, -0.000000) |e|*Ang
+Dipole moment: (-0.000000, -0.000000, -0.000000) |e|*Ang
 
 Energy contributions relative to reference atoms: (reference = -130134.647000)
 
@@ -2425,7 +2425,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 157.38 MiB
+  Process memory now: 150.93 MiB
   Calculator: 3.20 MiB
     Density: 1.31 MiB
       Arrays: 0.67 MiB
@@ -2485,23 +2485,23 @@ Effective grid spacing dv^(1/3) = 0.1664
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  20:00:33  +1.99   +inf    -7.784187    3             
-iter:   2  20:00:34  -1.96  -1.34    -7.661926    4             
-iter:   3  20:00:34  -1.18  -1.38    -7.317478    30            
-iter:   4  20:00:35  -2.98  -1.78    -7.245308    4             
-iter:   5  20:00:35  -2.25  -2.04    -7.220941    32            
-iter:   6  20:00:35  -3.70  -2.45    -7.214992    3             
-iter:   7  20:00:36  -4.67  -2.92    -7.214625    3             
-iter:   8  20:00:36  -4.53  -3.12    -7.214349    3             
-iter:   9  20:00:37  -5.12  -3.34    -7.214382    3             
-iter:  10  20:00:37  -6.45  -3.93    -7.214374    2             
-iter:  11  20:00:38  -6.44  -3.96    -7.214375    2             
-iter:  12  20:00:38  -6.77  -4.29    -7.214372    2             
-iter:  13  20:00:38  -7.52  -4.78    -7.214370    2             
+iter:   1  21:14:12  +1.99   +inf    -7.784187    3             
+iter:   2  21:14:13  -1.96  -1.34    -7.661926    4             
+iter:   3  21:14:13  -1.18  -1.38    -7.317478    30            
+iter:   4  21:14:13  -2.98  -1.78    -7.245308    4             
+iter:   5  21:14:14  -2.25  -2.04    -7.220941    32            
+iter:   6  21:14:14  -3.70  -2.45    -7.214992    3             
+iter:   7  21:14:15  -4.67  -2.92    -7.214625    3             
+iter:   8  21:14:15  -4.53  -3.12    -7.214349    3             
+iter:   9  21:14:15  -5.12  -3.34    -7.214382    3             
+iter:  10  21:14:16  -6.45  -3.93    -7.214374    2             
+iter:  11  21:14:16  -6.44  -3.96    -7.214375    2             
+iter:  12  21:14:17  -6.77  -4.29    -7.214372    2             
+iter:  13  21:14:17  -7.52  -4.78    -7.214370    2             
 
 Converged after 13 iterations.
 
-Dipole moment: (0.000000, -0.000000, 0.000000) |e|*Ang
+Dipole moment: (-0.000000, -0.000000, -0.000000) |e|*Ang
 
 Energy contributions relative to reference atoms: (reference = -130134.647000)
 
@@ -2652,7 +2652,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 157.39 MiB
+  Process memory now: 150.95 MiB
   Calculator: 3.26 MiB
     Density: 1.32 MiB
       Arrays: 0.67 MiB
@@ -2712,23 +2712,23 @@ Effective grid spacing dv^(1/3) = 0.1687
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  20:00:43  +2.01   +inf    -7.684989    3             
-iter:   2  20:00:43  -2.04  -1.34    -7.561306    4             
-iter:   3  20:00:43  -1.18  -1.38    -7.220428    31            
-iter:   4  20:00:44  -3.07  -1.80    -7.157211    4             
-iter:   5  20:00:44  -2.21  -2.03    -7.136900    29            
-iter:   6  20:00:45  -3.53  -2.34    -7.127934    3             
-iter:   7  20:00:45  -4.72  -2.92    -7.127591    3             
-iter:   8  20:00:45  -4.46  -3.11    -7.127318    3             
-iter:   9  20:00:46  -5.01  -3.28    -7.127351    3             
-iter:  10  20:00:46  -6.54  -3.85    -7.127337    2             
-iter:  11  20:00:47  -6.29  -3.99    -7.127335    2             
-iter:  12  20:00:47  -6.73  -4.35    -7.127331    2             
-iter:  13  20:00:47  -7.95  -5.09    -7.127330    2             
+iter:   1  21:14:21  +2.01   +inf    -7.684989    3             
+iter:   2  21:14:22  -2.04  -1.34    -7.561306    4             
+iter:   3  21:14:22  -1.18  -1.38    -7.220428    31            
+iter:   4  21:14:22  -3.07  -1.80    -7.157211    4             
+iter:   5  21:14:23  -2.21  -2.03    -7.136900    29            
+iter:   6  21:14:23  -3.53  -2.34    -7.127934    3             
+iter:   7  21:14:24  -4.72  -2.92    -7.127591    3             
+iter:   8  21:14:24  -4.46  -3.11    -7.127318    3             
+iter:   9  21:14:24  -5.01  -3.28    -7.127351    3             
+iter:  10  21:14:25  -6.54  -3.85    -7.127337    2             
+iter:  11  21:14:25  -6.29  -3.99    -7.127335    2             
+iter:  12  21:14:26  -6.73  -4.35    -7.127331    2             
+iter:  13  21:14:26  -7.95  -5.09    -7.127330    2             
 
 Converged after 13 iterations.
 
-Dipole moment: (0.000000, 0.000000, -0.000000) |e|*Ang
+Dipole moment: (-0.000000, -0.000000, -0.000000) |e|*Ang
 
 Energy contributions relative to reference atoms: (reference = -130134.647000)
 
@@ -2879,7 +2879,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 157.40 MiB
+  Process memory now: 150.97 MiB
   Calculator: 3.34 MiB
     Density: 1.34 MiB
       Arrays: 0.67 MiB
@@ -2939,23 +2939,23 @@ Effective grid spacing dv^(1/3) = 0.1710
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  20:00:51  +2.03   +inf    -7.561736    3             
-iter:   2  20:00:52  -2.12  -1.34    -7.437341    4             
-iter:   3  20:00:52  -1.20  -1.38    -7.101950    33            
-iter:   4  20:00:53  -3.16  -1.82    -7.047124    4             
-iter:   5  20:00:53  -2.16  -2.03    -7.033032    32            
-iter:   6  20:00:53  -3.32  -2.24    -7.019537    4             
-iter:   7  20:00:54  -4.69  -2.92    -7.019211    3             
-iter:   8  20:00:54  -4.41  -3.11    -7.018942    3             
-iter:   9  20:00:55  -4.89  -3.23    -7.018975    3             
-iter:  10  20:00:55  -6.56  -3.86    -7.018967    2             
-iter:  11  20:00:55  -6.28  -3.92    -7.018954    2             
-iter:  12  20:00:56  -6.83  -4.49    -7.018951    2             
-iter:  13  20:00:56  -8.17  -5.40    -7.018951    2             
+iter:   1  21:14:30  +2.03   +inf    -7.561736    3             
+iter:   2  21:14:31  -2.12  -1.34    -7.437341    4             
+iter:   3  21:14:31  -1.20  -1.38    -7.101950    33            
+iter:   4  21:14:31  -3.16  -1.82    -7.047124    4             
+iter:   5  21:14:32  -2.16  -2.03    -7.033032    32            
+iter:   6  21:14:32  -3.32  -2.24    -7.019537    4             
+iter:   7  21:14:33  -4.69  -2.92    -7.019211    3             
+iter:   8  21:14:33  -4.41  -3.11    -7.018942    3             
+iter:   9  21:14:33  -4.89  -3.23    -7.018975    3             
+iter:  10  21:14:34  -6.56  -3.86    -7.018967    2             
+iter:  11  21:14:34  -6.28  -3.92    -7.018954    2             
+iter:  12  21:14:35  -6.83  -4.49    -7.018951    2             
+iter:  13  21:14:35  -8.17  -5.40    -7.018951    2             
 
 Converged after 13 iterations.
 
-Dipole moment: (0.000000, 0.000000, -0.000000) |e|*Ang
+Dipole moment: (0.000000, 0.000000, 0.000000) |e|*Ang
 
 Energy contributions relative to reference atoms: (reference = -130134.647000)
 
@@ -3106,7 +3106,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 157.41 MiB
+  Process memory now: 150.98 MiB
   Calculator: 3.41 MiB
     Density: 1.36 MiB
       Arrays: 0.67 MiB
@@ -3166,23 +3166,23 @@ Effective grid spacing dv^(1/3) = 0.1733
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  20:01:00  +2.06   +inf    -7.418742    3             
-iter:   2  20:01:01  -2.18  -1.34    -7.294502    4             
-iter:   3  20:01:01  -1.21  -1.38    -6.966144    32            
-iter:   4  20:01:02  -3.22  -1.84    -6.918910    4             
-iter:   5  20:01:02  -2.11  -2.04    -6.913719    32            
-iter:   6  20:01:02  -3.10  -2.15    -6.893983    4             
-iter:   7  20:01:03  -4.60  -2.93    -6.893663    3             
-iter:   8  20:01:03  -4.40  -3.13    -6.893443    3             
-iter:   9  20:01:04  -4.84  -3.18    -6.893458    3             
-iter:  10  20:01:04  -6.32  -4.12    -6.893466    2             
-iter:  11  20:01:05  -6.58  -3.92    -6.893450    2             
-iter:  12  20:01:05  -6.85  -4.39    -6.893447    2             
-iter:  13  20:01:05  -7.94  -5.08    -6.893447    2             
+iter:   1  21:14:39  +2.06   +inf    -7.418742    3             
+iter:   2  21:14:40  -2.18  -1.34    -7.294502    4             
+iter:   3  21:14:40  -1.21  -1.38    -6.966144    32            
+iter:   4  21:14:40  -3.22  -1.84    -6.918910    4             
+iter:   5  21:14:41  -2.11  -2.04    -6.913719    32            
+iter:   6  21:14:41  -3.10  -2.15    -6.893983    4             
+iter:   7  21:14:42  -4.60  -2.93    -6.893663    3             
+iter:   8  21:14:42  -4.40  -3.13    -6.893443    3             
+iter:   9  21:14:42  -4.84  -3.18    -6.893458    3             
+iter:  10  21:14:43  -6.32  -4.12    -6.893466    2             
+iter:  11  21:14:43  -6.58  -3.92    -6.893450    2             
+iter:  12  21:14:44  -6.85  -4.39    -6.893447    2             
+iter:  13  21:14:44  -7.94  -5.08    -6.893447    2             
 
 Converged after 13 iterations.
 
-Dipole moment: (-0.000000, 0.000000, 0.000000) |e|*Ang
+Dipole moment: (0.000000, 0.000000, 0.000000) |e|*Ang
 
 Energy contributions relative to reference atoms: (reference = -130134.647000)
 
@@ -3333,7 +3333,7 @@ Hamiltonian:
 XC parameters: PBE with 2 nearest neighbor stencil
 
 Memory estimate:
-  Process memory now: 157.41 MiB
+  Process memory now: 150.99 MiB
   Calculator: 3.49 MiB
     Density: 1.37 MiB
       Arrays: 0.67 MiB
@@ -3393,24 +3393,24 @@ Effective grid spacing dv^(1/3) = 0.1755
 
                      log10-error:    total        iterations:
            time      wfs    density  energy       fermi  poisson
-iter:   1  20:01:09  +2.08   +inf    -7.259768    3             
-iter:   2  20:01:10  -2.21  -1.34    -7.136752    4             
-iter:   3  20:01:10  -1.22  -1.38    -6.818964    30            
-iter:   4  20:01:10  -3.21  -1.85    -6.775322    4             
-iter:   5  20:01:11  -2.06  -2.06    -6.782618    32            
-iter:   6  20:01:11  -2.90  -2.07    -6.754852    4             
-iter:   7  20:01:12  -4.45  -2.97    -6.754538    3             
-iter:   8  20:01:12  -4.45  -3.19    -6.754423    3             
-iter:   9  20:01:12  -4.80  -3.14    -6.754423    3             
-iter:  10  20:01:13  -6.28  -4.26    -6.754428    2             
-iter:  11  20:01:13  -6.90  -4.24    -6.754432    2             
-iter:  12  20:01:14  -6.30  -4.11    -6.754418    2             
-iter:  13  20:01:14  -7.31  -4.33    -6.754425    2             
-iter:  14  20:01:14  -8.18  -4.67    -6.754423    2             
+iter:   1  21:14:48  +2.08   +inf    -7.259768    3             
+iter:   2  21:14:48  -2.21  -1.34    -7.136752    4             
+iter:   3  21:14:49  -1.22  -1.38    -6.818964    30            
+iter:   4  21:14:49  -3.21  -1.85    -6.775322    4             
+iter:   5  21:14:50  -2.06  -2.06    -6.782618    32            
+iter:   6  21:14:50  -2.90  -2.07    -6.754852    4             
+iter:   7  21:14:50  -4.45  -2.97    -6.754538    3             
+iter:   8  21:14:51  -4.45  -3.19    -6.754423    3             
+iter:   9  21:14:51  -4.80  -3.14    -6.754423    3             
+iter:  10  21:14:52  -6.28  -4.26    -6.754428    2             
+iter:  11  21:14:52  -6.90  -4.24    -6.754432    2             
+iter:  12  21:14:52  -6.30  -4.11    -6.754418    2             
+iter:  13  21:14:53  -7.31  -4.33    -6.754425    2             
+iter:  14  21:14:53  -8.18  -4.67    -6.754423    2             
 
 Converged after 14 iterations.
 
-Dipole moment: (0.000000, -0.000000, 0.000000) |e|*Ang
+Dipole moment: (0.000000, -0.000000, -0.000000) |e|*Ang
 
 Energy contributions relative to reference atoms: (reference = -130134.647000)
 
@@ -3442,67 +3442,67 @@ Showing only first 2 kpts
 No gap
 Timing:                              incl.     excl.
 -----------------------------------------------------------
-Hamiltonian:                         2.390     0.008   0.0% |
- Atomic:                             2.062     2.062   1.5% ||
+Hamiltonian:                         2.404     0.008   0.0% |
+ Atomic:                             2.076     2.076   1.5% ||
   XC Correction:                     0.000     0.000   0.0% |
  Calculate atomic Hamiltonians:      0.013     0.013   0.0% |
- Communicate:                        0.002     0.002   0.0% |
+ Communicate:                        0.003     0.003   0.0% |
  Initialize Hamiltonian:             0.002     0.002   0.0% |
  Poisson:                            0.003     0.003   0.0% |
- XC 3D grid:                         0.300     0.300   0.2% |
-LCAO initialization:                39.341     2.051   1.5% ||
- LCAO eigensolver:                  11.842     0.014   0.0% |
-  Calculate projections:             0.007     0.007   0.0% |
-  DenseAtomicCorrection:             0.026     0.026   0.0% |
+ XC 3D grid:                         0.299     0.299   0.2% |
+LCAO initialization:                38.147     2.011   1.5% ||
+ LCAO eigensolver:                  11.458     0.013   0.0% |
+  Calculate projections:             0.006     0.006   0.0% |
+  DenseAtomicCorrection:             0.023     0.023   0.0% |
   Distribute overlap matrix:         0.007     0.007   0.0% |
-  Orbital Layouts:                   0.032     0.032   0.0% |
-  Potential matrix:                 10.706    10.706   7.6% |--|
-  Sum over cells:                    1.050     1.050   0.7% |
- LCAO to grid:                      21.664    21.664  15.4% |-----|
- Set positions (LCAO WFS):           3.784     0.604   0.4% |
-  Basic WFS set positions:           0.051     0.051   0.0% |
+  Orbital Layouts:                   0.031     0.031   0.0% |
+  Potential matrix:                 10.356    10.356   7.5% |--|
+  Sum over cells:                    1.023     1.023   0.7% |
+ LCAO to grid:                      21.023    21.023  15.2% |-----|
+ Set positions (LCAO WFS):           3.655     0.579   0.4% |
+  Basic WFS set positions:           0.050     0.050   0.0% |
   Basis functions set positions:     0.001     0.001   0.0% |
-  P tci:                             0.739     0.739   0.5% |
-  ST tci:                            1.727     1.727   1.2% |
-  mktci:                             0.662     0.662   0.5% |
-PWDescriptor:                        0.051     0.051   0.0% |
-SCF-cycle:                          78.112     9.450   6.7% |--|
- Davidson:                          33.732     8.227   5.9% |-|
-  Apply H:                           3.701     3.196   2.3% ||
-   HMM T:                            0.505     0.505   0.4% |
-  Subspace diag:                     5.945     0.317   0.2% |
-   calc_h_matrix:                    4.549     0.818   0.6% |
-    Apply H:                         3.732     3.216   2.3% ||
-     HMM T:                          0.516     0.516   0.4% |
-   diagonalize:                      0.690     0.690   0.5% |
-   rotate_psi:                       0.389     0.389   0.3% |
-  calc. matrices:                   12.831     5.426   3.9% |-|
-   Apply H:                          7.405     6.390   4.5% |-|
-    HMM T:                           1.015     1.015   0.7% |
-  diagonalize:                       2.431     2.431   1.7% ||
-  rotate_psi:                        0.598     0.598   0.4% |
- Density:                            5.328     0.006   0.0% |
-  Atomic density matrices:           0.412     0.412   0.3% |
-  Mix:                               0.500     0.500   0.4% |
-  Multipole moments:                 0.035     0.035   0.0% |
-  Pseudo density:                    4.375     1.446   1.0% |
-   Symmetrize density:               2.929     2.929   2.1% ||
- Hamiltonian:                       29.440     0.104   0.1% |
-  Atomic:                           25.388    25.386  18.1% |------|
+  P tci:                             0.715     0.715   0.5% |
+  ST tci:                            1.665     1.665   1.2% |
+  mktci:                             0.645     0.645   0.5% |
+PWDescriptor:                        0.054     0.054   0.0% |
+SCF-cycle:                          77.524     9.809   7.1% |--|
+ Davidson:                          32.892     7.970   5.8% |-|
+  Apply H:                           3.624     3.143   2.3% ||
+   HMM T:                            0.481     0.481   0.3% |
+  Subspace diag:                     5.801     0.309   0.2% |
+   calc_h_matrix:                    4.427     0.786   0.6% |
+    Apply H:                         3.641     3.150   2.3% ||
+     HMM T:                          0.491     0.491   0.4% |
+   diagonalize:                      0.683     0.683   0.5% |
+   rotate_psi:                       0.382     0.382   0.3% |
+  calc. matrices:                   12.508     5.267   3.8% |-|
+   Apply H:                          7.241     6.274   4.5% |-|
+    HMM T:                           0.967     0.967   0.7% |
+  diagonalize:                       2.400     2.400   1.7% ||
+  rotate_psi:                        0.589     0.589   0.4% |
+ Density:                            5.286     0.006   0.0% |
+  Atomic density matrices:           0.407     0.407   0.3% |
+  Mix:                               0.495     0.495   0.4% |
+  Multipole moments:                 0.034     0.034   0.0% |
+  Pseudo density:                    4.344     1.426   1.0% |
+   Symmetrize density:               2.918     2.918   2.1% ||
+ Hamiltonian:                       29.386     0.104   0.1% |
+  Atomic:                           25.370    25.369  18.3% |------|
    XC Correction:                    0.001     0.001   0.0% |
-  Calculate atomic Hamiltonians:     0.172     0.172   0.1% |
-  Communicate:                       0.028     0.028   0.0% |
+  Calculate atomic Hamiltonians:     0.170     0.170   0.1% |
+  Communicate:                       0.015     0.015   0.0% |
   Poisson:                           0.042     0.042   0.0% |
-  XC 3D grid:                        3.706     3.706   2.6% ||
- Orthonormalize:                     0.162     0.022   0.0% |
-  calc_s_matrix:                     0.040     0.040   0.0% |
-  inverse-cholesky:                  0.047     0.047   0.0% |
-  projections:                       0.043     0.043   0.0% |
-  rotate_psi_s:                      0.011     0.011   0.0% |
-Set symmetry:                        3.474     3.474   2.5% ||
-Other:                              17.139    17.139  12.2% |----|
+  XC 3D grid:                        3.686     3.686   2.7% ||
+ Orthonormalize:                     0.151     0.020   0.0% |
+  calc_s_matrix:                     0.037     0.037   0.0% |
+  inverse-cholesky:                  0.044     0.044   0.0% |
+  projections:                       0.040     0.040   0.0% |
+  rotate_psi_s:                      0.010     0.010   0.0% |
+Set symmetry:                        3.422     3.422   2.5% ||
+Other:                              16.900    16.900  12.2% |----|
 -----------------------------------------------------------
-Total:                                       140.507 100.0%
+Total:                                       138.452 100.0%
 
-Memory usage: 157.43 MiB
-Date: Fri Feb 25 20:01:14 2022
+Memory usage: 151.00 MiB
+Date: Fri Feb 25 21:14:53 2022
