@@ -1,0 +1,663 @@
+rank=01 L00: Traceback (most recent call last):
+rank=01 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=01 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=01 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=01 L04:     pkg_name=pkg_name, script_name=fname)
+rank=01 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=01 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=01 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=01 L08:     exec(code, run_globals)
+rank=01 L09:   File "task1_2.py", line 11, in <module>
+rank=01 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=01 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=01 L12:     self._write(writer, mode)
+rank=01 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=01 L14:     self.scf.write(writer.child('scf'))
+rank=01 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 1): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=05 L00: Traceback (most recent call last):
+rank=05 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=05 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=05 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=05 L04:     pkg_name=pkg_name, script_name=fname)
+rank=05 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=05 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=05 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=05 L08:     exec(code, run_globals)
+rank=05 L09:   File "task1_2.py", line 11, in <module>
+rank=05 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=05 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=05 L12:     self._write(writer, mode)
+rank=05 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=05 L14:     self.scf.write(writer.child('scf'))
+rank=05 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 5): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=03 L00: Traceback (most recent call last):
+rank=03 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=03 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=03 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=03 L04:     pkg_name=pkg_name, script_name=fname)
+rank=03 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=03 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=03 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=03 L08:     exec(code, run_globals)
+rank=03 L09:   File "task1_2.py", line 11, in <module>
+rank=03 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=03 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=03 L12:     self._write(writer, mode)
+rank=03 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=03 L14:     self.scf.write(writer.child('scf'))
+rank=03 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 3): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=04 L00: Traceback (most recent call last):
+rank=04 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=04 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=04 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=04 L04:     pkg_name=pkg_name, script_name=fname)
+rank=04 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=04 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=04 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=04 L08:     exec(code, run_globals)
+rank=04 L09:   File "task1_2.py", line 11, in <module>
+rank=04 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=04 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=04 L12:     self._write(writer, mode)
+rank=04 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=04 L14:     self.scf.write(writer.child('scf'))
+rank=04 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 4): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=06 L00: Traceback (most recent call last):
+rank=06 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=06 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=06 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=06 L04:     pkg_name=pkg_name, script_name=fname)
+rank=06 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=06 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=06 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=06 L08:     exec(code, run_globals)
+rank=06 L09:   File "task1_2.py", line 11, in <module>
+rank=06 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=06 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=06 L12:     self._write(writer, mode)
+rank=06 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=06 L14:     self.scf.write(writer.child('scf'))
+rank=06 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 6): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=02 L00: Traceback (most recent call last):
+rank=02 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=02 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=02 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=02 L04:     pkg_name=pkg_name, script_name=fname)
+rank=02 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=02 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=02 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=02 L08:     exec(code, run_globals)
+rank=02 L09:   File "task1_2.py", line 11, in <module>
+rank=02 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=02 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=02 L12:     self._write(writer, mode)
+rank=02 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=02 L14:     self.scf.write(writer.child('scf'))
+rank=02 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 2): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=07 L00: Traceback (most recent call last):
+rank=07 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=07 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=07 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=07 L04:     pkg_name=pkg_name, script_name=fname)
+rank=07 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=07 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=07 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=07 L08:     exec(code, run_globals)
+rank=07 L09:   File "task1_2.py", line 11, in <module>
+rank=07 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=07 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=07 L12:     self._write(writer, mode)
+rank=07 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=07 L14:     self.scf.write(writer.child('scf'))
+rank=07 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 7): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=08 L00: Traceback (most recent call last):
+rank=08 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=08 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=08 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=08 L04:     pkg_name=pkg_name, script_name=fname)
+rank=08 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=08 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=08 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=08 L08:     exec(code, run_globals)
+rank=08 L09:   File "task1_2.py", line 11, in <module>
+rank=08 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=08 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=08 L12:     self._write(writer, mode)
+rank=08 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=08 L14:     self.scf.write(writer.child('scf'))
+rank=08 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 8): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=09 L00: Traceback (most recent call last):
+rank=09 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=09 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=09 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=09 L04:     pkg_name=pkg_name, script_name=fname)
+rank=09 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=09 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=09 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=09 L08:     exec(code, run_globals)
+rank=09 L09:   File "task1_2.py", line 11, in <module>
+rank=09 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=09 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=09 L12:     self._write(writer, mode)
+rank=09 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=09 L14:     self.scf.write(writer.child('scf'))
+rank=09 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 9): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=10 L00: Traceback (most recent call last):
+rank=10 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=10 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=10 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=10 L04:     pkg_name=pkg_name, script_name=fname)
+rank=10 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=10 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=10 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=10 L08:     exec(code, run_globals)
+rank=10 L09:   File "task1_2.py", line 11, in <module>
+rank=10 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=10 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=10 L12:     self._write(writer, mode)
+rank=10 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=10 L14:     self.scf.write(writer.child('scf'))
+rank=10 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 10): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=11 L00: Traceback (most recent call last):
+rank=11 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=11 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=11 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=11 L04:     pkg_name=pkg_name, script_name=fname)
+rank=11 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=11 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=11 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=11 L08:     exec(code, run_globals)
+rank=11 L09:   File "task1_2.py", line 11, in <module>
+rank=11 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=11 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=11 L12:     self._write(writer, mode)
+rank=11 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=11 L14:     self.scf.write(writer.child('scf'))
+rank=11 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 11): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=13 L00: Traceback (most recent call last):
+rank=13 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=13 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=13 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=13 L04:     pkg_name=pkg_name, script_name=fname)
+rank=13 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=13 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=13 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=13 L08:     exec(code, run_globals)
+rank=13 L09:   File "task1_2.py", line 11, in <module>
+rank=13 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=13 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=13 L12:     self._write(writer, mode)
+rank=13 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=13 L14:     self.scf.write(writer.child('scf'))
+rank=13 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 13): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=14 L00: Traceback (most recent call last):
+rank=14 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=14 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=14 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=14 L04:     pkg_name=pkg_name, script_name=fname)
+rank=14 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=14 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=14 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=14 L08:     exec(code, run_globals)
+rank=14 L09:   File "task1_2.py", line 11, in <module>
+rank=14 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=14 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=14 L12:     self._write(writer, mode)
+rank=14 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=14 L14:     self.scf.write(writer.child('scf'))
+rank=14 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 14): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=15 L00: Traceback (most recent call last):
+rank=15 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=15 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=15 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=15 L04:     pkg_name=pkg_name, script_name=fname)
+rank=15 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=15 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=15 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=15 L08:     exec(code, run_globals)
+rank=15 L09:   File "task1_2.py", line 11, in <module>
+rank=15 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=15 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=15 L12:     self._write(writer, mode)
+rank=15 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=15 L14:     self.scf.write(writer.child('scf'))
+rank=15 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 15): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=12 L00: Traceback (most recent call last):
+rank=12 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=12 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=12 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=12 L04:     pkg_name=pkg_name, script_name=fname)
+rank=12 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=12 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=12 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=12 L08:     exec(code, run_globals)
+rank=12 L09:   File "task1_2.py", line 11, in <module>
+rank=12 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=12 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=12 L12:     self._write(writer, mode)
+rank=12 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=12 L14:     self.scf.write(writer.child('scf'))
+rank=12 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 12): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+rank=00 L00: Traceback (most recent call last):
+rank=00 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=00 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=00 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=00 L04:     pkg_name=pkg_name, script_name=fname)
+rank=00 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=00 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=00 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=00 L08:     exec(code, run_globals)
+rank=00 L09:   File "task1_2.py", line 11, in <module>
+rank=00 L10:     calc2.write('task1_backup.gpw', mode='all')
+rank=00 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 167, in write
+rank=00 L12:     self._write(writer, mode)
+rank=00 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 183, in _write
+rank=00 L14:     self.scf.write(writer.child('scf'))
+rank=00 L15: AttributeError: 'NoneType' object has no attribute 'write'
+GPAW CLEANUP (node 0): <class 'AttributeError'> occurred.  Calling MPI_Abort!
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 1
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 9
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 8
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 3
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 7
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 2
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 10
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 5
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 6
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 4
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 11
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 13
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 14
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 12
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 15
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 0
+slurmstepd: error: *** STEP 3115954.1 ON vera06-3 CANCELLED AT 2022-03-03T17:00:48 ***
+srun: Job step aborted: Waiting up to 122 seconds for job step to finish.
+srun: error: vera06-3: tasks 0-15: Killed
+rank=00 L00: Traceback (most recent call last):
+rank=00 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=00 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=00 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=00 L04:     pkg_name=pkg_name, script_name=fname)
+rank=00 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=00 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=00 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=00 L08:     exec(code, run_globals)
+rank=00 L09:   File "task1_3.py", line 8, in <module>
+rank=00 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=00 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=00 L12:     calc = Class(filename, **kwargs)
+rank=00 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=00 L14:     atoms, **kwargs)
+rank=00 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=00 L16:     self.read(restart)  # read parameters, atoms and results
+rank=00 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=00 L18:     atoms = read_atoms(reader.atoms)
+rank=00 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=00 L20:     value = self._data[attr]
+rank=00 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 0): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=10 L00: Traceback (most recent call last):
+rank=10 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=10 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=10 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=10 L04:     pkg_name=pkg_name, script_name=fname)
+rank=10 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=10 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=10 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=10 L08:     exec(code, run_globals)
+rank=10 L09:   File "task1_3.py", line 8, in <module>
+rank=10 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=10 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=10 L12:     calc = Class(filename, **kwargs)
+rank=10 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=10 L14:     atoms, **kwargs)
+rank=10 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=10 L16:     self.read(restart)  # read parameters, atoms and results
+rank=10 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=10 L18:     atoms = read_atoms(reader.atoms)
+rank=10 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=10 L20:     value = self._data[attr]
+rank=10 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 10): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=02 L00: Traceback (most recent call last):
+rank=02 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=02 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=02 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=02 L04:     pkg_name=pkg_name, script_name=fname)
+rank=02 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=02 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=02 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=02 L08:     exec(code, run_globals)
+rank=02 L09:   File "task1_3.py", line 8, in <module>
+rank=02 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=02 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=02 L12:     calc = Class(filename, **kwargs)
+rank=02 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=02 L14:     atoms, **kwargs)
+rank=02 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=02 L16:     self.read(restart)  # read parameters, atoms and results
+rank=02 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=02 L18:     atoms = read_atoms(reader.atoms)
+rank=02 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=02 L20:     value = self._data[attr]
+rank=02 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 2): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=11 L00: Traceback (most recent call last):
+rank=11 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=11 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=11 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=11 L04:     pkg_name=pkg_name, script_name=fname)
+rank=11 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=11 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=11 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=11 L08:     exec(code, run_globals)
+rank=11 L09:   File "task1_3.py", line 8, in <module>
+rank=11 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=11 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=11 L12:     calc = Class(filename, **kwargs)
+rank=11 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=11 L14:     atoms, **kwargs)
+rank=11 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=11 L16:     self.read(restart)  # read parameters, atoms and results
+rank=11 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=11 L18:     atoms = read_atoms(reader.atoms)
+rank=11 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=11 L20:     value = self._data[attr]
+rank=11 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 11): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=01 L00: Traceback (most recent call last):
+rank=01 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=01 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=01 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=01 L04:     pkg_name=pkg_name, script_name=fname)
+rank=01 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=01 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=01 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=01 L08:     exec(code, run_globals)
+rank=01 L09:   File "task1_3.py", line 8, in <module>
+rank=01 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=01 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=01 L12:     calc = Class(filename, **kwargs)
+rank=01 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=01 L14:     atoms, **kwargs)
+rank=01 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=01 L16:     self.read(restart)  # read parameters, atoms and results
+rank=01 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=01 L18:     atoms = read_atoms(reader.atoms)
+rank=01 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=01 L20:     value = self._data[attr]
+rank=01 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 1): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=13 L00: Traceback (most recent call last):
+rank=13 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=13 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=13 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=13 L04:     pkg_name=pkg_name, script_name=fname)
+rank=13 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=13 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=13 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=13 L08:     exec(code, run_globals)
+rank=13 L09:   File "task1_3.py", line 8, in <module>
+rank=13 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=13 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=13 L12:     calc = Class(filename, **kwargs)
+rank=13 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=13 L14:     atoms, **kwargs)
+rank=13 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=13 L16:     self.read(restart)  # read parameters, atoms and results
+rank=13 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=13 L18:     atoms = read_atoms(reader.atoms)
+rank=13 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=13 L20:     value = self._data[attr]
+rank=13 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 13): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=05 L00: Traceback (most recent call last):
+rank=05 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=05 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=05 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=05 L04:     pkg_name=pkg_name, script_name=fname)
+rank=05 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=05 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=05 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=05 L08:     exec(code, run_globals)
+rank=05 L09:   File "task1_3.py", line 8, in <module>
+rank=05 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=05 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=05 L12:     calc = Class(filename, **kwargs)
+rank=05 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=05 L14:     atoms, **kwargs)
+rank=05 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=05 L16:     self.read(restart)  # read parameters, atoms and results
+rank=05 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=05 L18:     atoms = read_atoms(reader.atoms)
+rank=05 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=05 L20:     value = self._data[attr]
+rank=05 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 5): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=12 L00: Traceback (most recent call last):
+rank=12 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=12 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=12 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=12 L04:     pkg_name=pkg_name, script_name=fname)
+rank=12 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=12 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=12 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=12 L08:     exec(code, run_globals)
+rank=12 L09:   File "task1_3.py", line 8, in <module>
+rank=12 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=12 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=12 L12:     calc = Class(filename, **kwargs)
+rank=12 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=12 L14:     atoms, **kwargs)
+rank=12 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=12 L16:     self.read(restart)  # read parameters, atoms and results
+rank=12 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=12 L18:     atoms = read_atoms(reader.atoms)
+rank=12 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=12 L20:     value = self._data[attr]
+rank=12 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 12): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=04 L00: Traceback (most recent call last):
+rank=04 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=04 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=04 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=04 L04:     pkg_name=pkg_name, script_name=fname)
+rank=04 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=04 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=04 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=04 L08:     exec(code, run_globals)
+rank=04 L09:   File "task1_3.py", line 8, in <module>
+rank=04 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=04 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=04 L12:     calc = Class(filename, **kwargs)
+rank=04 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=04 L14:     atoms, **kwargs)
+rank=04 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=04 L16:     self.read(restart)  # read parameters, atoms and results
+rank=04 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=04 L18:     atoms = read_atoms(reader.atoms)
+rank=04 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=04 L20:     value = self._data[attr]
+rank=04 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 4): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=15 L00: Traceback (most recent call last):
+rank=15 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=15 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=15 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=15 L04:     pkg_name=pkg_name, script_name=fname)
+rank=15 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=15 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=15 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=15 L08:     exec(code, run_globals)
+rank=15 L09:   File "task1_3.py", line 8, in <module>
+rank=15 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=15 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=15 L12:     calc = Class(filename, **kwargs)
+rank=15 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=15 L14:     atoms, **kwargs)
+rank=15 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=15 L16:     self.read(restart)  # read parameters, atoms and results
+rank=15 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=15 L18:     atoms = read_atoms(reader.atoms)
+rank=15 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=15 L20:     value = self._data[attr]
+rank=15 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 15): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=08 L00: Traceback (most recent call last):
+rank=08 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=08 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=08 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=08 L04:     pkg_name=pkg_name, script_name=fname)
+rank=08 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=08 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=08 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=08 L08:     exec(code, run_globals)
+rank=08 L09:   File "task1_3.py", line 8, in <module>
+rank=08 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=08 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=08 L12:     calc = Class(filename, **kwargs)
+rank=08 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=08 L14:     atoms, **kwargs)
+rank=08 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=08 L16:     self.read(restart)  # read parameters, atoms and results
+rank=08 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=08 L18:     atoms = read_atoms(reader.atoms)
+rank=08 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=08 L20:     value = self._data[attr]
+rank=08 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 8): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=09 L00: Traceback (most recent call last):
+rank=09 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=09 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=09 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=09 L04:     pkg_name=pkg_name, script_name=fname)
+rank=09 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=09 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=09 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=09 L08:     exec(code, run_globals)
+rank=09 L09:   File "task1_3.py", line 8, in <module>
+rank=09 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=09 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=09 L12:     calc = Class(filename, **kwargs)
+rank=09 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=09 L14:     atoms, **kwargs)
+rank=09 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=09 L16:     self.read(restart)  # read parameters, atoms and results
+rank=09 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=09 L18:     atoms = read_atoms(reader.atoms)
+rank=09 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=09 L20:     value = self._data[attr]
+rank=09 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 9): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=07 L00: Traceback (most recent call last):
+rank=07 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=07 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=07 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=07 L04:     pkg_name=pkg_name, script_name=fname)
+rank=07 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=07 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=07 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=07 L08:     exec(code, run_globals)
+rank=07 L09:   File "task1_3.py", line 8, in <module>
+rank=07 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=07 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=07 L12:     calc = Class(filename, **kwargs)
+rank=07 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=07 L14:     atoms, **kwargs)
+rank=07 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=07 L16:     self.read(restart)  # read parameters, atoms and results
+rank=07 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=07 L18:     atoms = read_atoms(reader.atoms)
+rank=07 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=07 L20:     value = self._data[attr]
+rank=07 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 7): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=14 L00: Traceback (most recent call last):
+rank=14 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=14 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=14 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=14 L04:     pkg_name=pkg_name, script_name=fname)
+rank=14 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=14 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=14 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=14 L08:     exec(code, run_globals)
+rank=14 L09:   File "task1_3.py", line 8, in <module>
+rank=14 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=14 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=14 L12:     calc = Class(filename, **kwargs)
+rank=14 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=14 L14:     atoms, **kwargs)
+rank=14 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=14 L16:     self.read(restart)  # read parameters, atoms and results
+rank=14 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=14 L18:     atoms = read_atoms(reader.atoms)
+rank=14 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=14 L20:     value = self._data[attr]
+rank=14 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 14): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=06 L00: Traceback (most recent call last):
+rank=06 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=06 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=06 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=06 L04:     pkg_name=pkg_name, script_name=fname)
+rank=06 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=06 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=06 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=06 L08:     exec(code, run_globals)
+rank=06 L09:   File "task1_3.py", line 8, in <module>
+rank=06 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=06 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=06 L12:     calc = Class(filename, **kwargs)
+rank=06 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=06 L14:     atoms, **kwargs)
+rank=06 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=06 L16:     self.read(restart)  # read parameters, atoms and results
+rank=06 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=06 L18:     atoms = read_atoms(reader.atoms)
+rank=06 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=06 L20:     value = self._data[attr]
+rank=06 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 6): <class 'KeyError'> occurred.  Calling MPI_Abort!
+rank=03 L00: Traceback (most recent call last):
+rank=03 L01:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 209, in main
+rank=03 L02:     runpy.run_path(gpaw_args.script, run_name='__main__')
+rank=03 L03:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 263, in run_path
+rank=03 L04:     pkg_name=pkg_name, script_name=fname)
+rank=03 L05:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 96, in _run_module_code
+rank=03 L06:     mod_name, mod_spec, pkg_name, script_name)
+rank=03 L07:   File "/apps/Vera/software/Python/3.7.2-GCCcore-8.2.0/lib/python3.7/runpy.py", line 85, in _run_code
+rank=03 L08:     exec(code, run_globals)
+rank=03 L09:   File "task1_3.py", line 8, in <module>
+rank=03 L10:     _ , calc3 = restart('task1_backup.gpw')
+rank=03 L11:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/__init__.py", line 264, in restart
+rank=03 L12:     calc = Class(filename, **kwargs)
+rank=03 L13:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 151, in __init__
+rank=03 L14:     atoms, **kwargs)
+rank=03 L15:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/calculators/calculator.py", line 445, in __init__
+rank=03 L16:     self.read(restart)  # read parameters, atoms and results
+rank=03 L17:   File "/apps/Vera/software/GPAW/19.8.1-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/gpaw/calculator.py", line 203, in read
+rank=03 L18:     atoms = read_atoms(reader.atoms)
+rank=03 L19:   File "/apps/Vera/software/ASE/3.18.0-intel-2019a-Python-3.7.2/lib/python3.7/site-packages/ase/io/ulm.py", line 535, in __getattr__
+rank=03 L20:     value = self._data[attr]
+rank=03 L21: KeyError: 'atoms'
+GPAW CLEANUP (node 3): <class 'KeyError'> occurred.  Calling MPI_Abort!
+application called MPI_Abort(MPI_COMM_WORLD, 42) - process 0
+slurmstepd: error: *** STEP 3115954.2 ON vera06-3 CANCELLED AT 2022-03-03T17:01:00 ***
+srun: Job step aborted: Waiting up to 122 seconds for job step to finish.
+srun: error: vera06-3: tasks 0-15: Killed
