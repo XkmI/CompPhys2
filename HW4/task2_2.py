@@ -1,7 +1,7 @@
 import numpy as np
 import numpy.linalg as la
 import matplotlib.pyplot as plt
-from helper.py import fold
+from helper import fold
 '''
 		Keywords for dumped quantities:
 		'i_p':		Kohn-Sham state that gets excited from
