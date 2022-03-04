@@ -14,8 +14,6 @@ from helper import fold
 		'K_pp':		K-matrix
 '''
 
-calc=LrTDDFT('LrTDDFTresults.dat')
-dump_data(calc, 'babysFirstDump.npz')
 dump = np.load('babysFirstDump.npz')
 
 K_pp = dump['K_pp']
