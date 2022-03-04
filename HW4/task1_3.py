@@ -11,5 +11,5 @@ calc3.get_eigenvalues()
 dE = 6 # eV
 lr = LrTDDFT(calc3, xc='LDA', energy_range=dE)
 lr.diagonalize()
-photoabsorption_spectrum(lr,'spectrum_w.dat',width=0.06)
+photoabsorption_spectrum(lr,'spectrum_w.dat', width=0.06)
 lr.write('LrTDDFTresults.dat') # Save for task 2
