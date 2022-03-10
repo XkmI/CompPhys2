@@ -2,6 +2,8 @@ import numpy as np
 import numpy.linalg as la
 import matplotlib.pyplot as plt
 
+hartreeInEV = 27.211396641308
+
 def fold(x_t, x_i, y_i, width):
     '''
         Convolutes each peak in the discrete spectrum
@@ -30,7 +32,7 @@ def fold(x_t, x_i, y_i, width):
 		'i_p':		Kohn-Sham state that gets excited from
 		'a_p':		Kohn-Sham state that gets excited to
 		'ediff_p':	Kohn-Sham eigenvalue differences for each KS excitation
-		'fdiff_p':	Kohn_sham occupation differe for each KS excitation
+		'fdiff_p':	Kohn_sham occupation differences for each KS excitation
 		'mux_p':	x-component of dipole matrix elements
 		'muy_p':	y-component of dipole matrix elements
 		'muz_p':	z-component of dipole matrix elements
@@ -51,26 +53,26 @@ a_p = dump['a_p']
 i_p = dump['i_p']
 
 D_pp = np.diag(de_p)
-omega_pp = np.sqrt(D_pp)*(D_pp+2*K_pp)*np.sqrt(D_pp)
+omega_pp = np.matmul(np.matmul(np.sqrt(D_pp),(D_pp)),np.sqrt(D_pp)) # +2*K_pp
 (eigs,F) = la.eig(omega_pp) 
 X = np.sqrt(eigs) #these are the discrete x vals
-
-fi=0
+#print(omega_pp)
 mu = np.array([mux_p, muy_p, muz_p])
-#print(X)
-for a in range(0,2):
-    sum = 0
-    for p in range(0,len(X/2)-1):
-        sum += mu[a][p] * np.sqrt(df_p[p]*de_p[p]) * F[p]
-    fai = 2*np.abs(sum)*np.abs(sum)
-    fi += fai
-Y = fi/3 #these are the discrete y vals
+fI = np.zeros(mu.shape)
+#print(F[:,10:11])
+for a in range(mu.shape[0]):
+	for i in range(mu.shape[1]):
+		sum = 0
+		for p in range(mu.shape[1]):
+			sum += mu[a][p] * np.sqrt(df_p[p]*de_p[p]) * F[p,i]
+		fI[a][i] = 2 * np.abs(sum)**2
 
-hartreeInEV = 27.211396641308
-x = np.linspace(0,6/hartreeInEV)
-y = fold(x,X,Y,0.06)
+Y = np.sum(fI,0)/3 #these are the discrete y vals
+x = np.linspace(0/hartreeInEV,6.4/hartreeInEV,500) # 6/hartreeInEV
+#plt.plot(x,Y)
+y = fold(x,X,Y,0.06/hartreeInEV)
 
-plt.plot(x,y)
-plt.xlabel('Energy [Ha]')
-plt.ylabel('Dipole moment [1/Ha]?')
+plt.plot(x*hartreeInEV,y/hartreeInEV)
+plt.xlabel('Energy [eV]')
+plt.ylabel('Dipole moment [1/eV]')
 plt.show()
