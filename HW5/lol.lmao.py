@@ -1,5 +1,4 @@
 from gpaw import GPAW , PW
-import ase.io as io
 from ase.build import bulk
 from ase import Atoms
 from ase.optimize import GPMin
