@@ -11,5 +11,5 @@ module purge
 module load ifort/2019.1.144-GCC-8.2.0-2.31.1 impi/2018.4.274
 module load ASE/3.18.0-Python-3.7.2 GPAW/19.8.1-Python-3.7.2
 
-srun gpaw-python jugar.py
+srun gpaw-python gas_gas_gas.py
 
