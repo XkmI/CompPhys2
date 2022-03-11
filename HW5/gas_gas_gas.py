@@ -3,8 +3,14 @@ from ase.build import molecule
 from ase.optimize import GPMin, BFGS
 from gpaw import GPAW, PW
 
-o2 = molecule('O2', vacuum=6.0)
-co = molecule('CO', vacuum=6.0)
+o2 = molecule('O2', pbc=True)
+co = molecule('CO', pbc=True)
+
+o2.set_cell([12,12,12])
+co.set_cell([12,12,12])
+o2.center
+co.center
+
 
 babys_nth_calc = GPAW(xc ='PBE', mode=PW(450), kpts =(1, 1, 1), spinpol=True, txt='calculation.txt')
 babys_nplus1th_calc = GPAW(xc ='PBE', mode=PW(450), kpts =(1, 1, 1), spinpol=False, txt='calculation.txt')
